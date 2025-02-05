@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.dgvPersonar = new System.Windows.Forms.DataGridView();
             this.btnVarios = new System.Windows.Forms.Button();
             this.btnSobre = new System.Windows.Forms.Button();
             this.btnBlanco = new System.Windows.Forms.Button();
@@ -176,8 +177,9 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.dgvPersonar = new System.Windows.Forms.DataGridView();
+            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.panelLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PanelBtns.SuspendLayout();
@@ -190,7 +192,6 @@
             this.panel8.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLeft
@@ -213,6 +214,16 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(325, 1012);
             this.panelLeft.TabIndex = 130;
+            // 
+            // dgvPersonar
+            // 
+            this.dgvPersonar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPersonar.Location = new System.Drawing.Point(9, 544);
+            this.dgvPersonar.Name = "dgvPersonar";
+            this.dgvPersonar.RowHeadersWidth = 51;
+            this.dgvPersonar.RowTemplate.Height = 24;
+            this.dgvPersonar.Size = new System.Drawing.Size(309, 150);
+            this.dgvPersonar.TabIndex = 11;
             // 
             // btnVarios
             // 
@@ -360,6 +371,7 @@
             // 
             // PanelBtns
             // 
+            this.PanelBtns.Controls.Add(this.txtBuscarNombre);
             this.PanelBtns.Controls.Add(this.button2);
             this.PanelBtns.Controls.Add(this.btnNuevoPaciente);
             this.PanelBtns.Controls.Add(this.btnImprimir);
@@ -380,6 +392,7 @@
             this.button2.TabIndex = 108;
             this.button2.Text = "buscar Datos ";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnNuevoPaciente
             // 
@@ -453,7 +466,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(756, 1012);
             this.panel7.TabIndex = 132;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+//            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -567,7 +580,7 @@
             this.txtAPTT.Name = "txtAPTT";
             this.txtAPTT.Size = new System.Drawing.Size(76, 22);
             this.txtAPTT.TabIndex = 46;
-            this.txtAPTT.TextChanged += new System.EventHandler(this.txtAPTT_TextChanged);
+//            this.txtAPTT.TextChanged += new System.EventHandler(this.txtAPTT_TextChanged);
             // 
             // label73
             // 
@@ -730,7 +743,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(754, 276);
             this.panel4.TabIndex = 170;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+//            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label64
             // 
@@ -1695,15 +1708,12 @@
             this.dtpFecha.TabIndex = 171;
             this.dtpFecha.Value = new System.DateTime(2025, 1, 21, 0, 0, 0, 0);
             // 
-            // dgvPersonar
+            // txtBuscarNombre
             // 
-            this.dgvPersonar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPersonar.Location = new System.Drawing.Point(9, 544);
-            this.dgvPersonar.Name = "dgvPersonar";
-            this.dgvPersonar.RowHeadersWidth = 51;
-            this.dgvPersonar.RowTemplate.Height = 24;
-            this.dgvPersonar.Size = new System.Drawing.Size(309, 150);
-            this.dgvPersonar.TabIndex = 11;
+            this.txtBuscarNombre.Location = new System.Drawing.Point(35, 330);
+            this.txtBuscarNombre.Name = "txtBuscarNombre";
+            this.txtBuscarNombre.Size = new System.Drawing.Size(229, 22);
+            this.txtBuscarNombre.TabIndex = 180;
             // 
             // Hemograma
             // 
@@ -1718,10 +1728,12 @@
             this.Text = "Hemograma";
             this.Load += new System.EventHandler(this.Hemograma_Load);
             this.panelLeft.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();
             this.PanelLogo.ResumeLayout(false);
             this.PanelLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.PanelBtns.ResumeLayout(false);
+            this.PanelBtns.PerformLayout();
             this.panelRight.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -1737,7 +1749,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1892,5 +1903,6 @@
         private System.Windows.Forms.TextBox textIK;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.DataGridView dgvPersonar;
+        private System.Windows.Forms.TextBox txtBuscarNombre;
     }
 }

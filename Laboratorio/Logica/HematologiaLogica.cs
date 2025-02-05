@@ -13,6 +13,57 @@ namespace Laboratorio.Logica
 
         private static string cadena = ConfigurationManager.ConnectionStrings["cadena"].ConnectionString;
         private static HematologiaLogica _instancia = null;
+
+        public Hematologia BuscarPorNombre(string nombrePaciente)
+        {
+            Hematologia paciente = null;
+            using (SQLiteConnection conexion = new SQLiteConnection(cadena))
+            {
+                conexion.Open();
+                string query = @"SELECT * FROM Hematologia WHERE NombrePaciente = @nombrePaciente";
+                SQLiteCommand cmd = new SQLiteCommand(query, conexion);
+                cmd.Parameters.Add(new SQLiteParameter("@nombrePaciente", nombrePaciente));
+                using (SQLiteDataReader dr = cmd.ExecuteReader())
+                {
+                    if (dr.Read())
+                    {
+                        paciente = new Hematologia()
+                        {
+                            Id = int.Parse(dr["Id"].ToString()),
+                            Eritrocitos = dr["Eritrocitos"].ToString(),
+                            Leucocitos = dr["Leucocitos"].ToString(),
+                            Hemoglobina = dr["Hemoglobina"].ToString(),
+                            Hematocrito = dr["Hematocrito"].ToString(),
+                            Plaquetas = dr["Plaquetas"].ToString(),
+                            Mielocitos = dr["Mielocitos"].ToString(),
+                            Melamielocitos = dr["Melamielocitos"].ToString(),
+                            Cayados = dr["Cayados"].ToString(),
+                            Segmentados = dr["Segmentados"].ToString(),
+                            Linfocitos = dr["Linfocitos"].ToString(),
+                            Monocitos = dr["Monocitos"].ToString(),
+                            Eosinofilos = dr["Eosinofilos"].ToString(),
+                            Basofilos = dr["Basofilos"].ToString(),
+                            VES1 = dr["VES1"].ToString(),
+                            VES2 = dr["VES2"].ToString(),
+                            Ik = dr["Ik"].ToString(),
+                            GrupoSanguineo = dr["GrupoSanguineo"].ToString(),
+                            Factor = dr["Factor"].ToString(),
+                            TiempoSangria = dr["TiempoSangria"].ToString(),
+                            TiempoCoagulacion = dr["TiempoCoagulacion"].ToString(),
+                            TiempoProtrombina = dr["TiempoProtrombina"].ToString(),
+                            PorcentajeActividad = dr["PorcentajeActividad"].ToString(),
+                            Aptt = dr["Aptt"].ToString(),
+                            SerieRoja = dr["SerieRoja"].ToString(),
+                            SerieBlanca = dr["SerieBlanca"].ToString(),
+                            NombrePaciente = dr["NombrePaciente"].ToString(),
+                            MedicoSolicitante = dr["MedicoSolicitante"].ToString(),
+                            Edad = dr["Edad"].ToString(),
+                        };
+                    }
+                }
+            }
+            return paciente;
+        }
         public HematologiaLogica()
         {
 
@@ -192,11 +243,5 @@ namespace Laboratorio.Logica
             }
             return respuesta;
         }
-
-
-
-
-
-
     }
 }

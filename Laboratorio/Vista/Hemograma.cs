@@ -10,6 +10,7 @@ using System.Drawing;
 using System.Drawing.Printing;
 using Laboratorio.Logica;
 using Laboratorio.Modelo;
+using System.Data.SQLite;
 namespace Laboratorio
 {
     public partial class Hemograma : Form
@@ -42,7 +43,7 @@ namespace Laboratorio
        
         private void Hemograma_Load(object sender, EventArgs e)
         {
-
+            mostrarPersonas();
         }
 
        
@@ -53,6 +54,44 @@ namespace Laboratorio
         {
             Quimica mainForm = new Quimica();
             mainForm.Show();
+        }
+        public void LlenarCampos(Hematologia paciente)
+        {
+            if (paciente != null)
+            {
+                textEritrocitos.Text = paciente.Eritrocitos;
+                textLeucocitos.Text = paciente.Leucocitos;
+                textHemoglobina.Text = paciente.Hemoglobina;
+                textHematocritos.Text = paciente.Hematocrito;
+                textPlaquetas.Text = paciente.Plaquetas;
+                textMielocitos.Text = paciente.Mielocitos;
+                textMetamielocitos.Text = paciente.Melamielocitos;
+                textCayados.Text = paciente.Cayados;
+                textSegmentados.Text = paciente.Segmentados;
+                textLinfocitos.Text = paciente.Linfocitos;
+                textMonocitos.Text = paciente.Monocitos;
+                textEosinofilos.Text = paciente.Eosinofilos;
+                textBasofilos.Text = paciente.Basofilos;
+                textVES1.Text = paciente.VES1;
+                textVES2.Text = paciente.VES2;
+                textIK.Text = paciente.Ik;
+                textGrupoSanguineo.Text = paciente.GrupoSanguineo;
+                textFactorRh.Text = paciente.Factor;
+                txtTiempoSangria.Text = paciente.TiempoSangria;
+                txtTiempoCoagulacion.Text = paciente.TiempoCoagulacion;
+                txtTiempoProtrombina.Text = paciente.TiempoProtrombina;
+                txtPorcentajeActividad.Text = paciente.PorcentajeActividad;
+                txtAPTT.Text = paciente.Aptt;
+                txtSerieRoja.Text = paciente.SerieRoja;
+                txtSerieBlanca.Text = paciente.SerieBlanca;
+                textNombre.Text = paciente.NombrePaciente;
+                txtMedico.Text = paciente.MedicoSolicitante;
+                txtEdad.Text = paciente.Edad;
+            }
+            else
+            {
+                MessageBox.Show("Paciente no encontrado.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btnImprimir_Click_1(object sender, EventArgs e)
@@ -124,24 +163,16 @@ namespace Laboratorio
             dgvPersonar.DataSource = null;
             dgvPersonar.DataSource = HematologiaLogica.Instancia.Listar();
         }
-        private void panel1_Paint(object sender, PaintEventArgs e)
+       
+       
+        private void button2_Click(object sender, EventArgs e)
         {
 
+            string nombrePaciente = txtBuscarNombre.Text; // Campo de texto donde el usuario ingresa el nombre
+            Hematologia paciente  = HematologiaLogica.Instancia.BuscarPorNombre(nombrePaciente);
+            LlenarCampos(paciente);
         }
 
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtAPTT_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-    }
+    
+}
 }
