@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Printing;
+using Laboratorio.Logica;
+using Laboratorio.Modelo;
 namespace Laboratorio
 {
     public partial class Hemograma : Form
@@ -55,6 +57,52 @@ namespace Laboratorio
 
         private void btnImprimir_Click_1(object sender, EventArgs e)
         {
+            Hematologia objeto = new Hematologia()
+            {
+                Eritrocitos = textEritrocitos.Text,
+                Leucocitos = textLeucocitos.Text,
+                Hemoglobina = textHemoglobina.Text,
+                Hematocrito = textHematocritos.Text,
+                Plaquetas = textPlaquetas.Text,
+                Mielocitos = textMielocitos.Text,   
+                Melamielocitos  = textMetamielocitos.Text,
+                Cayados = textCayados.Text,
+                Segmentados = textSegmentados.Text,
+                Linfocitos  = textLinfocitos.Text,  
+                Monocitos = textMonocitos.Text,
+                Eosinofilos = textEosinofilos.Text,
+                Basofilos = textBasofilos.Text,
+                VES1 = textVES1.Text,
+                VES2 = textVES2.Text,
+                Ik  =   textIK.Text,    
+                GrupoSanguineo = textGrupoSanguineo.Text,
+                Factor= textFactorRh.Text,
+                TiempoSangria = txtTiempoSangria.Text,
+                TiempoCoagulacion = txtTiempoCoagulacion.Text,
+                TiempoProtrombina = txtTiempoProtrombina.Text,
+                PorcentajeActividad = txtPorcentajeActividad.Text,
+                Aptt = txtAPTT.Text,    
+                SerieRoja = txtSerieRoja.Text,
+                SerieBlanca = txtSerieBlanca.Text,
+                NombrePaciente = textNombre.Text,
+                MedicoSolicitante = txtMedico.Text,
+                Edad = txtEdad.Text
+          
+            };
+
+            bool respuesta = HematologiaLogica.Instancia.Guardar(objeto);
+
+            if (respuesta)
+            {
+                MessageBox.Show("Usuario guardado con éxito.");
+                
+                mostrarPersonas();
+
+            }
+            else
+            {
+                MessageBox.Show("Error al guardar el usuario.");
+            }
             // Capturar el contenido del panel
             CapturarPanel(panel7); // Reemplaza 'panel1' con el nombre de tu panel.
 
@@ -70,6 +118,30 @@ namespace Laboratorio
             {
                 printDocument.Print();
             }
+        }
+        public void mostrarPersonas()
+        {
+            dgvPersonar.DataSource = null;
+            dgvPersonar.DataSource = HematologiaLogica.Instancia.Listar();
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtAPTT_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
