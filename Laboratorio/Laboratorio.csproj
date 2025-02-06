@@ -66,8 +66,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logica\BlancoLogica.cs" />
     <Compile Include="Logica\HematologiaLogica.cs" />
     <Compile Include="Logica\PersonaLogica.cs" />
+    <Compile Include="Modelo\BlancoM.cs" />
     <Compile Include="Modelo\Hematologia.cs" />
     <Compile Include="Modelo\Usuario.cs" />
     <Compile Include="Vista\Blanco.cs">
