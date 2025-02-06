@@ -28,7 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.panelLeft = new System.Windows.Forms.Panel();
+            this.dgvPersonar = new System.Windows.Forms.DataGridView();
+            this.btnVarios = new System.Windows.Forms.Button();
+            this.btnSobre = new System.Windows.Forms.Button();
+            this.btnBlanco = new System.Windows.Forms.Button();
+            this.btnMicro = new System.Windows.Forms.Button();
+            this.btnSerologia = new System.Windows.Forms.Button();
+            this.btnHCG = new System.Windows.Forms.Button();
+            this.btnCopros = new System.Windows.Forms.Button();
+            this.btnOrina = new System.Windows.Forms.Button();
+            this.btnHemograma = new System.Windows.Forms.Button();
+            this.PanelLogo = new System.Windows.Forms.Panel();
+            this.label87 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.PanelBtns = new System.Windows.Forms.Panel();
+            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnNuevoPaciente = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.panelRight = new System.Windows.Forms.Panel();
+            this.btnadelante = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label85 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox31 = new System.Windows.Forms.GroupBox();
@@ -92,10 +114,16 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox27 = new System.Windows.Forms.GroupBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.label41 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.txtSerieBlanca = new System.Windows.Forms.TextBox();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.label37 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.txtSerieRoja = new System.Windows.Forms.TextBox();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
@@ -106,19 +134,17 @@
             this.label76 = new System.Windows.Forms.Label();
             this.txtPorcentajeActividad = new System.Windows.Forms.TextBox();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
+            this.label56 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
             this.txtTiempoProtrombina = new System.Windows.Forms.TextBox();
             this.groupBox25 = new System.Windows.Forms.GroupBox();
-            this.label56 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
             this.txtTiempoCoagulacion = new System.Windows.Forms.TextBox();
             this.groupBox26 = new System.Windows.Forms.GroupBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
             this.txtTiempoSangria = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label74 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -164,14 +190,15 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.label25 = new System.Windows.Forms.Label();
-            this.groupBox27 = new System.Windows.Forms.GroupBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.panel7.SuspendLayout();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.panelLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
+            this.PanelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.PanelBtns.SuspendLayout();
+            this.panelRight.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.groupBox31.SuspendLayout();
             this.groupBox30.SuspendLayout();
@@ -191,6 +218,7 @@
             this.groupBox19.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox27.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.groupBox21.SuspendLayout();
             this.groupBox22.SuspendLayout();
@@ -198,8 +226,7 @@
             this.groupBox24.SuspendLayout();
             this.groupBox25.SuspendLayout();
             this.groupBox26.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -208,43 +235,307 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox27.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel7
+            // panelLeft
             // 
-            this.panel7.Controls.Add(this.label85);
-            this.panel7.Controls.Add(this.panel4);
-            this.panel7.Controls.Add(this.panel8);
-            this.panel7.Controls.Add(this.panel2);
-            this.panel7.Controls.Add(this.panel6);
-            this.panel7.Controls.Add(this.panel1);
-            this.panel7.Controls.Add(this.label57);
-            this.panel7.Controls.Add(this.txtEdad);
-            this.panel7.Controls.Add(this.label65);
-            this.panel7.Controls.Add(this.label83);
-            this.panel7.Controls.Add(this.txtMedico);
-            this.panel7.Controls.Add(this.label71);
-            this.panel7.Controls.Add(this.pictureBox1);
-            this.panel7.Controls.Add(this.label81);
-            this.panel7.Controls.Add(this.textNombre);
-            this.panel7.Controls.Add(this.label72);
-            this.panel7.Controls.Add(this.label77);
-            this.panel7.Controls.Add(this.label86);
-            this.panel7.Controls.Add(this.dtpFecha);
-            this.panel7.Location = new System.Drawing.Point(51, 47);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(736, 933);
-            this.panel7.TabIndex = 130;
+            this.panelLeft.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panelLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelLeft.Controls.Add(this.dgvPersonar);
+            this.panelLeft.Controls.Add(this.btnVarios);
+            this.panelLeft.Controls.Add(this.btnSobre);
+            this.panelLeft.Controls.Add(this.btnBlanco);
+            this.panelLeft.Controls.Add(this.btnMicro);
+            this.panelLeft.Controls.Add(this.btnSerologia);
+            this.panelLeft.Controls.Add(this.btnHCG);
+            this.panelLeft.Controls.Add(this.btnCopros);
+            this.panelLeft.Controls.Add(this.btnOrina);
+            this.panelLeft.Controls.Add(this.btnHemograma);
+            this.panelLeft.Controls.Add(this.PanelLogo);
+            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(325, 1184);
+            this.panelLeft.TabIndex = 131;
+            // 
+            // dgvPersonar
+            // 
+            this.dgvPersonar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPersonar.Location = new System.Drawing.Point(9, 544);
+            this.dgvPersonar.Name = "dgvPersonar";
+            this.dgvPersonar.RowHeadersWidth = 51;
+            this.dgvPersonar.RowTemplate.Height = 24;
+            this.dgvPersonar.Size = new System.Drawing.Size(309, 150);
+            this.dgvPersonar.TabIndex = 11;
+            // 
+            // btnVarios
+            // 
+            this.btnVarios.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnVarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVarios.FlatAppearance.BorderSize = 0;
+            this.btnVarios.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVarios.Location = new System.Drawing.Point(0, 456);
+            this.btnVarios.Name = "btnVarios";
+            this.btnVarios.Size = new System.Drawing.Size(323, 35);
+            this.btnVarios.TabIndex = 10;
+            this.btnVarios.Text = "VARIOS";
+            this.btnVarios.UseVisualStyleBackColor = false;
+            // 
+            // btnSobre
+            // 
+            this.btnSobre.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnSobre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSobre.FlatAppearance.BorderSize = 0;
+            this.btnSobre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSobre.Location = new System.Drawing.Point(0, 421);
+            this.btnSobre.Name = "btnSobre";
+            this.btnSobre.Size = new System.Drawing.Size(323, 35);
+            this.btnSobre.TabIndex = 9;
+            this.btnSobre.Text = "SOBRE";
+            this.btnSobre.UseVisualStyleBackColor = false;
+            // 
+            // btnBlanco
+            // 
+            this.btnBlanco.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnBlanco.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBlanco.FlatAppearance.BorderSize = 0;
+            this.btnBlanco.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBlanco.Location = new System.Drawing.Point(0, 386);
+            this.btnBlanco.Name = "btnBlanco";
+            this.btnBlanco.Size = new System.Drawing.Size(323, 35);
+            this.btnBlanco.TabIndex = 8;
+            this.btnBlanco.Text = "BLANCO";
+            this.btnBlanco.UseVisualStyleBackColor = false;
+            // 
+            // btnMicro
+            // 
+            this.btnMicro.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnMicro.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMicro.FlatAppearance.BorderSize = 0;
+            this.btnMicro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMicro.Location = new System.Drawing.Point(0, 351);
+            this.btnMicro.Name = "btnMicro";
+            this.btnMicro.Size = new System.Drawing.Size(323, 35);
+            this.btnMicro.TabIndex = 7;
+            this.btnMicro.Text = "MICRO";
+            this.btnMicro.UseVisualStyleBackColor = false;
+            // 
+            // btnSerologia
+            // 
+            this.btnSerologia.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnSerologia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSerologia.FlatAppearance.BorderSize = 0;
+            this.btnSerologia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSerologia.Location = new System.Drawing.Point(0, 316);
+            this.btnSerologia.Name = "btnSerologia";
+            this.btnSerologia.Size = new System.Drawing.Size(323, 35);
+            this.btnSerologia.TabIndex = 6;
+            this.btnSerologia.Text = "SEROLOGIA";
+            this.btnSerologia.UseVisualStyleBackColor = false;
+            // 
+            // btnHCG
+            // 
+            this.btnHCG.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnHCG.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHCG.FlatAppearance.BorderSize = 0;
+            this.btnHCG.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHCG.Location = new System.Drawing.Point(0, 281);
+            this.btnHCG.Name = "btnHCG";
+            this.btnHCG.Size = new System.Drawing.Size(323, 35);
+            this.btnHCG.TabIndex = 5;
+            this.btnHCG.Text = "HCG";
+            this.btnHCG.UseVisualStyleBackColor = false;
+            // 
+            // btnCopros
+            // 
+            this.btnCopros.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnCopros.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCopros.FlatAppearance.BorderSize = 0;
+            this.btnCopros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCopros.Location = new System.Drawing.Point(0, 246);
+            this.btnCopros.Name = "btnCopros";
+            this.btnCopros.Size = new System.Drawing.Size(323, 35);
+            this.btnCopros.TabIndex = 4;
+            this.btnCopros.Text = "COPROS";
+            this.btnCopros.UseVisualStyleBackColor = false;
+            // 
+            // btnOrina
+            // 
+            this.btnOrina.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnOrina.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrina.FlatAppearance.BorderSize = 0;
+            this.btnOrina.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrina.Location = new System.Drawing.Point(0, 211);
+            this.btnOrina.Name = "btnOrina";
+            this.btnOrina.Size = new System.Drawing.Size(323, 35);
+            this.btnOrina.TabIndex = 3;
+            this.btnOrina.Text = "ORINAS";
+            this.btnOrina.UseVisualStyleBackColor = false;
+            // 
+            // btnHemograma
+            // 
+            this.btnHemograma.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnHemograma.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHemograma.FlatAppearance.BorderSize = 0;
+            this.btnHemograma.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHemograma.Location = new System.Drawing.Point(0, 176);
+            this.btnHemograma.Name = "btnHemograma";
+            this.btnHemograma.Size = new System.Drawing.Size(323, 35);
+            this.btnHemograma.TabIndex = 2;
+            this.btnHemograma.Text = "QUIMICA";
+            this.btnHemograma.UseVisualStyleBackColor = false;
+            // 
+            // PanelLogo
+            // 
+            this.PanelLogo.Controls.Add(this.label87);
+            this.PanelLogo.Controls.Add(this.pictureBox2);
+            this.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelLogo.Location = new System.Drawing.Point(0, 0);
+            this.PanelLogo.Name = "PanelLogo";
+            this.PanelLogo.Size = new System.Drawing.Size(323, 176);
+            this.PanelLogo.TabIndex = 0;
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Location = new System.Drawing.Point(6, 160);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(270, 16);
+            this.label87.TabIndex = 1;
+            this.label87.Text = "_____________________________________-";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(32, 21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(206, 136);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // PanelBtns
+            // 
+            this.PanelBtns.Controls.Add(this.txtBuscarNombre);
+            this.PanelBtns.Controls.Add(this.button2);
+            this.PanelBtns.Controls.Add(this.btnNuevoPaciente);
+            this.PanelBtns.Controls.Add(this.btnImprimir);
+            this.PanelBtns.Controls.Add(this.panelRight);
+            this.PanelBtns.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PanelBtns.Location = new System.Drawing.Point(1058, 0);
+            this.PanelBtns.Name = "PanelBtns";
+            this.PanelBtns.Size = new System.Drawing.Size(319, 1184);
+            this.PanelBtns.TabIndex = 132;
+            // 
+            // txtBuscarNombre
+            // 
+            this.txtBuscarNombre.Location = new System.Drawing.Point(35, 330);
+            this.txtBuscarNombre.Name = "txtBuscarNombre";
+            this.txtBuscarNombre.Size = new System.Drawing.Size(229, 22);
+            this.txtBuscarNombre.TabIndex = 180;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.Location = new System.Drawing.Point(0, 265);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(319, 44);
+            this.button2.TabIndex = 108;
+            this.button2.Text = "buscar Datos ";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btnNuevoPaciente
+            // 
+            this.btnNuevoPaciente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNuevoPaciente.FlatAppearance.BorderSize = 0;
+            this.btnNuevoPaciente.Location = new System.Drawing.Point(0, 221);
+            this.btnNuevoPaciente.Name = "btnNuevoPaciente";
+            this.btnNuevoPaciente.Size = new System.Drawing.Size(319, 44);
+            this.btnNuevoPaciente.TabIndex = 107;
+            this.btnNuevoPaciente.Text = "Nuevo Paciente";
+            this.btnNuevoPaciente.UseVisualStyleBackColor = true;
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnImprimir.FlatAppearance.BorderSize = 0;
+            this.btnImprimir.Location = new System.Drawing.Point(0, 177);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(319, 44);
+            this.btnImprimir.TabIndex = 106;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            // 
+            // panelRight
+            // 
+            this.panelRight.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelRight.Controls.Add(this.btnadelante);
+            this.panelRight.Controls.Add(this.btnAtras);
+            this.panelRight.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelRight.Location = new System.Drawing.Point(0, 0);
+            this.panelRight.Name = "panelRight";
+            this.panelRight.Size = new System.Drawing.Size(319, 177);
+            this.panelRight.TabIndex = 0;
+            // 
+            // btnadelante
+            // 
+            this.btnadelante.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnadelante.Location = new System.Drawing.Point(194, 70);
+            this.btnadelante.Name = "btnadelante";
+            this.btnadelante.Size = new System.Drawing.Size(81, 62);
+            this.btnadelante.TabIndex = 1;
+            this.btnadelante.Text = "Adelante";
+            this.btnadelante.UseVisualStyleBackColor = true;
+            // 
+            // btnAtras
+            // 
+            this.btnAtras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAtras.Location = new System.Drawing.Point(56, 70);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(81, 62);
+            this.btnAtras.TabIndex = 0;
+            this.btnAtras.Text = "atras";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.textBox13);
+            this.panel1.Controls.Add(this.label74);
+            this.panel1.Controls.Add(this.label85);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel8);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.label57);
+            this.panel1.Controls.Add(this.txtEdad);
+            this.panel1.Controls.Add(this.label65);
+            this.panel1.Controls.Add(this.label83);
+            this.panel1.Controls.Add(this.txtMedico);
+            this.panel1.Controls.Add(this.label71);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label81);
+            this.panel1.Controls.Add(this.textNombre);
+            this.panel1.Controls.Add(this.label72);
+            this.panel1.Controls.Add(this.label77);
+            this.panel1.Controls.Add(this.label86);
+            this.panel1.Controls.Add(this.dtpFecha);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(325, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(733, 1184);
+            this.panel1.TabIndex = 133;
             // 
             // label85
             // 
             this.label85.AutoSize = true;
             this.label85.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.Location = new System.Drawing.Point(42, 31);
+            this.label85.Location = new System.Drawing.Point(34, 44);
             this.label85.Name = "label85";
             this.label85.Size = new System.Drawing.Size(309, 30);
-            this.label85.TabIndex = 123;
+            this.label85.TabIndex = 142;
             this.label85.Text = "LABORATORIO CLINICO ";
             // 
             // panel4
@@ -269,10 +560,10 @@
             this.panel4.Controls.Add(this.groupBox8);
             this.panel4.Controls.Add(this.groupBox9);
             this.panel4.Controls.Add(this.groupBox19);
-            this.panel4.Location = new System.Drawing.Point(25, 422);
+            this.panel4.Location = new System.Drawing.Point(17, 435);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(683, 261);
-            this.panel4.TabIndex = 126;
+            this.panel4.TabIndex = 145;
             // 
             // groupBox31
             // 
@@ -835,10 +1126,10 @@
             this.panel8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label18);
-            this.panel8.Location = new System.Drawing.Point(29, 199);
+            this.panel8.Location = new System.Drawing.Point(21, 212);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(679, 30);
-            this.panel8.TabIndex = 110;
+            this.panel8.TabIndex = 129;
             // 
             // label18
             // 
@@ -863,10 +1154,48 @@
             this.panel2.Controls.Add(this.groupBox24);
             this.panel2.Controls.Add(this.groupBox25);
             this.panel2.Controls.Add(this.groupBox26);
-            this.panel2.Location = new System.Drawing.Point(25, 689);
+            this.panel2.Location = new System.Drawing.Point(17, 702);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(683, 202);
-            this.panel2.TabIndex = 127;
+            this.panel2.TabIndex = 146;
+            // 
+            // groupBox27
+            // 
+            this.groupBox27.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox27.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox27.Controls.Add(this.label43);
+            this.groupBox27.Controls.Add(this.label33);
+            this.groupBox27.Controls.Add(this.textBox5);
+            this.groupBox27.Location = new System.Drawing.Point(347, 8);
+            this.groupBox27.Name = "groupBox27";
+            this.groupBox27.Size = new System.Drawing.Size(323, 25);
+            this.groupBox27.TabIndex = 101;
+            this.groupBox27.TabStop = false;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(216, 6);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(96, 16);
+            this.label43.TabIndex = 61;
+            this.label43.Text = "8,1 - 10,4 mEq/l";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(12, 6);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(45, 16);
+            this.label33.TabIndex = 53;
+            this.label33.Text = "Calcio";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(116, 3);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(77, 22);
+            this.textBox5.TabIndex = 52;
             // 
             // groupBox20
             // 
@@ -880,6 +1209,15 @@
             this.groupBox20.Size = new System.Drawing.Size(323, 25);
             this.groupBox20.TabIndex = 100;
             this.groupBox20.TabStop = false;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(225, 6);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(90, 16);
+            this.label41.TabIndex = 60;
+            this.label41.Text = "94 - 111 mEq/l";
             // 
             // label63
             // 
@@ -909,6 +1247,15 @@
             this.groupBox21.Size = new System.Drawing.Size(323, 25);
             this.groupBox21.TabIndex = 99;
             this.groupBox21.TabStop = false;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(226, 3);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(89, 16);
+            this.label37.TabIndex = 59;
+            this.label37.Text = "3,5 - 5,5 mEq/l";
             // 
             // label69
             // 
@@ -1005,6 +1352,15 @@
             this.groupBox24.TabIndex = 99;
             this.groupBox24.TabStop = false;
             // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(246, 1);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(66, 16);
+            this.label56.TabIndex = 43;
+            this.label56.Text = "6,2 - 8,2 %";
+            // 
             // label79
             // 
             this.label79.AutoSize = true;
@@ -1032,15 +1388,6 @@
             this.groupBox25.Size = new System.Drawing.Size(323, 25);
             this.groupBox25.TabIndex = 99;
             this.groupBox25.TabStop = false;
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(246, 1);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(66, 16);
-            this.label56.TabIndex = 43;
-            this.label56.Text = "6,2 - 8,2 %";
             // 
             // label82
             // 
@@ -1071,6 +1418,15 @@
             this.groupBox26.TabIndex = 98;
             this.groupBox26.TabStop = false;
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(208, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(75, 16);
+            this.label25.TabIndex = 44;
+            this.label25.Text = "0,0 - 24 U/L ";
+            // 
             // label84
             // 
             this.label84.AutoSize = true;
@@ -1087,55 +1443,26 @@
             this.txtTiempoSangria.Size = new System.Drawing.Size(76, 22);
             this.txtTiempoSangria.TabIndex = 35;
             // 
-            // panel6
+            // panel3
             // 
-            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.textBox13);
-            this.panel6.Controls.Add(this.label74);
-            this.panel6.Enabled = false;
-            this.panel6.Location = new System.Drawing.Point(588, 60);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(91, 75);
-            this.panel6.TabIndex = 107;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(36, 26);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(34, 22);
-            this.textBox13.TabIndex = 33;
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(3, 32);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(38, 16);
-            this.label74.TabIndex = 33;
-            this.label74.Text = "Cod. ";
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.groupBox7);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.groupBox6);
-            this.panel1.Controls.Add(this.textEritrocitos);
-            this.panel1.Controls.Add(this.groupBox5);
-            this.panel1.Controls.Add(this.groupBox4);
-            this.panel1.Controls.Add(this.groupBox3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Location = new System.Drawing.Point(29, 235);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(683, 181);
-            this.panel1.TabIndex = 121;
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.groupBox7);
+            this.panel3.Controls.Add(this.groupBox1);
+            this.panel3.Controls.Add(this.groupBox6);
+            this.panel3.Controls.Add(this.textEritrocitos);
+            this.panel3.Controls.Add(this.groupBox5);
+            this.panel3.Controls.Add(this.groupBox4);
+            this.panel3.Controls.Add(this.groupBox3);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.groupBox2);
+            this.panel3.Controls.Add(this.label17);
+            this.panel3.Location = new System.Drawing.Point(21, 248);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(683, 181);
+            this.panel3.TabIndex = 140;
             // 
             // groupBox7
             // 
@@ -1441,189 +1768,150 @@
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(26, 144);
+            this.label57.Location = new System.Drawing.Point(18, 157);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(56, 16);
-            this.label57.TabIndex = 111;
+            this.label57.TabIndex = 130;
             this.label57.Text = "Nombre";
             // 
             // txtEdad
             // 
-            this.txtEdad.Location = new System.Drawing.Point(411, 171);
+            this.txtEdad.Location = new System.Drawing.Point(403, 184);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(123, 22);
-            this.txtEdad.TabIndex = 118;
+            this.txtEdad.TabIndex = 137;
             // 
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(28, 171);
+            this.label65.Location = new System.Drawing.Point(20, 184);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(117, 16);
-            this.label65.TabIndex = 113;
+            this.label65.TabIndex = 132;
             this.label65.Text = "Medico Solicitante";
             // 
             // label83
             // 
             this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(68, 119);
+            this.label83.Location = new System.Drawing.Point(60, 132);
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(140, 16);
-            this.label83.TabIndex = 122;
+            this.label83.TabIndex = 141;
             this.label83.Text = "Cochabamba - Bolivia";
             // 
             // txtMedico
             // 
-            this.txtMedico.Location = new System.Drawing.Point(167, 168);
+            this.txtMedico.Location = new System.Drawing.Point(159, 181);
             this.txtMedico.Name = "txtMedico";
             this.txtMedico.Size = new System.Drawing.Size(181, 22);
-            this.txtMedico.TabIndex = 117;
+            this.txtMedico.TabIndex = 136;
             // 
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(328, 143);
+            this.label71.Location = new System.Drawing.Point(320, 156);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(45, 16);
-            this.label71.TabIndex = 114;
+            this.label71.TabIndex = 133;
             this.label71.Text = "Fecha";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(425, 31);
+            this.pictureBox1.Location = new System.Drawing.Point(417, 44);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(135, 98);
-            this.pictureBox1.TabIndex = 125;
+            this.pictureBox1.TabIndex = 144;
             this.pictureBox1.TabStop = false;
             // 
             // label81
             // 
             this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(65, 103);
+            this.label81.Location = new System.Drawing.Point(57, 116);
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(173, 16);
-            this.label81.TabIndex = 120;
+            this.label81.TabIndex = 139;
             this.label81.Text = "Telf. 4252475  Cel: 70374276";
             // 
             // textNombre
             // 
-            this.textNombre.Location = new System.Drawing.Point(98, 138);
+            this.textNombre.Location = new System.Drawing.Point(90, 151);
             this.textNombre.Name = "textNombre";
             this.textNombre.Size = new System.Drawing.Size(229, 22);
-            this.textNombre.TabIndex = 112;
+            this.textNombre.TabIndex = 131;
             // 
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(349, 173);
+            this.label72.Location = new System.Drawing.Point(341, 186);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(40, 16);
-            this.label72.TabIndex = 115;
+            this.label72.TabIndex = 134;
             this.label72.Text = "Edad";
             // 
             // label77
             // 
             this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(51, 87);
+            this.label77.Location = new System.Drawing.Point(43, 100);
             this.label77.Name = "label77";
             this.label77.Size = new System.Drawing.Size(216, 16);
-            this.label77.TabIndex = 119;
+            this.label77.TabIndex = 138;
             this.label77.Text = "Av. Aroma No 383 esq. 25 de Mayo";
             // 
             // label86
             // 
             this.label86.AutoSize = true;
             this.label86.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.Location = new System.Drawing.Point(93, 61);
+            this.label86.Location = new System.Drawing.Point(85, 74);
             this.label86.Name = "label86";
             this.label86.Size = new System.Drawing.Size(142, 30);
-            this.label86.TabIndex = 124;
+            this.label86.TabIndex = 143;
             this.label86.Text = "\" ISRAEL \"";
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(373, 139);
+            this.dtpFecha.Location = new System.Drawing.Point(365, 152);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(257, 22);
-            this.dtpFecha.TabIndex = 116;
+            this.dtpFecha.TabIndex = 135;
             this.dtpFecha.Value = new System.DateTime(2025, 1, 21, 0, 0, 0, 0);
             // 
-            // label25
+            // textBox13
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(208, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(75, 16);
-            this.label25.TabIndex = 44;
-            this.label25.Text = "0,0 - 24 U/L ";
+            this.textBox13.Location = new System.Drawing.Point(621, 110);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(34, 22);
+            this.textBox13.TabIndex = 147;
             // 
-            // groupBox27
+            // label74
             // 
-            this.groupBox27.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox27.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox27.Controls.Add(this.label43);
-            this.groupBox27.Controls.Add(this.label33);
-            this.groupBox27.Controls.Add(this.textBox5);
-            this.groupBox27.Location = new System.Drawing.Point(347, 8);
-            this.groupBox27.Name = "groupBox27";
-            this.groupBox27.Size = new System.Drawing.Size(323, 25);
-            this.groupBox27.TabIndex = 101;
-            this.groupBox27.TabStop = false;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(12, 6);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(45, 16);
-            this.label33.TabIndex = 53;
-            this.label33.Text = "Calcio";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(116, 3);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(77, 22);
-            this.textBox5.TabIndex = 52;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(226, 3);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(89, 16);
-            this.label37.TabIndex = 59;
-            this.label37.Text = "3,5 - 5,5 mEq/l";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(225, 6);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(90, 16);
-            this.label41.TabIndex = 60;
-            this.label41.Text = "94 - 111 mEq/l";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(216, 6);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(96, 16);
-            this.label43.TabIndex = 61;
-            this.label43.Text = "8,1 - 10,4 mEq/l";
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(576, 113);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(38, 16);
+            this.label74.TabIndex = 148;
+            this.label74.Text = "Cod. ";
             // 
             // Quimica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 1161);
-            this.Controls.Add(this.panel7);
+            this.ClientSize = new System.Drawing.Size(1377, 1184);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PanelBtns);
+            this.Controls.Add(this.panelLeft);
             this.Name = "Quimica";
             this.Text = "Quimica";
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.panelLeft.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();
+            this.PanelLogo.ResumeLayout(false);
+            this.PanelLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.PanelBtns.ResumeLayout(false);
+            this.PanelBtns.PerformLayout();
+            this.panelRight.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.groupBox31.ResumeLayout(false);
@@ -1661,6 +1949,8 @@
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.groupBox27.ResumeLayout(false);
+            this.groupBox27.PerformLayout();
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
             this.groupBox21.ResumeLayout(false);
@@ -1675,10 +1965,8 @@
             this.groupBox25.PerformLayout();
             this.groupBox26.ResumeLayout(false);
             this.groupBox26.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -1694,19 +1982,53 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox27.ResumeLayout(false);
-            this.groupBox27.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.DataGridView dgvPersonar;
+        private System.Windows.Forms.Button btnVarios;
+        private System.Windows.Forms.Button btnSobre;
+        private System.Windows.Forms.Button btnBlanco;
+        private System.Windows.Forms.Button btnMicro;
+        private System.Windows.Forms.Button btnSerologia;
+        private System.Windows.Forms.Button btnHCG;
+        private System.Windows.Forms.Button btnCopros;
+        private System.Windows.Forms.Button btnOrina;
+        private System.Windows.Forms.Button btnHemograma;
+        private System.Windows.Forms.Panel PanelLogo;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel PanelBtns;
+        private System.Windows.Forms.TextBox txtBuscarNombre;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnNuevoPaciente;
+        private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.Panel panelRight;
+        private System.Windows.Forms.Button btnadelante;
+        private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.GroupBox groupBox31;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.GroupBox groupBox30;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.GroupBox groupBox29;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.GroupBox groupBox28;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.GroupBox groupBox18;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.TextBox textBasofilos;
         private System.Windows.Forms.GroupBox groupBox17;
@@ -1722,11 +2044,11 @@
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.TextBox textSegmentados;
-        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label39;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.TextBox textCayados;
-        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label47;
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.GroupBox groupBox11;
@@ -1734,9 +2056,11 @@
         private System.Windows.Forms.TextBox textMielocitos;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.TextBox textIK;
         private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textVCM;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label59;
@@ -1745,15 +2069,22 @@
         private System.Windows.Forms.TextBox textVES1;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.GroupBox groupBox19;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.TextBox textVES2;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.GroupBox groupBox27;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.GroupBox groupBox20;
+        private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.TextBox txtSerieBlanca;
         private System.Windows.Forms.GroupBox groupBox21;
+        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.TextBox txtSerieRoja;
         private System.Windows.Forms.GroupBox groupBox22;
@@ -1764,19 +2095,25 @@
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.TextBox txtPorcentajeActividad;
         private System.Windows.Forms.GroupBox groupBox24;
+        private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.TextBox txtTiempoProtrombina;
         private System.Windows.Forms.GroupBox groupBox25;
-        private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.TextBox txtTiempoCoagulacion;
         private System.Windows.Forms.GroupBox groupBox26;
+        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.TextBox txtTiempoSangria;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textReticulocitos;
@@ -1785,11 +2122,11 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textPlaquetas;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textHematocritos;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textHemoglobina;
@@ -1814,36 +2151,5 @@
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox28;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.GroupBox groupBox31;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.GroupBox groupBox30;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.GroupBox groupBox29;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.GroupBox groupBox27;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label37;
     }
 }

@@ -14,15 +14,15 @@ namespace Laboratorio.Logica
         private static string cadena = ConfigurationManager.ConnectionStrings["cadena"].ConnectionString;
         private static HematologiaLogica _instancia = null;
 
-        public Hematologia BuscarPorNombre(string nombrePaciente)
+        public Hematologia BuscarPorNombre(int idpaciente)
         {
             Hematologia paciente = null;
             using (SQLiteConnection conexion = new SQLiteConnection(cadena))
             {
                 conexion.Open();
-                string query = @"SELECT * FROM Hematologia WHERE NombrePaciente = @nombrePaciente";
+                string query = @"SELECT * FROM Hematologia WHERE Id = @idPaciente"; // Cambio aquí
                 SQLiteCommand cmd = new SQLiteCommand(query, conexion);
-                cmd.Parameters.Add(new SQLiteParameter("@nombrePaciente", nombrePaciente));
+                cmd.Parameters.Add(new SQLiteParameter("@idPaciente", idpaciente)); // Cambio aquí
                 using (SQLiteDataReader dr = cmd.ExecuteReader())
                 {
                     if (dr.Read())
@@ -132,7 +132,9 @@ namespace Laboratorio.Logica
             using (SQLiteConnection conexion = new SQLiteConnection(cadena))
             {
                 conexion.Open();
-                string query = "SELECT Id, Eritrocitos, Leucocitos, Hemoglobina, Hematocrito, Plaquetas, Mielocitos, Melamielocitos, Cayados, Segmentados, Linfocitos, Monocitos, Eosinofilos, Basofilos, VES1, VES2, Ik, GrupoSanguineo, Factor, TiempoSangria, TiempoCoagulacion, TiempoProtrombina, PorcentajeActividad, Aptt, SerieRoja, SerieBlanca, NombrePaciente, MedicoSolicitante, Edad FROM Hematologia";
+                string query = "SELECT Id, NombrePaciente FROM Hematologia";
+
+                // string query = "SELECT Id, Eritrocitos, Leucocitos, Hemoglobina, Hematocrito, Plaquetas, Mielocitos, Melamielocitos, Cayados, Segmentados, Linfocitos, Monocitos, Eosinofilos, Basofilos, VES1, VES2, Ik, GrupoSanguineo, Factor, TiempoSangria, TiempoCoagulacion, TiempoProtrombina, PorcentajeActividad, Aptt, SerieRoja, SerieBlanca, NombrePaciente, MedicoSolicitante, Edad FROM Hematologia";
                 SQLiteCommand cmd = new SQLiteCommand(query, conexion);
                 cmd.CommandType = System.Data.CommandType.Text;
                 using (SQLiteDataReader dr = cmd.ExecuteReader())
@@ -142,6 +144,8 @@ namespace Laboratorio.Logica
                         oList.Add(new Hematologia()
                         {
                             Id = int.Parse(dr["Id"].ToString()),
+                            NombrePaciente = dr["NombrePaciente"].ToString()
+/*
                             Eritrocitos = dr["Eritrocitos"].ToString(),
                             Leucocitos = dr["Leucocitos"].ToString(),
                             Hemoglobina = dr["Hemoglobina"].ToString(),
@@ -167,9 +171,9 @@ namespace Laboratorio.Logica
                             Aptt = dr["Aptt"].ToString(),
                             SerieRoja = dr["SerieRoja"].ToString(),
                             SerieBlanca = dr["SerieBlanca"].ToString(),
-                            NombrePaciente = dr["NombrePaciente"].ToString(),
                             MedicoSolicitante = dr["MedicoSolicitante"].ToString(),
                             Edad = dr["Edad"].ToString()
+*/
                         });
                     }
                 }
@@ -196,7 +200,7 @@ namespace Laboratorio.Logica
                 cmd.Parameters.Add(new SQLiteParameter("@hematocrito", obj.Hematocrito));
                 cmd.Parameters.Add(new SQLiteParameter("@plaquetas", obj.Plaquetas));
                 cmd.Parameters.Add(new SQLiteParameter("@mielocitos", obj.Mielocitos));
-                cmd.Parameters.Add(new SQLiteParameter("@melamilocitos", obj.Melamielocitos));
+                cmd.Parameters.Add(new SQLiteParameter("@melamielocitos", obj.Melamielocitos));
                 cmd.Parameters.Add(new SQLiteParameter("@cayados", obj.Cayados));
                 cmd.Parameters.Add(new SQLiteParameter("@segmentados", obj.Segmentados));
                 cmd.Parameters.Add(new SQLiteParameter("@linfocitos", obj.Linfocitos));

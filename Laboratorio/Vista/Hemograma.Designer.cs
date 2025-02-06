@@ -43,6 +43,7 @@
             this.label87 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.PanelBtns = new System.Windows.Forms.Panel();
+            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnNuevoPaciente = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
@@ -177,7 +178,8 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnGuardarPaciente = new System.Windows.Forms.Button();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.PanelLogo.SuspendLayout();
@@ -371,16 +373,25 @@
             // 
             // PanelBtns
             // 
+            this.PanelBtns.Controls.Add(this.btnGuardarPaciente);
+            this.PanelBtns.Controls.Add(this.btnEditar);
             this.PanelBtns.Controls.Add(this.txtBuscarNombre);
             this.PanelBtns.Controls.Add(this.button2);
             this.PanelBtns.Controls.Add(this.btnNuevoPaciente);
             this.PanelBtns.Controls.Add(this.btnImprimir);
             this.PanelBtns.Controls.Add(this.panelRight);
             this.PanelBtns.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PanelBtns.Location = new System.Drawing.Point(1081, 0);
+            this.PanelBtns.Location = new System.Drawing.Point(1048, 0);
             this.PanelBtns.Name = "PanelBtns";
-            this.PanelBtns.Size = new System.Drawing.Size(325, 1012);
+            this.PanelBtns.Size = new System.Drawing.Size(358, 1012);
             this.PanelBtns.TabIndex = 131;
+            // 
+            // txtBuscarNombre
+            // 
+            this.txtBuscarNombre.Location = new System.Drawing.Point(56, 407);
+            this.txtBuscarNombre.Name = "txtBuscarNombre";
+            this.txtBuscarNombre.Size = new System.Drawing.Size(229, 22);
+            this.txtBuscarNombre.TabIndex = 180;
             // 
             // button2
             // 
@@ -388,7 +399,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.Location = new System.Drawing.Point(0, 265);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(325, 44);
+            this.button2.Size = new System.Drawing.Size(358, 44);
             this.button2.TabIndex = 108;
             this.button2.Text = "buscar Datos ";
             this.button2.UseVisualStyleBackColor = true;
@@ -400,7 +411,7 @@
             this.btnNuevoPaciente.FlatAppearance.BorderSize = 0;
             this.btnNuevoPaciente.Location = new System.Drawing.Point(0, 221);
             this.btnNuevoPaciente.Name = "btnNuevoPaciente";
-            this.btnNuevoPaciente.Size = new System.Drawing.Size(325, 44);
+            this.btnNuevoPaciente.Size = new System.Drawing.Size(358, 44);
             this.btnNuevoPaciente.TabIndex = 107;
             this.btnNuevoPaciente.Text = "Nuevo Paciente";
             this.btnNuevoPaciente.UseVisualStyleBackColor = true;
@@ -411,7 +422,7 @@
             this.btnImprimir.FlatAppearance.BorderSize = 0;
             this.btnImprimir.Location = new System.Drawing.Point(0, 177);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(325, 44);
+            this.btnImprimir.Size = new System.Drawing.Size(358, 44);
             this.btnImprimir.TabIndex = 106;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
@@ -425,7 +436,7 @@
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelRight.Location = new System.Drawing.Point(0, 0);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(325, 177);
+            this.panelRight.Size = new System.Drawing.Size(358, 177);
             this.panelRight.TabIndex = 0;
             // 
             // btnadelante
@@ -435,7 +446,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnadelante.Location = new System.Drawing.Point(194, 70);
             this.btnadelante.Name = "btnadelante";
-            this.btnadelante.Size = new System.Drawing.Size(87, 62);
+            this.btnadelante.Size = new System.Drawing.Size(120, 62);
             this.btnadelante.TabIndex = 1;
             this.btnadelante.Text = "Adelante";
             this.btnadelante.UseVisualStyleBackColor = true;
@@ -447,7 +458,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAtras.Location = new System.Drawing.Point(56, 70);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(87, 62);
+            this.btnAtras.Size = new System.Drawing.Size(120, 62);
             this.btnAtras.TabIndex = 0;
             this.btnAtras.Text = "atras";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -464,9 +475,8 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(325, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(756, 1012);
+            this.panel7.Size = new System.Drawing.Size(723, 1012);
             this.panel7.TabIndex = 132;
-//            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -498,7 +508,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 744);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(754, 245);
+            this.panel2.Size = new System.Drawing.Size(721, 245);
             this.panel2.TabIndex = 171;
             // 
             // textIsi
@@ -580,7 +590,6 @@
             this.txtAPTT.Name = "txtAPTT";
             this.txtAPTT.Size = new System.Drawing.Size(76, 22);
             this.txtAPTT.TabIndex = 46;
-//            this.txtAPTT.TextChanged += new System.EventHandler(this.txtAPTT_TextChanged);
             // 
             // label73
             // 
@@ -741,9 +750,8 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 468);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(754, 276);
+            this.panel4.Size = new System.Drawing.Size(721, 276);
             this.panel4.TabIndex = 170;
-//            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label64
             // 
@@ -1195,7 +1203,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 229);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(754, 239);
+            this.panel5.Size = new System.Drawing.Size(721, 239);
             this.panel5.TabIndex = 169;
             // 
             // label16
@@ -1534,7 +1542,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 199);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(754, 30);
+            this.panel8.Size = new System.Drawing.Size(721, 30);
             this.panel8.TabIndex = 168;
             // 
             // label18
@@ -1568,7 +1576,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(754, 199);
+            this.panel1.Size = new System.Drawing.Size(721, 199);
             this.panel1.TabIndex = 167;
             // 
             // label85
@@ -1583,7 +1591,7 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(682, 66);
+            this.txtCodigo.Location = new System.Drawing.Point(670, 80);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(34, 22);
             this.txtCodigo.TabIndex = 147;
@@ -1591,7 +1599,7 @@
             // label74
             // 
             this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(638, 69);
+            this.label74.Location = new System.Drawing.Point(626, 83);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(38, 16);
             this.label74.TabIndex = 165;
@@ -1708,12 +1716,29 @@
             this.dtpFecha.TabIndex = 171;
             this.dtpFecha.Value = new System.DateTime(2025, 1, 21, 0, 0, 0, 0);
             // 
-            // txtBuscarNombre
+            // btnEditar
             // 
-            this.txtBuscarNombre.Location = new System.Drawing.Point(35, 330);
-            this.txtBuscarNombre.Name = "txtBuscarNombre";
-            this.txtBuscarNombre.Size = new System.Drawing.Size(229, 22);
-            this.txtBuscarNombre.TabIndex = 180;
+            this.btnEditar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.Location = new System.Drawing.Point(0, 309);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(358, 44);
+            this.btnEditar.TabIndex = 181;
+            this.btnEditar.Text = "Editar Datos";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnGuardarPaciente
+            // 
+            this.btnGuardarPaciente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGuardarPaciente.FlatAppearance.BorderSize = 0;
+            this.btnGuardarPaciente.Location = new System.Drawing.Point(0, 353);
+            this.btnGuardarPaciente.Name = "btnGuardarPaciente";
+            this.btnGuardarPaciente.Size = new System.Drawing.Size(358, 44);
+            this.btnGuardarPaciente.TabIndex = 182;
+            this.btnGuardarPaciente.Text = "Guardar Paciente";
+            this.btnGuardarPaciente.UseVisualStyleBackColor = true;
+            this.btnGuardarPaciente.Click += new System.EventHandler(this.btnGuardarPaciente_Click);
             // 
             // Hemograma
             // 
@@ -1904,5 +1929,7 @@
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.DataGridView dgvPersonar;
         private System.Windows.Forms.TextBox txtBuscarNombre;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnGuardarPaciente;
     }
 }
