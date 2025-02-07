@@ -50,8 +50,8 @@
             this.panelRight = new System.Windows.Forms.Panel();
             this.btnadelante = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.panelCap = new System.Windows.Forms.Panel();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtResistentes = new System.Windows.Forms.TextBox();
@@ -62,27 +62,27 @@
             this.label74 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtIdentificacion = new System.Windows.Forms.TextBox();
+            this.txtColonia = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtM3 = new System.Windows.Forms.TextBox();
+            this.txtM2 = new System.Windows.Forms.TextBox();
+            this.txtM1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCultivo = new System.Windows.Forms.TextBox();
             this.label85 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox32 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtGram = new System.Windows.Forms.TextBox();
+            this.txtMuestra = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.txtEdad = new System.Windows.Forms.TextBox();
@@ -92,18 +92,21 @@
             this.label71 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label81 = new System.Windows.Forms.Label();
-            this.textNombre = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label72 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PanelBtns.SuspendLayout();
             this.panelRight.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelCap.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -291,6 +294,9 @@
             // 
             // PanelBtns
             // 
+            this.PanelBtns.Controls.Add(this.btnEditar);
+            this.PanelBtns.Controls.Add(this.btnEliminar);
+            this.PanelBtns.Controls.Add(this.btnGuardar);
             this.PanelBtns.Controls.Add(this.txtBuscarNombre);
             this.PanelBtns.Controls.Add(this.button2);
             this.PanelBtns.Controls.Add(this.btnNuevoPaciente);
@@ -304,7 +310,7 @@
             // 
             // txtBuscarNombre
             // 
-            this.txtBuscarNombre.Location = new System.Drawing.Point(35, 330);
+            this.txtBuscarNombre.Location = new System.Drawing.Point(23, 457);
             this.txtBuscarNombre.Name = "txtBuscarNombre";
             this.txtBuscarNombre.Size = new System.Drawing.Size(229, 22);
             this.txtBuscarNombre.TabIndex = 180;
@@ -319,6 +325,7 @@
             this.button2.TabIndex = 108;
             this.button2.Text = "buscar Datos ";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnNuevoPaciente
             // 
@@ -341,6 +348,7 @@
             this.btnImprimir.TabIndex = 106;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // panelRight
             // 
@@ -377,40 +385,40 @@
             this.btnAtras.Text = "atras";
             this.btnAtras.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // panelCap
             // 
-            this.panel1.Controls.Add(this.textBox13);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label74);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.label85);
-            this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.label57);
-            this.panel1.Controls.Add(this.txtEdad);
-            this.panel1.Controls.Add(this.label65);
-            this.panel1.Controls.Add(this.label83);
-            this.panel1.Controls.Add(this.txtMedico);
-            this.panel1.Controls.Add(this.label71);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label81);
-            this.panel1.Controls.Add(this.textNombre);
-            this.panel1.Controls.Add(this.label72);
-            this.panel1.Controls.Add(this.label77);
-            this.panel1.Controls.Add(this.label86);
-            this.panel1.Controls.Add(this.dtpFecha);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(325, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(717, 1296);
-            this.panel1.TabIndex = 136;
+            this.panelCap.Controls.Add(this.txtId);
+            this.panelCap.Controls.Add(this.panel3);
+            this.panelCap.Controls.Add(this.label74);
+            this.panelCap.Controls.Add(this.panel2);
+            this.panelCap.Controls.Add(this.label85);
+            this.panelCap.Controls.Add(this.panel8);
+            this.panelCap.Controls.Add(this.panel4);
+            this.panelCap.Controls.Add(this.label57);
+            this.panelCap.Controls.Add(this.txtEdad);
+            this.panelCap.Controls.Add(this.label65);
+            this.panelCap.Controls.Add(this.label83);
+            this.panelCap.Controls.Add(this.txtMedico);
+            this.panelCap.Controls.Add(this.label71);
+            this.panelCap.Controls.Add(this.pictureBox1);
+            this.panelCap.Controls.Add(this.label81);
+            this.panelCap.Controls.Add(this.txtNombre);
+            this.panelCap.Controls.Add(this.label72);
+            this.panelCap.Controls.Add(this.label77);
+            this.panelCap.Controls.Add(this.label86);
+            this.panelCap.Controls.Add(this.dtpFecha);
+            this.panelCap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCap.Location = new System.Drawing.Point(325, 0);
+            this.panelCap.Name = "panelCap";
+            this.panelCap.Size = new System.Drawing.Size(717, 1296);
+            this.panelCap.TabIndex = 136;
             // 
-            // textBox13
+            // txtId
             // 
-            this.textBox13.Location = new System.Drawing.Point(608, 70);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(34, 22);
-            this.textBox13.TabIndex = 33;
+            this.txtId.Location = new System.Drawing.Point(608, 70);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(34, 22);
+            this.txtId.TabIndex = 33;
             // 
             // panel3
             // 
@@ -418,7 +426,7 @@
             this.panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.groupBox2);
-            this.panel3.Location = new System.Drawing.Point(13, 693);
+            this.panel3.Location = new System.Drawing.Point(13, 836);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(683, 228);
             this.panel3.TabIndex = 146;
@@ -502,7 +510,7 @@
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.groupBox1);
-            this.panel2.Location = new System.Drawing.Point(13, 394);
+            this.panel2.Location = new System.Drawing.Point(13, 537);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(683, 293);
             this.panel2.TabIndex = 145;
@@ -511,19 +519,19 @@
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.txtIdentificacion);
+            this.groupBox1.Controls.Add(this.txtColonia);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtM3);
+            this.groupBox1.Controls.Add(this.txtM2);
+            this.groupBox1.Controls.Add(this.txtM1);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtCultivo);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(24, 13);
             this.groupBox1.Name = "groupBox1";
@@ -531,21 +539,21 @@
             this.groupBox1.TabIndex = 94;
             this.groupBox1.TabStop = false;
             // 
-            // textBox8
+            // txtIdentificacion
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(141, 216);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(473, 27);
-            this.textBox8.TabIndex = 103;
+            this.txtIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdentificacion.Location = new System.Drawing.Point(141, 216);
+            this.txtIdentificacion.Name = "txtIdentificacion";
+            this.txtIdentificacion.Size = new System.Drawing.Size(473, 27);
+            this.txtIdentificacion.TabIndex = 103;
             // 
-            // textBox7
+            // txtColonia
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(143, 176);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(475, 27);
-            this.textBox7.TabIndex = 102;
+            this.txtColonia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtColonia.Location = new System.Drawing.Point(143, 176);
+            this.txtColonia.Name = "txtColonia";
+            this.txtColonia.Size = new System.Drawing.Size(475, 27);
+            this.txtColonia.TabIndex = 102;
             // 
             // label7
             // 
@@ -567,29 +575,29 @@
             this.label6.TabIndex = 100;
             this.label6.Text = "# de Colonias :";
             // 
-            // textBox4
+            // txtM3
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(513, 36);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(81, 27);
-            this.textBox4.TabIndex = 99;
+            this.txtM3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtM3.Location = new System.Drawing.Point(513, 36);
+            this.txtM3.Name = "txtM3";
+            this.txtM3.Size = new System.Drawing.Size(81, 27);
+            this.txtM3.TabIndex = 99;
             // 
-            // textBox3
+            // txtM2
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(312, 40);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(81, 27);
-            this.textBox3.TabIndex = 98;
+            this.txtM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtM2.Location = new System.Drawing.Point(312, 40);
+            this.txtM2.Name = "txtM2";
+            this.txtM2.Size = new System.Drawing.Size(81, 27);
+            this.txtM2.TabIndex = 98;
             // 
-            // textBox2
+            // txtM1
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(111, 40);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(81, 27);
-            this.textBox2.TabIndex = 93;
+            this.txtM1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtM1.Location = new System.Drawing.Point(111, 40);
+            this.txtM1.Name = "txtM1";
+            this.txtM1.Size = new System.Drawing.Size(81, 27);
+            this.txtM1.TabIndex = 93;
             // 
             // label5
             // 
@@ -641,13 +649,13 @@
             this.label1.TabIndex = 93;
             this.label1.Text = "Tinción de Zhiel Neelsen :";
             // 
-            // textBox1
+            // txtCultivo
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 73);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(515, 93);
-            this.textBox1.TabIndex = 8;
+            this.txtCultivo.Location = new System.Drawing.Point(103, 73);
+            this.txtCultivo.Multiline = true;
+            this.txtCultivo.Name = "txtCultivo";
+            this.txtCultivo.Size = new System.Drawing.Size(515, 93);
+            this.txtCultivo.TabIndex = 8;
             // 
             // label85
             // 
@@ -665,7 +673,7 @@
             this.panel8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label18);
-            this.panel8.Location = new System.Drawing.Point(13, 209);
+            this.panel8.Location = new System.Drawing.Point(13, 352);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(679, 30);
             this.panel8.TabIndex = 129;
@@ -686,9 +694,9 @@
             this.panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.groupBox32);
-            this.panel4.Controls.Add(this.textBox6);
+            this.panel4.Controls.Add(this.txtMuestra);
             this.panel4.Controls.Add(this.label17);
-            this.panel4.Location = new System.Drawing.Point(13, 245);
+            this.panel4.Location = new System.Drawing.Point(13, 388);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(683, 143);
             this.panel4.TabIndex = 140;
@@ -698,7 +706,7 @@
             this.groupBox32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox32.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.groupBox32.Controls.Add(this.label9);
-            this.groupBox32.Controls.Add(this.textBox5);
+            this.groupBox32.Controls.Add(this.txtGram);
             this.groupBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox32.Location = new System.Drawing.Point(7, 43);
             this.groupBox32.Name = "groupBox32";
@@ -716,21 +724,21 @@
             this.label9.TabIndex = 93;
             this.label9.Text = "Tinción de Gram :";
             // 
-            // textBox5
+            // txtGram
             // 
-            this.textBox5.Location = new System.Drawing.Point(172, 12);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(481, 76);
-            this.textBox5.TabIndex = 8;
+            this.txtGram.Location = new System.Drawing.Point(172, 12);
+            this.txtGram.Multiline = true;
+            this.txtGram.Name = "txtGram";
+            this.txtGram.Size = new System.Drawing.Size(481, 76);
+            this.txtGram.TabIndex = 8;
             // 
-            // textBox6
+            // txtMuestra
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(105, 13);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(362, 27);
-            this.textBox6.TabIndex = 8;
+            this.txtMuestra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMuestra.Location = new System.Drawing.Point(105, 13);
+            this.txtMuestra.Name = "txtMuestra";
+            this.txtMuestra.Size = new System.Drawing.Size(362, 27);
+            this.txtMuestra.TabIndex = 8;
             // 
             // label17
             // 
@@ -817,13 +825,13 @@
             this.label81.TabIndex = 139;
             this.label81.Text = "Telf. 4252475  Cel: 70374276";
             // 
-            // textNombre
+            // txtNombre
             // 
-            this.textNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNombre.Location = new System.Drawing.Point(84, 135);
-            this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(250, 27);
-            this.textNombre.TabIndex = 131;
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(84, 135);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(250, 27);
+            this.txtNombre.TabIndex = 131;
             // 
             // label72
             // 
@@ -864,16 +872,53 @@
             this.dtpFecha.TabIndex = 135;
             this.dtpFecha.Value = new System.DateTime(2025, 1, 21, 0, 0, 0, 0);
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.Location = new System.Drawing.Point(0, 309);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(264, 44);
+            this.btnGuardar.TabIndex = 181;
+            this.btnGuardar.Text = "Guardar Datos ";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.Location = new System.Drawing.Point(0, 353);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(264, 44);
+            this.btnEliminar.TabIndex = 182;
+            this.btnEliminar.Text = "Eliminar Datos";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.Location = new System.Drawing.Point(0, 397);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(264, 44);
+            this.btnEditar.TabIndex = 183;
+            this.btnEditar.Text = "Editar Datos ";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
             // Micro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1306, 1296);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelCap);
             this.Controls.Add(this.PanelBtns);
             this.Controls.Add(this.panelLeft);
             this.Name = "Micro";
             this.Text = "Micro";
+            this.Load += new System.EventHandler(this.Micro_Load);
             this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();
             this.PanelLogo.ResumeLayout(false);
@@ -882,8 +927,8 @@
             this.PanelBtns.ResumeLayout(false);
             this.PanelBtns.PerformLayout();
             this.panelRight.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelCap.ResumeLayout(false);
+            this.panelCap.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -924,8 +969,8 @@
         private System.Windows.Forms.Panel panelRight;
         private System.Windows.Forms.Button btnadelante;
         private System.Windows.Forms.Button btnAtras;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Panel panelCap;
+        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtResistentes;
@@ -936,27 +981,27 @@
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtIdentificacion;
+        private System.Windows.Forms.TextBox txtColonia;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtM3;
+        private System.Windows.Forms.TextBox txtM2;
+        private System.Windows.Forms.TextBox txtM1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCultivo;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.GroupBox groupBox32;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtGram;
+        private System.Windows.Forms.TextBox txtMuestra;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.TextBox txtEdad;
@@ -966,10 +1011,13 @@
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.TextBox textNombre;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }

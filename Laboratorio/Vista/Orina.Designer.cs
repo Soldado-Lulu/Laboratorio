@@ -44,92 +44,68 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.PanelBtns = new System.Windows.Forms.Panel();
             this.txtBuscarNombre = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnNuevoPaciente = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
             this.panelRight = new System.Windows.Forms.Panel();
             this.btnadelante = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelCap = new System.Windows.Forms.Panel();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.label74 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.groupBox25 = new System.Windows.Forms.GroupBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label74 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox32 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textPlaquetas = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textHemoglobina = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textLeucocitos = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
@@ -140,18 +116,45 @@
             this.label71 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label81 = new System.Windows.Forms.Label();
-            this.textNombre = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label72 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.txtAspecto = new System.Windows.Forms.TextBox();
+            this.txtColor = new System.Windows.Forms.TextBox();
+            this.txtOlor = new System.Windows.Forms.TextBox();
+            this.txtDensidad = new System.Windows.Forms.TextBox();
+            this.txtReaccion = new System.Windows.Forms.TextBox();
+            this.txtGlucosa = new System.Windows.Forms.TextBox();
+            this.txtBilirrubina = new System.Windows.Forms.TextBox();
+            this.txtCetonas = new System.Windows.Forms.TextBox();
+            this.txtSangre = new System.Windows.Forms.TextBox();
+            this.txtProteina = new System.Windows.Forms.TextBox();
+            this.txtUrobiliogeno = new System.Windows.Forms.TextBox();
+            this.txtNitrito = new System.Windows.Forms.TextBox();
+            this.txtLeucocitos = new System.Windows.Forms.TextBox();
+            this.txteritrocitos = new System.Windows.Forms.TextBox();
+            this.txtLeucocitos1 = new System.Windows.Forms.TextBox();
+            this.txtced = new System.Windows.Forms.TextBox();
+            this.txtredondas = new System.Windows.Forms.TextBox();
+            this.txtEmbarazo = new System.Windows.Forms.TextBox();
+            this.txtOtros = new System.Windows.Forms.TextBox();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
+            this.txtFlora = new System.Windows.Forms.TextBox();
+            this.txtPiocitos = new System.Windows.Forms.TextBox();
+            this.txtCristales = new System.Windows.Forms.TextBox();
+            this.txtCilindros = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PanelBtns.SuspendLayout();
             this.panelRight.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelCap.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox18.SuspendLayout();
@@ -359,8 +362,11 @@
             // 
             // PanelBtns
             // 
+            this.PanelBtns.Controls.Add(this.btnEliminar);
+            this.PanelBtns.Controls.Add(this.btnEditar);
+            this.PanelBtns.Controls.Add(this.btnGuardar);
             this.PanelBtns.Controls.Add(this.txtBuscarNombre);
-            this.PanelBtns.Controls.Add(this.button2);
+            this.PanelBtns.Controls.Add(this.btnBuscar);
             this.PanelBtns.Controls.Add(this.btnNuevoPaciente);
             this.PanelBtns.Controls.Add(this.btnImprimir);
             this.PanelBtns.Controls.Add(this.panelRight);
@@ -372,21 +378,22 @@
             // 
             // txtBuscarNombre
             // 
-            this.txtBuscarNombre.Location = new System.Drawing.Point(6, 318);
+            this.txtBuscarNombre.Location = new System.Drawing.Point(6, 457);
             this.txtBuscarNombre.Name = "txtBuscarNombre";
             this.txtBuscarNombre.Size = new System.Drawing.Size(169, 22);
             this.txtBuscarNombre.TabIndex = 180;
             // 
-            // button2
+            // btnBuscar
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Location = new System.Drawing.Point(0, 265);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(187, 44);
-            this.button2.TabIndex = 108;
-            this.button2.Text = "buscar Datos ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBuscar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.Location = new System.Drawing.Point(0, 265);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(187, 44);
+            this.btnBuscar.TabIndex = 108;
+            this.btnBuscar.Text = "buscar Datos ";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnNuevoPaciente
             // 
@@ -409,6 +416,7 @@
             this.btnImprimir.TabIndex = 106;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // panelRight
             // 
@@ -445,32 +453,48 @@
             this.btnAtras.Text = "atras";
             this.btnAtras.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // panelCap
             // 
-            this.panel1.Controls.Add(this.textBox13);
-            this.panel1.Controls.Add(this.label74);
-            this.panel1.Controls.Add(this.label85);
-            this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label57);
-            this.panel1.Controls.Add(this.txtEdad);
-            this.panel1.Controls.Add(this.label65);
-            this.panel1.Controls.Add(this.label83);
-            this.panel1.Controls.Add(this.txtMedico);
-            this.panel1.Controls.Add(this.label71);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label81);
-            this.panel1.Controls.Add(this.textNombre);
-            this.panel1.Controls.Add(this.label72);
-            this.panel1.Controls.Add(this.label77);
-            this.panel1.Controls.Add(this.label86);
-            this.panel1.Controls.Add(this.dtpFecha);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(325, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(725, 1207);
-            this.panel1.TabIndex = 134;
+            this.panelCap.Controls.Add(this.txtId);
+            this.panelCap.Controls.Add(this.label74);
+            this.panelCap.Controls.Add(this.label85);
+            this.panelCap.Controls.Add(this.panel8);
+            this.panelCap.Controls.Add(this.panel2);
+            this.panelCap.Controls.Add(this.panel3);
+            this.panelCap.Controls.Add(this.label57);
+            this.panelCap.Controls.Add(this.txtEdad);
+            this.panelCap.Controls.Add(this.label65);
+            this.panelCap.Controls.Add(this.label83);
+            this.panelCap.Controls.Add(this.txtMedico);
+            this.panelCap.Controls.Add(this.label71);
+            this.panelCap.Controls.Add(this.pictureBox1);
+            this.panelCap.Controls.Add(this.label81);
+            this.panelCap.Controls.Add(this.txtNombre);
+            this.panelCap.Controls.Add(this.label72);
+            this.panelCap.Controls.Add(this.label77);
+            this.panelCap.Controls.Add(this.label86);
+            this.panelCap.Controls.Add(this.dtpFecha);
+            this.panelCap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCap.Location = new System.Drawing.Point(325, 0);
+            this.panelCap.Name = "panelCap";
+            this.panelCap.Size = new System.Drawing.Size(725, 1207);
+            this.panelCap.TabIndex = 134;
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(615, 76);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(34, 22);
+            this.txtId.TabIndex = 33;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(571, 82);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(38, 16);
+            this.label74.TabIndex = 33;
+            this.label74.Text = "Cod. ";
             // 
             // label85
             // 
@@ -488,7 +512,7 @@
             this.panel8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label18);
-            this.panel8.Location = new System.Drawing.Point(15, 190);
+            this.panel8.Location = new System.Drawing.Point(15, 296);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(679, 30);
             this.panel8.TabIndex = 129;
@@ -520,7 +544,7 @@
             this.panel2.Controls.Add(this.groupBox19);
             this.panel2.Controls.Add(this.groupBox21);
             this.panel2.Controls.Add(this.groupBox20);
-            this.panel2.Location = new System.Drawing.Point(11, 566);
+            this.panel2.Location = new System.Drawing.Point(11, 672);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(687, 327);
             this.panel2.TabIndex = 145;
@@ -529,8 +553,8 @@
             // 
             this.groupBox18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox18.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox18.Controls.Add(this.txtObservaciones);
             this.groupBox18.Controls.Add(this.label21);
-            this.groupBox18.Controls.Add(this.textBox17);
             this.groupBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox18.Location = new System.Drawing.Point(24, 283);
             this.groupBox18.Name = "groupBox18";
@@ -547,19 +571,12 @@
             this.label21.TabIndex = 18;
             this.label21.Text = "Observaciones :";
             // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(165, 6);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(458, 27);
-            this.textBox17.TabIndex = 19;
-            // 
             // groupBox13
             // 
             this.groupBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox13.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox13.Controls.Add(this.txtOtros);
             this.groupBox13.Controls.Add(this.label13);
-            this.groupBox13.Controls.Add(this.textBox11);
             this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox13.Location = new System.Drawing.Point(25, 237);
             this.groupBox13.Name = "groupBox13";
@@ -576,19 +593,12 @@
             this.label13.TabIndex = 18;
             this.label13.Text = "Otros :";
             // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(165, 6);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(458, 27);
-            this.textBox11.TabIndex = 19;
-            // 
             // groupBox10
             // 
             this.groupBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox10.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox10.Controls.Add(this.txtEmbarazo);
             this.groupBox10.Controls.Add(this.label9);
-            this.groupBox10.Controls.Add(this.textBox5);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox10.Location = new System.Drawing.Point(26, 191);
             this.groupBox10.Name = "groupBox10";
@@ -605,18 +615,11 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Test de Embarazo :";
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(165, 6);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(458, 27);
-            this.textBox5.TabIndex = 19;
-            // 
             // groupBox12
             // 
             this.groupBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox12.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox12.Controls.Add(this.textBox9);
+            this.groupBox12.Controls.Add(this.txtFlora);
             this.groupBox12.Controls.Add(this.label12);
             this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox12.Location = new System.Drawing.Point(347, 34);
@@ -624,13 +627,6 @@
             this.groupBox12.Size = new System.Drawing.Size(296, 36);
             this.groupBox12.TabIndex = 111;
             this.groupBox12.TabStop = false;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(152, -1);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(138, 27);
-            this.textBox9.TabIndex = 8;
             // 
             // label12
             // 
@@ -655,7 +651,7 @@
             // 
             this.groupBox25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox25.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox25.Controls.Add(this.textBox24);
+            this.groupBox25.Controls.Add(this.txtLeucocitos1);
             this.groupBox25.Controls.Add(this.label28);
             this.groupBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox25.Location = new System.Drawing.Point(24, 75);
@@ -663,13 +659,6 @@
             this.groupBox25.Size = new System.Drawing.Size(296, 35);
             this.groupBox25.TabIndex = 106;
             this.groupBox25.TabStop = false;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(157, 5);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(136, 27);
-            this.textBox24.TabIndex = 8;
             // 
             // label28
             // 
@@ -684,7 +673,7 @@
             // 
             this.groupBox16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox16.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox16.Controls.Add(this.textBox12);
+            this.groupBox16.Controls.Add(this.txteritrocitos);
             this.groupBox16.Controls.Add(this.label19);
             this.groupBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox16.Location = new System.Drawing.Point(21, 34);
@@ -692,13 +681,6 @@
             this.groupBox16.Size = new System.Drawing.Size(296, 35);
             this.groupBox16.TabIndex = 107;
             this.groupBox16.TabStop = false;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(156, 5);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(138, 27);
-            this.textBox12.TabIndex = 8;
             // 
             // label19
             // 
@@ -713,8 +695,8 @@
             // 
             this.groupBox24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox24.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox24.Controls.Add(this.txtced);
             this.groupBox24.Controls.Add(this.label27);
-            this.groupBox24.Controls.Add(this.textBox23);
             this.groupBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox24.Location = new System.Drawing.Point(25, 116);
             this.groupBox24.Name = "groupBox24";
@@ -731,19 +713,12 @@
             this.label27.TabIndex = 9;
             this.label27.Text = "C.E.D : ";
             // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(152, 1);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(136, 27);
-            this.textBox23.TabIndex = 12;
-            // 
             // groupBox17
             // 
             this.groupBox17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox17.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox17.Controls.Add(this.txtCilindros);
             this.groupBox17.Controls.Add(this.label20);
-            this.groupBox17.Controls.Add(this.textBox16);
             this.groupBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox17.Location = new System.Drawing.Point(351, 155);
             this.groupBox17.Name = "groupBox17";
@@ -760,19 +735,12 @@
             this.label20.TabIndex = 18;
             this.label20.Text = "Cilindros :";
             // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(150, 0);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(136, 27);
-            this.textBox16.TabIndex = 19;
-            // 
             // groupBox19
             // 
             this.groupBox19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox19.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox19.Controls.Add(this.txtredondas);
             this.groupBox19.Controls.Add(this.label22);
-            this.groupBox19.Controls.Add(this.textBox18);
             this.groupBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox19.Location = new System.Drawing.Point(25, 155);
             this.groupBox19.Name = "groupBox19";
@@ -789,18 +757,11 @@
             this.label22.TabIndex = 18;
             this.label22.Text = "Cel. Redondas :";
             // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(156, -1);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(136, 27);
-            this.textBox18.TabIndex = 19;
-            // 
             // groupBox21
             // 
             this.groupBox21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox21.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox21.Controls.Add(this.textBox20);
+            this.groupBox21.Controls.Add(this.txtPiocitos);
             this.groupBox21.Controls.Add(this.label24);
             this.groupBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox21.Location = new System.Drawing.Point(350, 76);
@@ -808,13 +769,6 @@
             this.groupBox21.Size = new System.Drawing.Size(296, 35);
             this.groupBox21.TabIndex = 110;
             this.groupBox21.TabStop = false;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(149, 0);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(136, 27);
-            this.textBox20.TabIndex = 8;
             // 
             // label24
             // 
@@ -829,8 +783,8 @@
             // 
             this.groupBox20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox20.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox20.Controls.Add(this.txtCristales);
             this.groupBox20.Controls.Add(this.label23);
-            this.groupBox20.Controls.Add(this.textBox19);
             this.groupBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox20.Location = new System.Drawing.Point(351, 117);
             this.groupBox20.Name = "groupBox20";
@@ -846,29 +800,6 @@
             this.label23.Size = new System.Drawing.Size(86, 20);
             this.label23.TabIndex = 9;
             this.label23.Text = "Cristales :";
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(150, 0);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(136, 27);
-            this.textBox19.TabIndex = 12;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(615, 76);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(34, 22);
-            this.textBox13.TabIndex = 33;
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(571, 82);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(38, 16);
-            this.label74.TabIndex = 33;
-            this.label74.Text = "Cod. ";
             // 
             // panel3
             // 
@@ -889,7 +820,7 @@
             this.panel3.Controls.Add(this.groupBox3);
             this.panel3.Controls.Add(this.groupBox2);
             this.panel3.Controls.Add(this.label17);
-            this.panel3.Location = new System.Drawing.Point(15, 226);
+            this.panel3.Location = new System.Drawing.Point(15, 332);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(683, 334);
             this.panel3.TabIndex = 140;
@@ -898,7 +829,7 @@
             // 
             this.groupBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox8.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox8.Controls.Add(this.textBox3);
+            this.groupBox8.Controls.Add(this.txtLeucocitos);
             this.groupBox8.Controls.Add(this.label6);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.Location = new System.Drawing.Point(353, 242);
@@ -906,13 +837,6 @@
             this.groupBox8.Size = new System.Drawing.Size(296, 28);
             this.groupBox8.TabIndex = 104;
             this.groupBox8.TabStop = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(142, -2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(138, 27);
-            this.textBox3.TabIndex = 8;
             // 
             // label6
             // 
@@ -927,7 +851,7 @@
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtReaccion);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(26, 201);
@@ -935,13 +859,6 @@
             this.groupBox1.Size = new System.Drawing.Size(296, 28);
             this.groupBox1.TabIndex = 96;
             this.groupBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(141, -5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 27);
-            this.textBox1.TabIndex = 8;
             // 
             // label1
             // 
@@ -956,7 +873,7 @@
             // 
             this.groupBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox9.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox9.Controls.Add(this.textBox4);
+            this.groupBox9.Controls.Add(this.txtSangre);
             this.groupBox9.Controls.Add(this.label8);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(352, 92);
@@ -964,13 +881,6 @@
             this.groupBox9.Size = new System.Drawing.Size(296, 28);
             this.groupBox9.TabIndex = 100;
             this.groupBox9.TabStop = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(142, -3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(138, 27);
-            this.textBox4.TabIndex = 8;
             // 
             // label8
             // 
@@ -985,7 +895,7 @@
             // 
             this.groupBox32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox32.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox32.Controls.Add(this.textBox6);
+            this.groupBox32.Controls.Add(this.txtAspecto);
             this.groupBox32.Controls.Add(this.label3);
             this.groupBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox32.Location = new System.Drawing.Point(22, 51);
@@ -993,13 +903,6 @@
             this.groupBox32.Size = new System.Drawing.Size(296, 28);
             this.groupBox32.TabIndex = 92;
             this.groupBox32.TabStop = false;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(147, 2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(138, 27);
-            this.textBox6.TabIndex = 8;
             // 
             // label3
             // 
@@ -1014,8 +917,8 @@
             // 
             this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox4.Controls.Add(this.txtCetonas);
             this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.textBox2);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(353, 53);
             this.groupBox4.Name = "groupBox4";
@@ -1032,19 +935,12 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "Cetonas :";
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(142, -1);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 27);
-            this.textBox2.TabIndex = 19;
-            // 
             // groupBox11
             // 
             this.groupBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox11.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox11.Controls.Add(this.txtNitrito);
             this.groupBox11.Controls.Add(this.label11);
-            this.groupBox11.Controls.Add(this.textBox10);
             this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox11.Location = new System.Drawing.Point(353, 206);
             this.groupBox11.Name = "groupBox11";
@@ -1061,19 +957,12 @@
             this.label11.TabIndex = 18;
             this.label11.Text = "Ntritos :";
             // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(142, -1);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(136, 27);
-            this.textBox10.TabIndex = 19;
-            // 
             // groupBox5
             // 
             this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox5.Controls.Add(this.txtDensidad);
             this.groupBox5.Controls.Add(this.label15);
-            this.groupBox5.Controls.Add(this.textPlaquetas);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(26, 165);
             this.groupBox5.Name = "groupBox5";
@@ -1090,19 +979,12 @@
             this.label15.TabIndex = 18;
             this.label15.Text = "Densidad :";
             // 
-            // textPlaquetas
-            // 
-            this.textPlaquetas.Location = new System.Drawing.Point(141, -3);
-            this.textPlaquetas.Name = "textPlaquetas";
-            this.textPlaquetas.Size = new System.Drawing.Size(136, 27);
-            this.textPlaquetas.TabIndex = 19;
-            // 
             // groupBox6
             // 
             this.groupBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox6.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox6.Controls.Add(this.txtBilirrubina);
             this.groupBox6.Controls.Add(this.label4);
-            this.groupBox6.Controls.Add(this.textBox7);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(30, 276);
             this.groupBox6.Name = "groupBox6";
@@ -1119,18 +1001,11 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Bilirrubinas :";
             // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(139, 0);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(136, 27);
-            this.textBox7.TabIndex = 12;
-            // 
             // groupBox7
             // 
             this.groupBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox7.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox7.Controls.Add(this.textBox8);
+            this.groupBox7.Controls.Add(this.txtGlucosa);
             this.groupBox7.Controls.Add(this.label5);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(29, 235);
@@ -1138,13 +1013,6 @@
             this.groupBox7.Size = new System.Drawing.Size(296, 35);
             this.groupBox7.TabIndex = 95;
             this.groupBox7.TabStop = false;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(140, 0);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(136, 27);
-            this.textBox8.TabIndex = 8;
             // 
             // label5
             // 
@@ -1159,8 +1027,8 @@
             // 
             this.groupBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox14.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox14.Controls.Add(this.txtUrobiliogeno);
             this.groupBox14.Controls.Add(this.label14);
-            this.groupBox14.Controls.Add(this.textBox14);
             this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox14.Location = new System.Drawing.Point(353, 167);
             this.groupBox14.Name = "groupBox14";
@@ -1177,18 +1045,11 @@
             this.label14.TabIndex = 9;
             this.label14.Text = "Urobiliógeno :";
             // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(141, 0);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(136, 27);
-            this.textBox14.TabIndex = 12;
-            // 
             // groupBox15
             // 
             this.groupBox15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox15.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox15.Controls.Add(this.textBox15);
+            this.groupBox15.Controls.Add(this.txtProteina);
             this.groupBox15.Controls.Add(this.label16);
             this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox15.Location = new System.Drawing.Point(352, 126);
@@ -1196,13 +1057,6 @@
             this.groupBox15.Size = new System.Drawing.Size(296, 35);
             this.groupBox15.TabIndex = 99;
             this.groupBox15.TabStop = false;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(145, 2);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(136, 27);
-            this.textBox15.TabIndex = 8;
             // 
             // label16
             // 
@@ -1217,8 +1071,8 @@
             // 
             this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox3.Controls.Add(this.txtOlor);
             this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.textHemoglobina);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(26, 126);
             this.groupBox3.Name = "groupBox3";
@@ -1235,18 +1089,11 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "Olor : ";
             // 
-            // textHemoglobina
-            // 
-            this.textHemoglobina.Location = new System.Drawing.Point(141, 1);
-            this.textHemoglobina.Name = "textHemoglobina";
-            this.textHemoglobina.Size = new System.Drawing.Size(136, 27);
-            this.textHemoglobina.TabIndex = 12;
-            // 
             // groupBox2
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox2.Controls.Add(this.textLeucocitos);
+            this.groupBox2.Controls.Add(this.txtColor);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(25, 85);
@@ -1254,13 +1101,6 @@
             this.groupBox2.Size = new System.Drawing.Size(296, 35);
             this.groupBox2.TabIndex = 91;
             this.groupBox2.TabStop = false;
-            // 
-            // textLeucocitos
-            // 
-            this.textLeucocitos.Location = new System.Drawing.Point(144, 1);
-            this.textLeucocitos.Name = "textLeucocitos";
-            this.textLeucocitos.Size = new System.Drawing.Size(136, 27);
-            this.textLeucocitos.TabIndex = 8;
             // 
             // label7
             // 
@@ -1356,13 +1196,13 @@
             this.label81.TabIndex = 139;
             this.label81.Text = "Telf. 4252475  Cel: 70374276";
             // 
-            // textNombre
+            // txtNombre
             // 
-            this.textNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNombre.Location = new System.Drawing.Point(86, 135);
-            this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(250, 27);
-            this.textNombre.TabIndex = 131;
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(86, 135);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(250, 27);
+            this.txtNombre.TabIndex = 131;
             // 
             // label72
             // 
@@ -1403,16 +1243,221 @@
             this.dtpFecha.TabIndex = 135;
             this.dtpFecha.Value = new System.DateTime(2025, 1, 21, 0, 0, 0, 0);
             // 
+            // txtAspecto
+            // 
+            this.txtAspecto.Location = new System.Drawing.Point(99, 1);
+            this.txtAspecto.Name = "txtAspecto";
+            this.txtAspecto.Size = new System.Drawing.Size(185, 27);
+            this.txtAspecto.TabIndex = 6;
+            // 
+            // txtColor
+            // 
+            this.txtColor.Location = new System.Drawing.Point(96, 5);
+            this.txtColor.Name = "txtColor";
+            this.txtColor.Size = new System.Drawing.Size(185, 27);
+            this.txtColor.TabIndex = 7;
+            // 
+            // txtOlor
+            // 
+            this.txtOlor.Location = new System.Drawing.Point(95, 1);
+            this.txtOlor.Name = "txtOlor";
+            this.txtOlor.Size = new System.Drawing.Size(185, 27);
+            this.txtOlor.TabIndex = 8;
+            // 
+            // txtDensidad
+            // 
+            this.txtDensidad.Location = new System.Drawing.Point(95, 0);
+            this.txtDensidad.Name = "txtDensidad";
+            this.txtDensidad.Size = new System.Drawing.Size(185, 27);
+            this.txtDensidad.TabIndex = 10;
+            // 
+            // txtReaccion
+            // 
+            this.txtReaccion.Location = new System.Drawing.Point(124, 1);
+            this.txtReaccion.Name = "txtReaccion";
+            this.txtReaccion.Size = new System.Drawing.Size(163, 27);
+            this.txtReaccion.TabIndex = 19;
+            // 
+            // txtGlucosa
+            // 
+            this.txtGlucosa.Location = new System.Drawing.Point(98, 5);
+            this.txtGlucosa.Name = "txtGlucosa";
+            this.txtGlucosa.Size = new System.Drawing.Size(185, 27);
+            this.txtGlucosa.TabIndex = 20;
+            // 
+            // txtBilirrubina
+            // 
+            this.txtBilirrubina.Location = new System.Drawing.Point(107, 1);
+            this.txtBilirrubina.Name = "txtBilirrubina";
+            this.txtBilirrubina.Size = new System.Drawing.Size(185, 27);
+            this.txtBilirrubina.TabIndex = 10;
+            // 
+            // txtCetonas
+            // 
+            this.txtCetonas.Location = new System.Drawing.Point(85, 1);
+            this.txtCetonas.Name = "txtCetonas";
+            this.txtCetonas.Size = new System.Drawing.Size(185, 27);
+            this.txtCetonas.TabIndex = 11;
+            // 
+            // txtSangre
+            // 
+            this.txtSangre.Location = new System.Drawing.Point(86, 1);
+            this.txtSangre.Name = "txtSangre";
+            this.txtSangre.Size = new System.Drawing.Size(185, 27);
+            this.txtSangre.TabIndex = 19;
+            // 
+            // txtProteina
+            // 
+            this.txtProteina.Location = new System.Drawing.Point(102, 2);
+            this.txtProteina.Name = "txtProteina";
+            this.txtProteina.Size = new System.Drawing.Size(185, 27);
+            this.txtProteina.TabIndex = 20;
+            // 
+            // txtUrobiliogeno
+            // 
+            this.txtUrobiliogeno.Location = new System.Drawing.Point(125, 4);
+            this.txtUrobiliogeno.Name = "txtUrobiliogeno";
+            this.txtUrobiliogeno.Size = new System.Drawing.Size(171, 27);
+            this.txtUrobiliogeno.TabIndex = 21;
+            // 
+            // txtNitrito
+            // 
+            this.txtNitrito.Location = new System.Drawing.Point(82, 3);
+            this.txtNitrito.Name = "txtNitrito";
+            this.txtNitrito.Size = new System.Drawing.Size(185, 27);
+            this.txtNitrito.TabIndex = 22;
+            // 
+            // txtLeucocitos
+            // 
+            this.txtLeucocitos.Location = new System.Drawing.Point(111, 1);
+            this.txtLeucocitos.Name = "txtLeucocitos";
+            this.txtLeucocitos.Size = new System.Drawing.Size(185, 27);
+            this.txtLeucocitos.TabIndex = 23;
+            // 
+            // txteritrocitos
+            // 
+            this.txteritrocitos.Location = new System.Drawing.Point(111, 1);
+            this.txteritrocitos.Name = "txteritrocitos";
+            this.txteritrocitos.Size = new System.Drawing.Size(185, 27);
+            this.txteritrocitos.TabIndex = 7;
+            // 
+            // txtLeucocitos1
+            // 
+            this.txtLeucocitos1.Location = new System.Drawing.Point(111, 2);
+            this.txtLeucocitos1.Name = "txtLeucocitos1";
+            this.txtLeucocitos1.Size = new System.Drawing.Size(185, 27);
+            this.txtLeucocitos1.TabIndex = 8;
+            // 
+            // txtced
+            // 
+            this.txtced.Location = new System.Drawing.Point(81, 2);
+            this.txtced.Name = "txtced";
+            this.txtced.Size = new System.Drawing.Size(185, 27);
+            this.txtced.TabIndex = 9;
+            // 
+            // txtredondas
+            // 
+            this.txtredondas.Location = new System.Drawing.Point(135, -3);
+            this.txtredondas.Name = "txtredondas";
+            this.txtredondas.Size = new System.Drawing.Size(150, 27);
+            this.txtredondas.TabIndex = 10;
+            // 
+            // txtEmbarazo
+            // 
+            this.txtEmbarazo.Location = new System.Drawing.Point(168, 6);
+            this.txtEmbarazo.Name = "txtEmbarazo";
+            this.txtEmbarazo.Size = new System.Drawing.Size(452, 27);
+            this.txtEmbarazo.TabIndex = 19;
+            // 
+            // txtOtros
+            // 
+            this.txtOtros.Location = new System.Drawing.Point(74, 3);
+            this.txtOtros.Name = "txtOtros";
+            this.txtOtros.Size = new System.Drawing.Size(543, 27);
+            this.txtOtros.TabIndex = 20;
+            // 
+            // txtObservaciones
+            // 
+            this.txtObservaciones.Location = new System.Drawing.Point(145, 6);
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(468, 27);
+            this.txtObservaciones.TabIndex = 21;
+            // 
+            // txtFlora
+            // 
+            this.txtFlora.Location = new System.Drawing.Point(150, 1);
+            this.txtFlora.Name = "txtFlora";
+            this.txtFlora.Size = new System.Drawing.Size(140, 27);
+            this.txtFlora.TabIndex = 22;
+            // 
+            // txtPiocitos
+            // 
+            this.txtPiocitos.Location = new System.Drawing.Point(98, 2);
+            this.txtPiocitos.Name = "txtPiocitos";
+            this.txtPiocitos.Size = new System.Drawing.Size(185, 27);
+            this.txtPiocitos.TabIndex = 23;
+            // 
+            // txtCristales
+            // 
+            this.txtCristales.Location = new System.Drawing.Point(97, 4);
+            this.txtCristales.Name = "txtCristales";
+            this.txtCristales.Size = new System.Drawing.Size(185, 27);
+            this.txtCristales.TabIndex = 24;
+            // 
+            // txtCilindros
+            // 
+            this.txtCilindros.Location = new System.Drawing.Point(97, 0);
+            this.txtCilindros.Name = "txtCilindros";
+            this.txtCilindros.Size = new System.Drawing.Size(185, 27);
+            this.txtCilindros.TabIndex = 25;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.Location = new System.Drawing.Point(0, 309);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(187, 44);
+            this.btnGuardar.TabIndex = 181;
+            this.btnGuardar.Text = "Guardar Datos ";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.Location = new System.Drawing.Point(0, 353);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(187, 44);
+            this.btnEditar.TabIndex = 182;
+            this.btnEditar.Text = "Editar Datos";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.Location = new System.Drawing.Point(0, 397);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(187, 44);
+            this.btnEliminar.TabIndex = 183;
+            this.btnEliminar.Text = "Eliminar Datos ";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // Orina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1237, 1207);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelCap);
             this.Controls.Add(this.PanelBtns);
             this.Controls.Add(this.panelLeft);
             this.Name = "Orina";
             this.Text = "Orina";
+            this.Load += new System.EventHandler(this.Orina_Load);
             this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();
             this.PanelLogo.ResumeLayout(false);
@@ -1421,8 +1466,8 @@
             this.PanelBtns.ResumeLayout(false);
             this.PanelBtns.PerformLayout();
             this.panelRight.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelCap.ResumeLayout(false);
+            this.panelCap.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -1499,14 +1544,14 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel PanelBtns;
         private System.Windows.Forms.TextBox txtBuscarNombre;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnNuevoPaciente;
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Panel panelRight;
         private System.Windows.Forms.Button btnadelante;
         private System.Windows.Forms.Button btnAtras;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Panel panelCap;
+        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Panel panel8;
@@ -1514,77 +1559,53 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox18;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.GroupBox groupBox25;
-        private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.GroupBox groupBox16;
-        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.GroupBox groupBox24;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.GroupBox groupBox17;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.GroupBox groupBox19;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.GroupBox groupBox21;
-        private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.GroupBox groupBox20;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox32;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textPlaquetas;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.GroupBox groupBox15;
-        private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textHemoglobina;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textLeucocitos;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label57;
@@ -1595,10 +1616,37 @@
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.TextBox textNombre;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.TextBox txtObservaciones;
+        private System.Windows.Forms.TextBox txtOtros;
+        private System.Windows.Forms.TextBox txtEmbarazo;
+        private System.Windows.Forms.TextBox txtFlora;
+        private System.Windows.Forms.TextBox txtLeucocitos1;
+        private System.Windows.Forms.TextBox txteritrocitos;
+        private System.Windows.Forms.TextBox txtced;
+        private System.Windows.Forms.TextBox txtCilindros;
+        private System.Windows.Forms.TextBox txtredondas;
+        private System.Windows.Forms.TextBox txtPiocitos;
+        private System.Windows.Forms.TextBox txtCristales;
+        private System.Windows.Forms.TextBox txtLeucocitos;
+        private System.Windows.Forms.TextBox txtReaccion;
+        private System.Windows.Forms.TextBox txtSangre;
+        private System.Windows.Forms.TextBox txtAspecto;
+        private System.Windows.Forms.TextBox txtCetonas;
+        private System.Windows.Forms.TextBox txtNitrito;
+        private System.Windows.Forms.TextBox txtDensidad;
+        private System.Windows.Forms.TextBox txtBilirrubina;
+        private System.Windows.Forms.TextBox txtGlucosa;
+        private System.Windows.Forms.TextBox txtUrobiliogeno;
+        private System.Windows.Forms.TextBox txtProteina;
+        private System.Windows.Forms.TextBox txtOlor;
+        private System.Windows.Forms.TextBox txtColor;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }

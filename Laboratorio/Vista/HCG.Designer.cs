@@ -43,6 +43,9 @@
             this.label87 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.PanelBtns = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnNuevoPaciente = new System.Windows.Forms.Button();
@@ -50,7 +53,9 @@
             this.panelRight = new System.Windows.Forms.Panel();
             this.btnadelante = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelCap = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.label85 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
@@ -58,7 +63,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox32 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtResultado = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.txtEdad = new System.Windows.Forms.TextBox();
@@ -68,7 +73,7 @@
             this.label71 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label81 = new System.Windows.Forms.Label();
-            this.textNombre = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label72 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
@@ -79,7 +84,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PanelBtns.SuspendLayout();
             this.panelRight.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panelCap.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox32.SuspendLayout();
@@ -263,6 +268,9 @@
             // 
             // PanelBtns
             // 
+            this.PanelBtns.Controls.Add(this.button4);
+            this.PanelBtns.Controls.Add(this.button3);
+            this.PanelBtns.Controls.Add(this.button1);
             this.PanelBtns.Controls.Add(this.txtBuscarNombre);
             this.PanelBtns.Controls.Add(this.button2);
             this.PanelBtns.Controls.Add(this.btnNuevoPaciente);
@@ -274,9 +282,45 @@
             this.PanelBtns.Size = new System.Drawing.Size(237, 1045);
             this.PanelBtns.TabIndex = 135;
             // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.Location = new System.Drawing.Point(0, 397);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(237, 44);
+            this.button4.TabIndex = 183;
+            this.button4.Text = "Eliminar Datos";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.Location = new System.Drawing.Point(0, 353);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(237, 44);
+            this.button3.TabIndex = 182;
+            this.button3.Text = "Editar Datos";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.Location = new System.Drawing.Point(0, 309);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(237, 44);
+            this.button1.TabIndex = 181;
+            this.button1.Text = "Guardar Datos";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // txtBuscarNombre
             // 
-            this.txtBuscarNombre.Location = new System.Drawing.Point(35, 330);
+            this.txtBuscarNombre.Location = new System.Drawing.Point(5, 476);
             this.txtBuscarNombre.Name = "txtBuscarNombre";
             this.txtBuscarNombre.Size = new System.Drawing.Size(229, 22);
             this.txtBuscarNombre.TabIndex = 180;
@@ -291,6 +335,7 @@
             this.button2.TabIndex = 108;
             this.button2.Text = "buscar Datos ";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnNuevoPaciente
             // 
@@ -313,6 +358,7 @@
             this.btnImprimir.TabIndex = 106;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // panelRight
             // 
@@ -349,29 +395,48 @@
             this.btnAtras.Text = "atras";
             this.btnAtras.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // panelCap
             // 
-            this.panel2.Controls.Add(this.label85);
-            this.panel2.Controls.Add(this.panel8);
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.label57);
-            this.panel2.Controls.Add(this.txtEdad);
-            this.panel2.Controls.Add(this.label65);
-            this.panel2.Controls.Add(this.label83);
-            this.panel2.Controls.Add(this.txtMedico);
-            this.panel2.Controls.Add(this.label71);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label81);
-            this.panel2.Controls.Add(this.textNombre);
-            this.panel2.Controls.Add(this.label72);
-            this.panel2.Controls.Add(this.label77);
-            this.panel2.Controls.Add(this.label86);
-            this.panel2.Controls.Add(this.dtpFecha);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(325, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(752, 1045);
-            this.panel2.TabIndex = 136;
+            this.panelCap.Controls.Add(this.label2);
+            this.panelCap.Controls.Add(this.txtId);
+            this.panelCap.Controls.Add(this.label85);
+            this.panelCap.Controls.Add(this.panel8);
+            this.panelCap.Controls.Add(this.panel1);
+            this.panelCap.Controls.Add(this.label57);
+            this.panelCap.Controls.Add(this.txtEdad);
+            this.panelCap.Controls.Add(this.label65);
+            this.panelCap.Controls.Add(this.label83);
+            this.panelCap.Controls.Add(this.txtMedico);
+            this.panelCap.Controls.Add(this.label71);
+            this.panelCap.Controls.Add(this.pictureBox1);
+            this.panelCap.Controls.Add(this.label81);
+            this.panelCap.Controls.Add(this.txtNombre);
+            this.panelCap.Controls.Add(this.label72);
+            this.panelCap.Controls.Add(this.label77);
+            this.panelCap.Controls.Add(this.label86);
+            this.panelCap.Controls.Add(this.dtpFecha);
+            this.panelCap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCap.Location = new System.Drawing.Point(325, 0);
+            this.panelCap.Name = "panelCap";
+            this.panelCap.Size = new System.Drawing.Size(752, 1045);
+            this.panelCap.TabIndex = 136;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(570, 92);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 20);
+            this.label2.TabIndex = 142;
+            this.label2.Text = "Cod.";
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(623, 90);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(53, 22);
+            this.txtId.TabIndex = 96;
             // 
             // label85
             // 
@@ -432,7 +497,7 @@
             this.groupBox32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox32.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.groupBox32.Controls.Add(this.label1);
-            this.groupBox32.Controls.Add(this.textBox6);
+            this.groupBox32.Controls.Add(this.txtResultado);
             this.groupBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox32.Location = new System.Drawing.Point(20, 120);
             this.groupBox32.Name = "groupBox32";
@@ -450,13 +515,13 @@
             this.label1.TabIndex = 95;
             this.label1.Text = "RESULTADO ";
             // 
-            // textBox6
+            // txtResultado
             // 
-            this.textBox6.Location = new System.Drawing.Point(54, 65);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(482, 57);
-            this.textBox6.TabIndex = 8;
+            this.txtResultado.Location = new System.Drawing.Point(54, 65);
+            this.txtResultado.Multiline = true;
+            this.txtResultado.Name = "txtResultado";
+            this.txtResultado.Size = new System.Drawing.Size(482, 57);
+            this.txtResultado.TabIndex = 8;
             // 
             // label17
             // 
@@ -513,6 +578,7 @@
             this.txtMedico.Name = "txtMedico";
             this.txtMedico.Size = new System.Drawing.Size(181, 27);
             this.txtMedico.TabIndex = 133;
+            this.txtMedico.TextChanged += new System.EventHandler(this.txtMedico_TextChanged);
             // 
             // label71
             // 
@@ -527,7 +593,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(428, 37);
+            this.pictureBox1.Location = new System.Drawing.Point(415, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(135, 98);
             this.pictureBox1.TabIndex = 141;
@@ -543,13 +609,13 @@
             this.label81.TabIndex = 136;
             this.label81.Text = "Telf. 4252475  Cel: 70374276";
             // 
-            // textNombre
+            // txtNombre
             // 
-            this.textNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNombre.Location = new System.Drawing.Point(104, 146);
-            this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(250, 27);
-            this.textNombre.TabIndex = 128;
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(104, 146);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(250, 27);
+            this.txtNombre.TabIndex = 128;
             // 
             // label72
             // 
@@ -595,11 +661,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1314, 1045);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelCap);
             this.Controls.Add(this.PanelBtns);
             this.Controls.Add(this.panelLeft);
             this.Name = "HCG";
             this.Text = "HCG";
+            this.Load += new System.EventHandler(this.HCG_Load);
             this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();
             this.PanelLogo.ResumeLayout(false);
@@ -608,8 +675,8 @@
             this.PanelBtns.ResumeLayout(false);
             this.PanelBtns.PerformLayout();
             this.panelRight.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panelCap.ResumeLayout(false);
+            this.panelCap.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -644,7 +711,7 @@
         private System.Windows.Forms.Panel panelRight;
         private System.Windows.Forms.Button btnadelante;
         private System.Windows.Forms.Button btnAtras;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelCap;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label18;
@@ -652,7 +719,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox32;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.TextBox txtEdad;
@@ -662,10 +729,15 @@
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.TextBox textNombre;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtId;
     }
 }

@@ -17,7 +17,7 @@ namespace Laboratorio
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Blanco());
+            Application.Run(new Orina());
         }
     }
 }
