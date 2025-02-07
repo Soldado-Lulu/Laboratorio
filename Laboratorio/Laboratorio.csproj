@@ -73,6 +73,8 @@
     <Compile Include="Logica\MicroLogica.cs" />
     <Compile Include="Logica\OrinaLogica.cs" />
     <Compile Include="Logica\PersonaLogica.cs" />
+    <Compile Include="Logica\SerologiaLogica.cs" />
+    <Compile Include="Logica\SobreLogica.cs" />
     <Compile Include="Modelo\BlancoM.cs" />
     <Compile Include="Modelo\CoprosM.cs" />
     <Compile Include="Modelo\HCGM.cs" />

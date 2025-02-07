@@ -50,34 +50,37 @@
             this.panelRight = new System.Windows.Forms.Panel();
             this.btnadelante = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelCap = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtPaciente = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPresente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDr = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox32 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtSeñor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label81 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PanelBtns.SuspendLayout();
             this.panelRight.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelCap.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -264,6 +267,9 @@
             // 
             // PanelBtns
             // 
+            this.PanelBtns.Controls.Add(this.button4);
+            this.PanelBtns.Controls.Add(this.button3);
+            this.PanelBtns.Controls.Add(this.button1);
             this.PanelBtns.Controls.Add(this.txtBuscarNombre);
             this.PanelBtns.Controls.Add(this.button2);
             this.PanelBtns.Controls.Add(this.btnNuevoPaciente);
@@ -277,7 +283,7 @@
             // 
             // txtBuscarNombre
             // 
-            this.txtBuscarNombre.Location = new System.Drawing.Point(6, 327);
+            this.txtBuscarNombre.Location = new System.Drawing.Point(6, 457);
             this.txtBuscarNombre.Name = "txtBuscarNombre";
             this.txtBuscarNombre.Size = new System.Drawing.Size(219, 22);
             this.txtBuscarNombre.TabIndex = 180;
@@ -292,6 +298,7 @@
             this.button2.TabIndex = 108;
             this.button2.Text = "buscar Datos ";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnNuevoPaciente
             // 
@@ -314,6 +321,7 @@
             this.btnImprimir.TabIndex = 106;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // panelRight
             // 
@@ -350,21 +358,21 @@
             this.btnAtras.Text = "atras";
             this.btnAtras.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // panelCap
             // 
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.label85);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label83);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label81);
-            this.panel1.Controls.Add(this.label77);
-            this.panel1.Controls.Add(this.label86);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(325, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(727, 933);
-            this.panel1.TabIndex = 138;
+            this.panelCap.Controls.Add(this.panel2);
+            this.panelCap.Controls.Add(this.label85);
+            this.panelCap.Controls.Add(this.panel3);
+            this.panelCap.Controls.Add(this.label83);
+            this.panelCap.Controls.Add(this.pictureBox1);
+            this.panelCap.Controls.Add(this.label81);
+            this.panelCap.Controls.Add(this.label77);
+            this.panelCap.Controls.Add(this.label86);
+            this.panelCap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCap.Location = new System.Drawing.Point(325, 0);
+            this.panelCap.Name = "panelCap";
+            this.panelCap.Size = new System.Drawing.Size(727, 933);
+            this.panelCap.TabIndex = 138;
             // 
             // panel2
             // 
@@ -381,7 +389,7 @@
             // 
             this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox5.Controls.Add(this.textBox5);
+            this.groupBox5.Controls.Add(this.txtPaciente);
             this.groupBox5.Controls.Add(this.label6);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(22, 17);
@@ -390,12 +398,12 @@
             this.groupBox5.TabIndex = 92;
             this.groupBox5.TabStop = false;
             // 
-            // textBox5
+            // txtPaciente
             // 
-            this.textBox5.Location = new System.Drawing.Point(155, 10);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(456, 27);
-            this.textBox5.TabIndex = 8;
+            this.txtPaciente.Location = new System.Drawing.Point(155, 10);
+            this.txtPaciente.Name = "txtPaciente";
+            this.txtPaciente.Size = new System.Drawing.Size(456, 27);
+            this.txtPaciente.TabIndex = 8;
             // 
             // label6
             // 
@@ -434,7 +442,7 @@
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtPresente);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(23, 132);
@@ -443,12 +451,12 @@
             this.groupBox2.TabIndex = 94;
             this.groupBox2.TabStop = false;
             // 
-            // textBox2
+            // txtPresente
             // 
-            this.textBox2.Location = new System.Drawing.Point(154, 10);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(457, 27);
-            this.textBox2.TabIndex = 8;
+            this.txtPresente.Location = new System.Drawing.Point(154, 10);
+            this.txtPresente.Name = "txtPresente";
+            this.txtPresente.Size = new System.Drawing.Size(457, 27);
+            this.txtPresente.TabIndex = 8;
             // 
             // label2
             // 
@@ -464,7 +472,7 @@
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtDr);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(23, 73);
@@ -473,12 +481,12 @@
             this.groupBox1.TabIndex = 93;
             this.groupBox1.TabStop = false;
             // 
-            // textBox1
+            // txtDr
             // 
-            this.textBox1.Location = new System.Drawing.Point(154, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(457, 27);
-            this.textBox1.TabIndex = 8;
+            this.txtDr.Location = new System.Drawing.Point(154, 10);
+            this.txtDr.Name = "txtDr";
+            this.txtDr.Size = new System.Drawing.Size(457, 27);
+            this.txtDr.TabIndex = 8;
             // 
             // label1
             // 
@@ -494,7 +502,7 @@
             // 
             this.groupBox32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox32.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox32.Controls.Add(this.textBox6);
+            this.groupBox32.Controls.Add(this.txtSeñor);
             this.groupBox32.Controls.Add(this.label3);
             this.groupBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox32.Location = new System.Drawing.Point(22, 15);
@@ -503,12 +511,12 @@
             this.groupBox32.TabIndex = 92;
             this.groupBox32.TabStop = false;
             // 
-            // textBox6
+            // txtSeñor
             // 
-            this.textBox6.Location = new System.Drawing.Point(155, 10);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(456, 27);
-            this.textBox6.TabIndex = 8;
+            this.txtSeñor.Location = new System.Drawing.Point(155, 10);
+            this.txtSeñor.Name = "txtSeñor";
+            this.txtSeñor.Size = new System.Drawing.Size(456, 27);
+            this.txtSeñor.TabIndex = 8;
             // 
             // label3
             // 
@@ -569,12 +577,47 @@
             this.label86.TabIndex = 132;
             this.label86.Text = "\" ISRAEL \"";
             // 
+            // button1
+            // //
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.Location = new System.Drawing.Point(0, 309);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(237, 44);
+            this.button1.TabIndex = 181;
+            this.button1.Text = "Editar Datos ";
+            this.button1.UseVisualStyleBackColor = true;
+           // this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.Location = new System.Drawing.Point(0, 353);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(237, 44);
+            this.button3.TabIndex = 182;
+            this.button3.Text = "Guardar Datos ";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.Location = new System.Drawing.Point(0, 397);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(237, 44);
+            this.button4.TabIndex = 183;
+            this.button4.Text = "Eliminar Datos ";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // Sobre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1289, 933);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelCap);
             this.Controls.Add(this.PanelBtns);
             this.Controls.Add(this.panelLeft);
             this.Name = "Sobre";
@@ -587,8 +630,8 @@
             this.PanelBtns.ResumeLayout(false);
             this.PanelBtns.PerformLayout();
             this.panelRight.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelCap.ResumeLayout(false);
+            this.panelCap.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -627,26 +670,29 @@
         private System.Windows.Forms.Panel panelRight;
         private System.Windows.Forms.Button btnadelante;
         private System.Windows.Forms.Button btnAtras;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelCap;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtPaciente;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPresente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDr;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox32;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtSeñor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
     }
 }
