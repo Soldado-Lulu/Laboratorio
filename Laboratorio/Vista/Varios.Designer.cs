@@ -268,10 +268,10 @@
             // txtBuscarNombre
             // 
             this.txtBuscarNombre.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtBuscarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarNombre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarNombre.Location = new System.Drawing.Point(0, 567);
             this.txtBuscarNombre.Name = "txtBuscarNombre";
-            this.txtBuscarNombre.Size = new System.Drawing.Size(400, 30);
+            this.txtBuscarNombre.Size = new System.Drawing.Size(400, 34);
             this.txtBuscarNombre.TabIndex = 196;
             // 
             // btnEliminar
