@@ -376,7 +376,7 @@
             // 
             // txtOtros
             // 
-            this.txtOtros.Location = new System.Drawing.Point(21, 40);
+            this.txtOtros.Location = new System.Drawing.Point(35, 39);
             this.txtOtros.Multiline = true;
             this.txtOtros.Name = "txtOtros";
             this.txtOtros.Size = new System.Drawing.Size(617, 97);
@@ -385,9 +385,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(18, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 16);
+            this.label2.Size = new System.Drawing.Size(70, 28);
             this.label2.TabIndex = 5;
             this.label2.Text = "Otros :";
             // 
@@ -407,20 +408,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(470, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 20);
+            this.label4.Size = new System.Drawing.Size(196, 28);
             this.label4.TabIndex = 108;
             this.label4.Text = "Valores de Referencia";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(352, 18);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(88, 20);
+            this.label19.Size = new System.Drawing.Size(100, 28);
             this.label19.TabIndex = 5;
             this.label19.Text = "Panciente ";
             // 
