@@ -11,13 +11,13 @@ namespace Laboratorio
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.
-        /// </summary>
+        /// </summary>s
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Serologia());
+            Application.Run(new Blanco());
         }
     }
 }

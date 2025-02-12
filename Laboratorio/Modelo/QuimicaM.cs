@@ -39,7 +39,7 @@ namespace Laboratorio.Modelo
         public string CKMB { get; set; }
         public string CPK { get; set; }
         public string Hemoglobina { get; set; }
-        public string Lipasa { get; set; }
+        //public string Lipasa { get; set; }
         public string Sodio { get; set; }
         public string Potasio { get; set; }
         public string Cloro { get; set; }

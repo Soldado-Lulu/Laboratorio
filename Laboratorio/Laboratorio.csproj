@@ -73,6 +73,7 @@
     <Compile Include="Logica\MicroLogica.cs" />
     <Compile Include="Logica\OrinaLogica.cs" />
     <Compile Include="Logica\PersonaLogica.cs" />
+    <Compile Include="Logica\QuimicaLogica.cs" />
     <Compile Include="Logica\SerologiaLogica.cs" />
     <Compile Include="Logica\SobreLogica.cs" />
     <Compile Include="Modelo\BlancoM.cs" />
@@ -159,6 +160,12 @@
     <Compile Include="UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Varios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Varios.Designer.cs">
+      <DependentUpon>Varios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Vista\Blanco.resx">
       <DependentUpon>Blanco.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,6 +214,9 @@
     <Content Include="BDLaboratorio.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="Vista\Varios.resx">
+      <DependentUpon>Varios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
