@@ -40,6 +40,7 @@
             this.btnOrina = new System.Windows.Forms.Button();
             this.btnHemograma = new System.Windows.Forms.Button();
             this.PanelBtns = new System.Windows.Forms.Panel();
+            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -50,53 +51,55 @@
             this.panelCap = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
             this.txtOtros = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtEmbarazo = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.txtCilindros = new System.Windows.Forms.TextBox();
+            this.txtCristales = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtPiocitos = new System.Windows.Forms.TextBox();
             this.txtFlora = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtredondas = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
+            this.txtced = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.txtLeucocitos1 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.txteritrocitos = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.txtced = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtCilindros = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtredondas = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtPiocitos = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.txtCristales = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtLeucocitos = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtReaccion = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtSangre = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtAspecto = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtCetonas = new System.Windows.Forms.TextBox();
+            this.txtSangre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtProteina = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtUrobiliogeno = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.txtNitrito = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtLeucocitos = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.txtBilirrubina = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtGlucosa = new System.Windows.Forms.TextBox();
+            this.txtReaccion = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtDensidad = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.txtBilirrubina = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtUrobiliogeno = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtProteina = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.txtOlor = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtColor = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtAspecto = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
@@ -117,9 +120,6 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.label25 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.PanelBtns.SuspendLayout();
@@ -305,6 +305,15 @@
             this.PanelBtns.Size = new System.Drawing.Size(400, 1320);
             this.PanelBtns.TabIndex = 133;
             // 
+            // txtBuscarNombre
+            // 
+            this.txtBuscarNombre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtBuscarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarNombre.Location = new System.Drawing.Point(0, 567);
+            this.txtBuscarNombre.Name = "txtBuscarNombre";
+            this.txtBuscarNombre.Size = new System.Drawing.Size(400, 30);
+            this.txtBuscarNombre.TabIndex = 184;
+            // 
             // btnEliminar
             // 
             this.btnEliminar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -438,6 +447,14 @@
             this.txtObservaciones.Size = new System.Drawing.Size(473, 27);
             this.txtObservaciones.TabIndex = 21;
             // 
+            // txtOtros
+            // 
+            this.txtOtros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOtros.Location = new System.Drawing.Point(209, 263);
+            this.txtOtros.Name = "txtOtros";
+            this.txtOtros.Size = new System.Drawing.Size(473, 27);
+            this.txtOtros.TabIndex = 20;
+            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -447,14 +464,6 @@
             this.label21.Size = new System.Drawing.Size(131, 20);
             this.label21.TabIndex = 18;
             this.label21.Text = "Observaciones :";
-            // 
-            // txtOtros
-            // 
-            this.txtOtros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOtros.Location = new System.Drawing.Point(209, 263);
-            this.txtOtros.Name = "txtOtros";
-            this.txtOtros.Size = new System.Drawing.Size(473, 27);
-            this.txtOtros.TabIndex = 20;
             // 
             // label13
             // 
@@ -484,6 +493,50 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Test de Embarazo :";
             // 
+            // txtCilindros
+            // 
+            this.txtCilindros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCilindros.Location = new System.Drawing.Point(497, 169);
+            this.txtCilindros.Name = "txtCilindros";
+            this.txtCilindros.Size = new System.Drawing.Size(185, 27);
+            this.txtCilindros.TabIndex = 25;
+            // 
+            // txtCristales
+            // 
+            this.txtCristales.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCristales.Location = new System.Drawing.Point(497, 127);
+            this.txtCristales.Name = "txtCristales";
+            this.txtCristales.Size = new System.Drawing.Size(185, 27);
+            this.txtCristales.TabIndex = 24;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(377, 174);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(85, 20);
+            this.label20.TabIndex = 18;
+            this.label20.Text = "Cilindros :";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(375, 133);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(86, 20);
+            this.label23.TabIndex = 9;
+            this.label23.Text = "Cristales :";
+            // 
+            // txtPiocitos
+            // 
+            this.txtPiocitos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPiocitos.Location = new System.Drawing.Point(497, 86);
+            this.txtPiocitos.Name = "txtPiocitos";
+            this.txtPiocitos.Size = new System.Drawing.Size(185, 27);
+            this.txtPiocitos.TabIndex = 23;
+            // 
             // txtFlora
             // 
             this.txtFlora.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -491,6 +544,24 @@
             this.txtFlora.Name = "txtFlora";
             this.txtFlora.Size = new System.Drawing.Size(185, 27);
             this.txtFlora.TabIndex = 22;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(373, 92);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(79, 20);
+            this.label24.TabIndex = 5;
+            this.label24.Text = "Piocitos :";
+            // 
+            // txtredondas
+            // 
+            this.txtredondas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtredondas.Location = new System.Drawing.Point(145, 172);
+            this.txtredondas.Name = "txtredondas";
+            this.txtredondas.Size = new System.Drawing.Size(186, 27);
+            this.txtredondas.TabIndex = 10;
             // 
             // label12
             // 
@@ -502,15 +573,23 @@
             this.label12.TabIndex = 5;
             this.label12.Text = "Flora Microbiana :";
             // 
-            // label29
+            // txtced
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(25, 3);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(166, 28);
-            this.label29.TabIndex = 105;
-            this.label29.Text = "SEDIMIENTO :";
+            this.txtced.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtced.Location = new System.Drawing.Point(143, 137);
+            this.txtced.Name = "txtced";
+            this.txtced.Size = new System.Drawing.Size(188, 27);
+            this.txtced.TabIndex = 9;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(45, 172);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(128, 20);
+            this.label22.TabIndex = 18;
+            this.label22.Text = "Cel. Redondas :";
             // 
             // txtLeucocitos1
             // 
@@ -519,6 +598,16 @@
             this.txtLeucocitos1.Name = "txtLeucocitos1";
             this.txtLeucocitos1.Size = new System.Drawing.Size(185, 27);
             this.txtLeucocitos1.TabIndex = 8;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(45, 137);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(68, 20);
+            this.label27.TabIndex = 9;
+            this.label27.Text = "C.E.D : ";
             // 
             // label28
             // 
@@ -548,95 +637,15 @@
             this.label19.TabIndex = 5;
             this.label19.Text = "Eritrocitos :";
             // 
-            // txtced
+            // label29
             // 
-            this.txtced.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtced.Location = new System.Drawing.Point(143, 137);
-            this.txtced.Name = "txtced";
-            this.txtced.Size = new System.Drawing.Size(188, 27);
-            this.txtced.TabIndex = 9;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(45, 137);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(68, 20);
-            this.label27.TabIndex = 9;
-            this.label27.Text = "C.E.D : ";
-            // 
-            // txtCilindros
-            // 
-            this.txtCilindros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCilindros.Location = new System.Drawing.Point(497, 169);
-            this.txtCilindros.Name = "txtCilindros";
-            this.txtCilindros.Size = new System.Drawing.Size(185, 27);
-            this.txtCilindros.TabIndex = 25;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(377, 174);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(85, 20);
-            this.label20.TabIndex = 18;
-            this.label20.Text = "Cilindros :";
-            // 
-            // txtredondas
-            // 
-            this.txtredondas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtredondas.Location = new System.Drawing.Point(145, 172);
-            this.txtredondas.Name = "txtredondas";
-            this.txtredondas.Size = new System.Drawing.Size(186, 27);
-            this.txtredondas.TabIndex = 10;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(45, 172);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(128, 20);
-            this.label22.TabIndex = 18;
-            this.label22.Text = "Cel. Redondas :";
-            // 
-            // txtPiocitos
-            // 
-            this.txtPiocitos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPiocitos.Location = new System.Drawing.Point(497, 86);
-            this.txtPiocitos.Name = "txtPiocitos";
-            this.txtPiocitos.Size = new System.Drawing.Size(185, 27);
-            this.txtPiocitos.TabIndex = 23;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(373, 92);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(79, 20);
-            this.label24.TabIndex = 5;
-            this.label24.Text = "Piocitos :";
-            // 
-            // txtCristales
-            // 
-            this.txtCristales.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCristales.Location = new System.Drawing.Point(497, 127);
-            this.txtCristales.Name = "txtCristales";
-            this.txtCristales.Size = new System.Drawing.Size(185, 27);
-            this.txtCristales.TabIndex = 24;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(375, 133);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(86, 20);
-            this.label23.TabIndex = 9;
-            this.label23.Text = "Cristales :";
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(25, 3);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(166, 28);
+            this.label29.TabIndex = 105;
+            this.label29.Text = "SEDIMIENTO :";
             // 
             // panel3
             // 
@@ -656,7 +665,7 @@
             this.panel3.Controls.Add(this.txtBilirrubina);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txtGlucosa);
             this.panel3.Controls.Add(this.txtReaccion);
             this.panel3.Controls.Add(this.label25);
             this.panel3.Controls.Add(this.label1);
@@ -675,41 +684,13 @@
             this.panel3.Size = new System.Drawing.Size(747, 334);
             this.panel3.TabIndex = 148;
             // 
-            // txtLeucocitos
+            // txtCetonas
             // 
-            this.txtLeucocitos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLeucocitos.Location = new System.Drawing.Point(485, 235);
-            this.txtLeucocitos.Name = "txtLeucocitos";
-            this.txtLeucocitos.Size = new System.Drawing.Size(185, 27);
-            this.txtLeucocitos.TabIndex = 23;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(364, 245);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 20);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Leucocitos :";
-            // 
-            // txtReaccion
-            // 
-            this.txtReaccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReaccion.Location = new System.Drawing.Point(143, 197);
-            this.txtReaccion.Name = "txtReaccion";
-            this.txtReaccion.Size = new System.Drawing.Size(185, 27);
-            this.txtReaccion.TabIndex = 19;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 200);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 20);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Reacción pH :";
+            this.txtCetonas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCetonas.Location = new System.Drawing.Point(485, 46);
+            this.txtCetonas.Name = "txtCetonas";
+            this.txtCetonas.Size = new System.Drawing.Size(185, 27);
+            this.txtCetonas.TabIndex = 11;
             // 
             // txtSangre
             // 
@@ -718,42 +699,6 @@
             this.txtSangre.Name = "txtSangre";
             this.txtSangre.Size = new System.Drawing.Size(185, 27);
             this.txtSangre.TabIndex = 19;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(364, 98);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 20);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Sangre :";
-            // 
-            // txtAspecto
-            // 
-            this.txtAspecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAspecto.Location = new System.Drawing.Point(143, 53);
-            this.txtAspecto.Name = "txtAspecto";
-            this.txtAspecto.Size = new System.Drawing.Size(185, 27);
-            this.txtAspecto.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(31, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Aspecto :";
-            // 
-            // txtCetonas
-            // 
-            this.txtCetonas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCetonas.Location = new System.Drawing.Point(485, 46);
-            this.txtCetonas.Name = "txtCetonas";
-            this.txtCetonas.Size = new System.Drawing.Size(185, 27);
-            this.txtCetonas.TabIndex = 11;
             // 
             // label2
             // 
@@ -765,6 +710,42 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "Cetonas :";
             // 
+            // txtProteina
+            // 
+            this.txtProteina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProteina.Location = new System.Drawing.Point(485, 124);
+            this.txtProteina.Name = "txtProteina";
+            this.txtProteina.Size = new System.Drawing.Size(185, 27);
+            this.txtProteina.TabIndex = 20;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(364, 98);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 20);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Sangre :";
+            // 
+            // txtUrobiliogeno
+            // 
+            this.txtUrobiliogeno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUrobiliogeno.Location = new System.Drawing.Point(485, 166);
+            this.txtUrobiliogeno.Name = "txtUrobiliogeno";
+            this.txtUrobiliogeno.Size = new System.Drawing.Size(185, 27);
+            this.txtUrobiliogeno.TabIndex = 21;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(364, 140);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(90, 20);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "Proteinas :";
+            // 
             // txtNitrito
             // 
             this.txtNitrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -772,6 +753,24 @@
             this.txtNitrito.Name = "txtNitrito";
             this.txtNitrito.Size = new System.Drawing.Size(185, 27);
             this.txtNitrito.TabIndex = 22;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(364, 175);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(112, 20);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "Urobiliógeno :";
+            // 
+            // txtLeucocitos
+            // 
+            this.txtLeucocitos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLeucocitos.Location = new System.Drawing.Point(485, 235);
+            this.txtLeucocitos.Name = "txtLeucocitos";
+            this.txtLeucocitos.Size = new System.Drawing.Size(185, 27);
+            this.txtLeucocitos.TabIndex = 23;
             // 
             // label11
             // 
@@ -782,6 +781,70 @@
             this.label11.Size = new System.Drawing.Size(69, 20);
             this.label11.TabIndex = 18;
             this.label11.Text = "Ntritos :";
+            // 
+            // txtBilirrubina
+            // 
+            this.txtBilirrubina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBilirrubina.Location = new System.Drawing.Point(145, 282);
+            this.txtBilirrubina.Name = "txtBilirrubina";
+            this.txtBilirrubina.Size = new System.Drawing.Size(185, 27);
+            this.txtBilirrubina.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(364, 245);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 20);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Leucocitos :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(31, 282);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(104, 20);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Bilirrubinas :";
+            // 
+            // txtGlucosa
+            // 
+            this.txtGlucosa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGlucosa.Location = new System.Drawing.Point(143, 239);
+            this.txtGlucosa.Name = "txtGlucosa";
+            this.txtGlucosa.Size = new System.Drawing.Size(185, 27);
+            this.txtGlucosa.TabIndex = 20;
+            // 
+            // txtReaccion
+            // 
+            this.txtReaccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReaccion.Location = new System.Drawing.Point(143, 197);
+            this.txtReaccion.Name = "txtReaccion";
+            this.txtReaccion.Size = new System.Drawing.Size(185, 27);
+            this.txtReaccion.TabIndex = 19;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(31, 239);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(81, 20);
+            this.label25.TabIndex = 5;
+            this.label25.Text = "Glucosa :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(31, 200);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Reacción pH :";
             // 
             // txtDensidad
             // 
@@ -800,60 +863,6 @@
             this.label15.Size = new System.Drawing.Size(90, 20);
             this.label15.TabIndex = 18;
             this.label15.Text = "Densidad :";
-            // 
-            // txtBilirrubina
-            // 
-            this.txtBilirrubina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBilirrubina.Location = new System.Drawing.Point(145, 282);
-            this.txtBilirrubina.Name = "txtBilirrubina";
-            this.txtBilirrubina.Size = new System.Drawing.Size(185, 27);
-            this.txtBilirrubina.TabIndex = 10;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(31, 282);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 20);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Bilirrubinas :";
-            // 
-            // txtUrobiliogeno
-            // 
-            this.txtUrobiliogeno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUrobiliogeno.Location = new System.Drawing.Point(485, 166);
-            this.txtUrobiliogeno.Name = "txtUrobiliogeno";
-            this.txtUrobiliogeno.Size = new System.Drawing.Size(185, 27);
-            this.txtUrobiliogeno.TabIndex = 21;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(364, 175);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(112, 20);
-            this.label14.TabIndex = 9;
-            this.label14.Text = "Urobiliógeno :";
-            // 
-            // txtProteina
-            // 
-            this.txtProteina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProteina.Location = new System.Drawing.Point(485, 124);
-            this.txtProteina.Name = "txtProteina";
-            this.txtProteina.Size = new System.Drawing.Size(185, 27);
-            this.txtProteina.TabIndex = 20;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(364, 140);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(90, 20);
-            this.label16.TabIndex = 5;
-            this.label16.Text = "Proteinas :";
             // 
             // txtOlor
             // 
@@ -890,6 +899,24 @@
             this.label7.Size = new System.Drawing.Size(64, 20);
             this.label7.TabIndex = 5;
             this.label7.Text = "Color : ";
+            // 
+            // txtAspecto
+            // 
+            this.txtAspecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAspecto.Location = new System.Drawing.Point(143, 53);
+            this.txtAspecto.Name = "txtAspecto";
+            this.txtAspecto.Size = new System.Drawing.Size(185, 27);
+            this.txtAspecto.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(31, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Aspecto :";
             // 
             // label17
             // 
@@ -1095,33 +1122,6 @@
             this.dtpFecha.TabIndex = 152;
             this.dtpFecha.Value = new System.DateTime(2025, 2, 11, 23, 37, 59, 0);
             // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(31, 239);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(81, 20);
-            this.label25.TabIndex = 5;
-            this.label25.Text = "Glucosa :";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(143, 239);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 27);
-            this.textBox1.TabIndex = 20;
-            // 
-            // txtBuscarNombre
-            // 
-            this.txtBuscarNombre.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtBuscarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarNombre.Location = new System.Drawing.Point(0, 567);
-            this.txtBuscarNombre.Name = "txtBuscarNombre";
-            this.txtBuscarNombre.Size = new System.Drawing.Size(400, 30);
-            this.txtBuscarNombre.TabIndex = 184;
-            // 
             // Orina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1241,7 +1241,7 @@
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtGlucosa;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox txtBuscarNombre;
     }
