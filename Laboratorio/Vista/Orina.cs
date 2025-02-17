@@ -338,7 +338,7 @@ namespace Laboratorio
             formQuimica.Show();
             this.Hide();
         }
-
+        
        
     }
 }
