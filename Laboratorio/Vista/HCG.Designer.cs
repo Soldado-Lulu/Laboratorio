@@ -41,9 +41,9 @@
             this.btnHemograma = new System.Windows.Forms.Button();
             this.panelCap = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtResultado = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
@@ -267,16 +267,6 @@
             this.panel1.Size = new System.Drawing.Size(782, 293);
             this.panel1.TabIndex = 140;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 55);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(249, 23);
-            this.label3.TabIndex = 94;
-            this.label3.Text = "Exámen :  HCG en Sangre ";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -289,11 +279,23 @@
             // 
             // txtResultado
             // 
+            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResultado.Location = new System.Drawing.Point(97, 148);
             this.txtResultado.Multiline = true;
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(568, 90);
             this.txtResultado.TabIndex = 8;
+            this.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(16, 55);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(249, 23);
+            this.label3.TabIndex = 94;
+            this.label3.Text = "Exámen :  HCG en Sangre ";
             // 
             // label17
             // 
@@ -382,7 +384,7 @@
             // 
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(34, 140);
+            this.label57.Location = new System.Drawing.Point(17, 140);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(68, 20);
             this.label57.TabIndex = 144;
@@ -400,7 +402,7 @@
             // 
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(34, 171);
+            this.label65.Location = new System.Drawing.Point(17, 178);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(146, 20);
             this.label65.TabIndex = 146;
@@ -498,7 +500,7 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(257, 27);
             this.dtpFecha.TabIndex = 149;
-            this.dtpFecha.Value = new System.DateTime(2025, 1, 21, 0, 0, 0, 0);
+            this.dtpFecha.Value = new System.DateTime(2025, 2, 16, 0, 0, 0, 0);
             // 
             // panelRight
             // 
@@ -546,6 +548,7 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Location = new System.Drawing.Point(0, 372);
@@ -553,7 +556,7 @@
             this.button1.Size = new System.Drawing.Size(400, 65);
             this.button1.TabIndex = 181;
             this.button1.Text = "GUARDAR PACIENTE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
@@ -616,6 +619,7 @@
             this.Controls.Add(this.panelLeft);
             this.Name = "HCG";
             this.Text = "HCG";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.HCG_Load);
             this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();

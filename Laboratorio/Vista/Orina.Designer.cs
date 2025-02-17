@@ -148,7 +148,7 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(400, 1320);
+            this.panelLeft.Size = new System.Drawing.Size(400, 1055);
             this.panelLeft.TabIndex = 132;
             // 
             // dgvPersonar
@@ -160,7 +160,7 @@
             this.dgvPersonar.Name = "dgvPersonar";
             this.dgvPersonar.RowHeadersWidth = 51;
             this.dgvPersonar.RowTemplate.Height = 24;
-            this.dgvPersonar.Size = new System.Drawing.Size(398, 733);
+            this.dgvPersonar.Size = new System.Drawing.Size(398, 468);
             this.dgvPersonar.TabIndex = 11;
             // 
             // btnVarios
@@ -302,7 +302,7 @@
             this.PanelBtns.Dock = System.Windows.Forms.DockStyle.Right;
             this.PanelBtns.Location = new System.Drawing.Point(1147, 0);
             this.PanelBtns.Name = "PanelBtns";
-            this.PanelBtns.Size = new System.Drawing.Size(400, 1320);
+            this.PanelBtns.Size = new System.Drawing.Size(400, 1055);
             this.PanelBtns.TabIndex = 133;
             // 
             // txtBuscarNombre
@@ -403,7 +403,7 @@
             this.panelCap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelCap.Location = new System.Drawing.Point(400, 0);
             this.panelCap.Name = "panelCap";
-            this.panelCap.Size = new System.Drawing.Size(747, 1320);
+            this.panelCap.Size = new System.Drawing.Size(747, 1055);
             this.panelCap.TabIndex = 134;
             // 
             // panel2
@@ -1120,18 +1120,19 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(257, 27);
             this.dtpFecha.TabIndex = 152;
-            this.dtpFecha.Value = new System.DateTime(2025, 2, 11, 23, 37, 59, 0);
+            this.dtpFecha.Value = new System.DateTime(2025, 2, 16, 0, 0, 0, 0);
             // 
             // Orina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1547, 1320);
+            this.ClientSize = new System.Drawing.Size(1547, 1055);
             this.Controls.Add(this.panelCap);
             this.Controls.Add(this.PanelBtns);
             this.Controls.Add(this.panelLeft);
             this.Name = "Orina";
             this.Text = "Orina";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Orina_Load);
             this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();

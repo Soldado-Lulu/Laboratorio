@@ -40,6 +40,7 @@
             this.btnOrina = new System.Windows.Forms.Button();
             this.btnHemograma = new System.Windows.Forms.Button();
             this.PanelBtns = new System.Windows.Forms.Panel();
+            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.btnGuardarPaciente = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -72,9 +73,14 @@
             this.txtTiempoSangria = new System.Windows.Forms.TextBox();
             this.label84 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.textFactorRh = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
             this.textIK = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
+            this.textGrupoSanguineo = new System.Windows.Forms.TextBox();
             this.textVES2 = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
             this.textVES1 = new System.Windows.Forms.TextBox();
@@ -114,11 +120,6 @@
             this.textMielocitos = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.textFactorRh = new System.Windows.Forms.TextBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.textGrupoSanguineo = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.textReticulocitos = new System.Windows.Forms.TextBox();
@@ -173,7 +174,6 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.PanelBtns.SuspendLayout();
@@ -359,8 +359,18 @@
             this.PanelBtns.Size = new System.Drawing.Size(358, 1157);
             this.PanelBtns.TabIndex = 131;
             // 
+            // txtBuscarNombre
+            // 
+            this.txtBuscarNombre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtBuscarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarNombre.Location = new System.Drawing.Point(0, 502);
+            this.txtBuscarNombre.Name = "txtBuscarNombre";
+            this.txtBuscarNombre.Size = new System.Drawing.Size(358, 30);
+            this.txtBuscarNombre.TabIndex = 183;
+            // 
             // btnGuardarPaciente
             // 
+            this.btnGuardarPaciente.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnGuardarPaciente.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnGuardarPaciente.FlatAppearance.BorderSize = 0;
             this.btnGuardarPaciente.Location = new System.Drawing.Point(0, 437);
@@ -368,7 +378,7 @@
             this.btnGuardarPaciente.Size = new System.Drawing.Size(358, 65);
             this.btnGuardarPaciente.TabIndex = 182;
             this.btnGuardarPaciente.Text = "GUARDAR PACIENTE";
-            this.btnGuardarPaciente.UseVisualStyleBackColor = true;
+            this.btnGuardarPaciente.UseVisualStyleBackColor = false;
             this.btnGuardarPaciente.Click += new System.EventHandler(this.btnGuardarPaciente_Click);
             // 
             // btnEditar
@@ -478,16 +488,17 @@
             // textIsi
             // 
             this.textIsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textIsi.Location = new System.Drawing.Point(604, 143);
+            this.textIsi.Location = new System.Drawing.Point(626, 86);
             this.textIsi.Name = "textIsi";
             this.textIsi.Size = new System.Drawing.Size(76, 27);
             this.textIsi.TabIndex = 42;
+            this.textIsi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label67
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(563, 150);
+            this.label67.Location = new System.Drawing.Point(585, 93);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(33, 20);
             this.label67.TabIndex = 43;
@@ -496,7 +507,7 @@
             // txtSerieBlanca
             // 
             this.txtSerieBlanca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSerieBlanca.Location = new System.Drawing.Point(195, 234);
+            this.txtSerieBlanca.Location = new System.Drawing.Point(200, 164);
             this.txtSerieBlanca.Name = "txtSerieBlanca";
             this.txtSerieBlanca.Size = new System.Drawing.Size(493, 27);
             this.txtSerieBlanca.TabIndex = 52;
@@ -505,7 +516,7 @@
             // 
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(67, 234);
+            this.label63.Location = new System.Drawing.Point(72, 164);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(105, 20);
             this.label63.TabIndex = 53;
@@ -514,16 +525,17 @@
             // textInr
             // 
             this.textInr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textInr.Location = new System.Drawing.Point(470, 143);
+            this.textInr.Location = new System.Drawing.Point(492, 86);
             this.textInr.Name = "textInr";
             this.textInr.Size = new System.Drawing.Size(76, 27);
             this.textInr.TabIndex = 40;
+            this.textInr.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label61
             // 
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(431, 150);
+            this.label61.Location = new System.Drawing.Point(453, 93);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(42, 20);
             this.label61.TabIndex = 41;
@@ -532,7 +544,7 @@
             // txtSerieRoja
             // 
             this.txtSerieRoja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSerieRoja.Location = new System.Drawing.Point(195, 189);
+            this.txtSerieRoja.Location = new System.Drawing.Point(200, 119);
             this.txtSerieRoja.Name = "txtSerieRoja";
             this.txtSerieRoja.Size = new System.Drawing.Size(493, 27);
             this.txtSerieRoja.TabIndex = 49;
@@ -541,7 +553,7 @@
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(72, 195);
+            this.label69.Location = new System.Drawing.Point(77, 125);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(87, 20);
             this.label69.TabIndex = 50;
@@ -551,7 +563,7 @@
             // 
             this.label75.AutoSize = true;
             this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.Location = new System.Drawing.Point(326, 153);
+            this.label75.Location = new System.Drawing.Point(641, 56);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(97, 20);
             this.label75.TabIndex = 58;
@@ -560,16 +572,17 @@
             // txtAPTT
             // 
             this.txtAPTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAPTT.Location = new System.Drawing.Point(222, 149);
+            this.txtAPTT.Location = new System.Drawing.Point(559, 51);
             this.txtAPTT.Name = "txtAPTT";
             this.txtAPTT.Size = new System.Drawing.Size(76, 27);
             this.txtAPTT.TabIndex = 46;
+            this.txtAPTT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label73
             // 
             this.label73.AutoSize = true;
             this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.Location = new System.Drawing.Point(74, 152);
+            this.label73.Location = new System.Drawing.Point(459, 56);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(51, 20);
             this.label73.TabIndex = 47;
@@ -579,7 +592,7 @@
             // 
             this.label78.AutoSize = true;
             this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(325, 122);
+            this.label78.Location = new System.Drawing.Point(648, 22);
             this.label78.Name = "label78";
             this.label78.Size = new System.Drawing.Size(90, 20);
             this.label78.TabIndex = 57;
@@ -588,20 +601,21 @@
             // txtPorcentajeActividad
             // 
             this.txtPorcentajeActividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPorcentajeActividad.Location = new System.Drawing.Point(222, 118);
+            this.txtPorcentajeActividad.Location = new System.Drawing.Point(558, 16);
             this.txtPorcentajeActividad.Name = "txtPorcentajeActividad";
-            this.txtPorcentajeActividad.Size = new System.Drawing.Size(76, 27);
+            this.txtPorcentajeActividad.Size = new System.Drawing.Size(74, 27);
             this.txtPorcentajeActividad.TabIndex = 43;
+            this.txtPorcentajeActividad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label76
             // 
             this.label76.AutoSize = true;
             this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.Location = new System.Drawing.Point(29, 121);
+            this.label76.Location = new System.Drawing.Point(440, 10);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(183, 20);
+            this.label76.Size = new System.Drawing.Size(112, 40);
             this.label76.TabIndex = 44;
-            this.label76.Text = "Porcentaje de actividad";
+            this.label76.Text = "Porcentaje de\r\nactividad";
             // 
             // label80
             // 
@@ -620,6 +634,7 @@
             this.txtTiempoProtrombina.Name = "txtTiempoProtrombina";
             this.txtTiempoProtrombina.Size = new System.Drawing.Size(76, 27);
             this.txtTiempoProtrombina.TabIndex = 40;
+            this.txtTiempoProtrombina.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label79
             // 
@@ -658,6 +673,7 @@
             this.txtTiempoCoagulacion.Name = "txtTiempoCoagulacion";
             this.txtTiempoCoagulacion.Size = new System.Drawing.Size(76, 27);
             this.txtTiempoCoagulacion.TabIndex = 37;
+            this.txtTiempoCoagulacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label82
             // 
@@ -676,6 +692,7 @@
             this.txtTiempoSangria.Name = "txtTiempoSangria";
             this.txtTiempoSangria.Size = new System.Drawing.Size(76, 27);
             this.txtTiempoSangria.TabIndex = 35;
+            this.txtTiempoSangria.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label84
             // 
@@ -744,6 +761,15 @@
             this.panel4.Size = new System.Drawing.Size(867, 296);
             this.panel4.TabIndex = 170;
             // 
+            // textFactorRh
+            // 
+            this.textFactorRh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textFactorRh.Location = new System.Drawing.Point(570, 241);
+            this.textFactorRh.Name = "textFactorRh";
+            this.textFactorRh.Size = new System.Drawing.Size(114, 27);
+            this.textFactorRh.TabIndex = 88;
+            this.textFactorRh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // label64
             // 
             this.label64.AutoSize = true;
@@ -754,6 +780,16 @@
             this.label64.TabIndex = 141;
             this.label64.Text = "IK";
             // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(392, 170);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(158, 20);
+            this.label62.TabIndex = 77;
+            this.label62.Text = "GRUPO Y FACTOR";
+            // 
             // textIK
             // 
             this.textIK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -761,6 +797,27 @@
             this.textIK.Name = "textIK";
             this.textIK.Size = new System.Drawing.Size(76, 27);
             this.textIK.TabIndex = 140;
+            this.textIK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(427, 244);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(83, 20);
+            this.label54.TabIndex = 87;
+            this.label54.Text = "Factor Rh";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(426, 213);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(138, 20);
+            this.label60.TabIndex = 80;
+            this.label60.Text = "Grupo Sanguineo";
             // 
             // label66
             // 
@@ -772,6 +829,15 @@
             this.label66.TabIndex = 139;
             this.label66.Text = "V . E . S. 2° hora";
             // 
+            // textGrupoSanguineo
+            // 
+            this.textGrupoSanguineo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textGrupoSanguineo.Location = new System.Drawing.Point(570, 206);
+            this.textGrupoSanguineo.Name = "textGrupoSanguineo";
+            this.textGrupoSanguineo.Size = new System.Drawing.Size(114, 27);
+            this.textGrupoSanguineo.TabIndex = 79;
+            this.textGrupoSanguineo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // textVES2
             // 
             this.textVES2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -779,6 +845,7 @@
             this.textVES2.Name = "textVES2";
             this.textVES2.Size = new System.Drawing.Size(76, 27);
             this.textVES2.TabIndex = 138;
+            this.textVES2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label68
             // 
@@ -797,6 +864,7 @@
             this.textVES1.Name = "textVES1";
             this.textVES1.Size = new System.Drawing.Size(76, 27);
             this.textVES1.TabIndex = 134;
+            this.textVES1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label58
             // 
@@ -825,6 +893,7 @@
             this.textVCM.Name = "textVCM";
             this.textVCM.Size = new System.Drawing.Size(76, 27);
             this.textVCM.TabIndex = 132;
+            this.textVCM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label70
             // 
@@ -893,6 +962,7 @@
             this.textMonocitos.Name = "textMonocitos";
             this.textMonocitos.Size = new System.Drawing.Size(76, 27);
             this.textMonocitos.TabIndex = 117;
+            this.textMonocitos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label43
             // 
@@ -911,6 +981,7 @@
             this.textEosinofilos.Name = "textEosinofilos";
             this.textEosinofilos.Size = new System.Drawing.Size(76, 27);
             this.textEosinofilos.TabIndex = 120;
+            this.textEosinofilos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label40
             // 
@@ -929,6 +1000,7 @@
             this.textBasofilos.Name = "textBasofilos";
             this.textBasofilos.Size = new System.Drawing.Size(76, 27);
             this.textBasofilos.TabIndex = 123;
+            this.textBasofilos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label42
             // 
@@ -967,6 +1039,7 @@
             this.textLinfocitos.Name = "textLinfocitos";
             this.textLinfocitos.Size = new System.Drawing.Size(76, 27);
             this.textLinfocitos.TabIndex = 114;
+            this.textLinfocitos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label45
             // 
@@ -1005,6 +1078,7 @@
             this.textSegmentados.Name = "textSegmentados";
             this.textSegmentados.Size = new System.Drawing.Size(76, 27);
             this.textSegmentados.TabIndex = 111;
+            this.textSegmentados.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label35
             // 
@@ -1033,6 +1107,7 @@
             this.textCayados.Name = "textCayados";
             this.textCayados.Size = new System.Drawing.Size(76, 27);
             this.textCayados.TabIndex = 108;
+            this.textCayados.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label39
             // 
@@ -1091,6 +1166,7 @@
             this.textMetamielocitos.Name = "textMetamielocitos";
             this.textMetamielocitos.Size = new System.Drawing.Size(76, 27);
             this.textMetamielocitos.TabIndex = 104;
+            this.textMetamielocitos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label33
             // 
@@ -1119,6 +1195,7 @@
             this.textMielocitos.Name = "textMielocitos";
             this.textMielocitos.Size = new System.Drawing.Size(76, 27);
             this.textMielocitos.TabIndex = 102;
+            this.textMielocitos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label32
             // 
@@ -1139,52 +1216,6 @@
             this.label30.Size = new System.Drawing.Size(208, 19);
             this.label30.TabIndex = 35;
             this.label30.Text = "FORMULA LEUCOCITARIA";
-            // 
-            // textFactorRh
-            // 
-            this.textFactorRh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textFactorRh.Location = new System.Drawing.Point(570, 241);
-            this.textFactorRh.Name = "textFactorRh";
-            this.textFactorRh.Size = new System.Drawing.Size(114, 27);
-            this.textFactorRh.TabIndex = 88;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(392, 170);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(158, 20);
-            this.label62.TabIndex = 77;
-            this.label62.Text = "GRUPO Y FACTOR";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(427, 244);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(83, 20);
-            this.label54.TabIndex = 87;
-            this.label54.Text = "Factor Rh";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(426, 213);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(138, 20);
-            this.label60.TabIndex = 80;
-            this.label60.Text = "Grupo Sanguineo";
-            // 
-            // textGrupoSanguineo
-            // 
-            this.textGrupoSanguineo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textGrupoSanguineo.Location = new System.Drawing.Point(570, 206);
-            this.textGrupoSanguineo.Name = "textGrupoSanguineo";
-            this.textGrupoSanguineo.Size = new System.Drawing.Size(114, 27);
-            this.textGrupoSanguineo.TabIndex = 79;
             // 
             // panel5
             // 
@@ -1234,7 +1265,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(462, 176);
+            this.label16.Location = new System.Drawing.Point(473, 192);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(106, 23);
             this.label16.TabIndex = 119;
@@ -1243,16 +1274,17 @@
             // textReticulocitos
             // 
             this.textReticulocitos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textReticulocitos.Location = new System.Drawing.Point(581, 176);
+            this.textReticulocitos.Location = new System.Drawing.Point(589, 185);
             this.textReticulocitos.Name = "textReticulocitos";
             this.textReticulocitos.Size = new System.Drawing.Size(82, 30);
             this.textReticulocitos.TabIndex = 120;
+            this.textReticulocitos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(693, 176);
+            this.label29.Location = new System.Drawing.Point(689, 192);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(77, 23);
             this.label29.TabIndex = 121;
@@ -1262,7 +1294,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(39, 215);
+            this.label15.Location = new System.Drawing.Point(36, 199);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(84, 23);
             this.label15.TabIndex = 116;
@@ -1271,16 +1303,17 @@
             // textPlaquetas
             // 
             this.textPlaquetas.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPlaquetas.Location = new System.Drawing.Point(154, 212);
+            this.textPlaquetas.Location = new System.Drawing.Point(147, 195);
             this.textPlaquetas.Name = "textPlaquetas";
-            this.textPlaquetas.Size = new System.Drawing.Size(95, 30);
+            this.textPlaquetas.Size = new System.Drawing.Size(102, 30);
             this.textPlaquetas.TabIndex = 117;
+            this.textPlaquetas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(268, 215);
+            this.label28.Location = new System.Drawing.Point(300, 202);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(177, 23);
             this.label28.TabIndex = 118;
@@ -1290,7 +1323,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(462, 125);
+            this.label14.Location = new System.Drawing.Point(466, 141);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(105, 23);
             this.label14.TabIndex = 110;
@@ -1299,16 +1332,17 @@
             // textHematocritos
             // 
             this.textHematocritos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textHematocritos.Location = new System.Drawing.Point(577, 121);
+            this.textHematocritos.Location = new System.Drawing.Point(577, 134);
             this.textHematocritos.Name = "textHematocritos";
             this.textHematocritos.Size = new System.Drawing.Size(82, 30);
             this.textHematocritos.TabIndex = 113;
+            this.textHematocritos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(678, 142);
+            this.label12.Location = new System.Drawing.Point(665, 147);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(54, 23);
             this.label12.TabIndex = 112;
@@ -1318,17 +1352,17 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(678, 118);
+            this.label13.Location = new System.Drawing.Point(660, 124);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 23);
+            this.label13.Size = new System.Drawing.Size(72, 23);
             this.label13.TabIndex = 111;
-            this.label13.Text = "Hombre ";
+            this.label13.Text = "Hombre";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(761, 118);
+            this.label26.Location = new System.Drawing.Point(738, 124);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(82, 23);
             this.label26.TabIndex = 114;
@@ -1338,7 +1372,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(761, 142);
+            this.label27.Location = new System.Drawing.Point(738, 147);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(82, 23);
             this.label27.TabIndex = 115;
@@ -1367,10 +1401,11 @@
             // textHemoglobina
             // 
             this.textHemoglobina.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textHemoglobina.Location = new System.Drawing.Point(153, 134);
+            this.textHemoglobina.Location = new System.Drawing.Point(147, 134);
             this.textHemoglobina.Name = "textHemoglobina";
-            this.textHemoglobina.Size = new System.Drawing.Size(96, 30);
+            this.textHemoglobina.Size = new System.Drawing.Size(102, 30);
             this.textHemoglobina.TabIndex = 105;
+            this.textHemoglobina.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
@@ -1406,7 +1441,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(338, 161);
+            this.label24.Location = new System.Drawing.Point(338, 151);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(109, 23);
             this.label24.TabIndex = 108;
@@ -1416,7 +1451,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(338, 185);
+            this.label25.Location = new System.Drawing.Point(338, 174);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(109, 23);
             this.label25.TabIndex = 109;
@@ -1426,7 +1461,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(383, 76);
+            this.label21.Location = new System.Drawing.Point(454, 76);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(155, 23);
             this.label21.TabIndex = 100;
@@ -1436,7 +1471,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(383, 96);
+            this.label22.Location = new System.Drawing.Point(453, 96);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(155, 23);
             this.label22.TabIndex = 101;
@@ -1447,14 +1482,15 @@
             this.textLeucocitos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textLeucocitos.Location = new System.Drawing.Point(120, 89);
             this.textLeucocitos.Name = "textLeucocitos";
-            this.textLeucocitos.Size = new System.Drawing.Size(92, 30);
+            this.textLeucocitos.Size = new System.Drawing.Size(161, 30);
             this.textLeucocitos.TabIndex = 99;
+            this.textLeucocitos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(218, 96);
+            this.label5.Location = new System.Drawing.Point(300, 95);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(155, 23);
             this.label5.TabIndex = 98;
@@ -1464,7 +1500,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(239, 76);
+            this.label6.Location = new System.Drawing.Point(317, 76);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 23);
             this.label6.TabIndex = 97;
@@ -1484,7 +1520,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(313, 53);
+            this.label20.Location = new System.Drawing.Point(400, 53);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(208, 23);
             this.label20.TabIndex = 25;
@@ -1495,14 +1531,15 @@
             this.textEritrocitos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textEritrocitos.Location = new System.Drawing.Point(120, 41);
             this.textEritrocitos.Name = "textEritrocitos";
-            this.textEritrocitos.Size = new System.Drawing.Size(92, 30);
+            this.textEritrocitos.Size = new System.Drawing.Size(161, 30);
             this.textEritrocitos.TabIndex = 4;
+            this.textEritrocitos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(313, 30);
+            this.label19.Location = new System.Drawing.Point(400, 27);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(208, 23);
             this.label19.TabIndex = 24;
@@ -1512,7 +1549,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(222, 53);
+            this.label4.Location = new System.Drawing.Point(327, 53);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 23);
             this.label4.TabIndex = 3;
@@ -1532,7 +1569,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(222, 30);
+            this.label3.Location = new System.Drawing.Point(317, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 23);
             this.label3.TabIndex = 2;
@@ -1542,7 +1579,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 6);
+            this.label1.Location = new System.Drawing.Point(10, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 28);
             this.label1.TabIndex = 0;
@@ -1552,7 +1589,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(284, 6);
+            this.label17.Location = new System.Drawing.Point(299, -1);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(196, 28);
             this.label17.TabIndex = 22;
@@ -1738,16 +1775,7 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(257, 22);
             this.dtpFecha.TabIndex = 171;
-            this.dtpFecha.Value = new System.DateTime(2025, 2, 11, 0, 0, 0, 0);
-            // 
-            // txtBuscarNombre
-            // 
-            this.txtBuscarNombre.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtBuscarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarNombre.Location = new System.Drawing.Point(0, 502);
-            this.txtBuscarNombre.Name = "txtBuscarNombre";
-            this.txtBuscarNombre.Size = new System.Drawing.Size(358, 30);
-            this.txtBuscarNombre.TabIndex = 183;
+            this.dtpFecha.Value = new System.DateTime(2025, 2, 16, 0, 0, 0, 0);
             // 
             // Hemograma
             // 
@@ -1760,6 +1788,7 @@
             this.MinimumSize = new System.Drawing.Size(1424, 1018);
             this.Name = "Hemograma";
             this.Text = "Hemograma";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Hemograma_Load);
             this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();

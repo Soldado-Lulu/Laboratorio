@@ -40,6 +40,7 @@
             this.btnOrina = new System.Windows.Forms.Button();
             this.btnHemograma = new System.Windows.Forms.Button();
             this.PanelBtns = new System.Windows.Forms.Panel();
+            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -52,6 +53,8 @@
             this.txtPaciente = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtPresente = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtDr = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSeñor = new System.Windows.Forms.TextBox();
@@ -63,9 +66,6 @@
             this.label81 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
-            this.txtPresente = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.PanelBtns.SuspendLayout();
@@ -131,7 +131,7 @@
             this.btnSobre.Name = "btnSobre";
             this.btnSobre.Size = new System.Drawing.Size(398, 65);
             this.btnSobre.TabIndex = 9;
-            this.btnSobre.Text = "SOBRE";
+            this.btnSobre.Text = "HEMOGRAMA";
             this.btnSobre.UseVisualStyleBackColor = false;
             this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click_1);
             // 
@@ -248,6 +248,15 @@
             this.PanelBtns.Name = "PanelBtns";
             this.PanelBtns.Size = new System.Drawing.Size(400, 1096);
             this.PanelBtns.TabIndex = 137;
+            // 
+            // txtBuscarNombre
+            // 
+            this.txtBuscarNombre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtBuscarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarNombre.Location = new System.Drawing.Point(0, 567);
+            this.txtBuscarNombre.Name = "txtBuscarNombre";
+            this.txtBuscarNombre.Size = new System.Drawing.Size(400, 30);
+            this.txtBuscarNombre.TabIndex = 184;
             // 
             // button4
             // 
@@ -383,6 +392,23 @@
             this.panel3.Size = new System.Drawing.Size(704, 181);
             this.panel3.TabIndex = 131;
             // 
+            // txtPresente
+            // 
+            this.txtPresente.Location = new System.Drawing.Point(199, 106);
+            this.txtPresente.Name = "txtPresente";
+            this.txtPresente.Size = new System.Drawing.Size(457, 22);
+            this.txtPresente.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(58, 104);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 22);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Presente :";
+            // 
             // txtDr
             // 
             this.txtDr.Location = new System.Drawing.Point(199, 74);
@@ -491,32 +517,6 @@
             this.label86.TabIndex = 138;
             this.label86.Text = "\" ISRAEL \"";
             // 
-            // txtPresente
-            // 
-            this.txtPresente.Location = new System.Drawing.Point(199, 106);
-            this.txtPresente.Name = "txtPresente";
-            this.txtPresente.Size = new System.Drawing.Size(457, 22);
-            this.txtPresente.TabIndex = 8;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(58, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 22);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Presente :";
-            // 
-            // txtBuscarNombre
-            // 
-            this.txtBuscarNombre.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtBuscarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarNombre.Location = new System.Drawing.Point(0, 567);
-            this.txtBuscarNombre.Name = "txtBuscarNombre";
-            this.txtBuscarNombre.Size = new System.Drawing.Size(400, 30);
-            this.txtBuscarNombre.TabIndex = 184;
-            // 
             // Sobre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -527,6 +527,7 @@
             this.Controls.Add(this.panelLeft);
             this.Name = "Sobre";
             this.Text = "Sobre";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Sobre_Load);
             this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();

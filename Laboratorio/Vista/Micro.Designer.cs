@@ -40,6 +40,7 @@
             this.btnOrina = new System.Windows.Forms.Button();
             this.btnHemograma = new System.Windows.Forms.Button();
             this.PanelBtns = new System.Windows.Forms.Panel();
+            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -49,7 +50,25 @@
             this.panelRight = new System.Windows.Forms.Panel();
             this.panelCap = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtResistentes = new System.Windows.Forms.TextBox();
+            this.txtSensibles = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtIdentificacion = new System.Windows.Forms.TextBox();
+            this.txtColonia = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtM3 = new System.Windows.Forms.TextBox();
+            this.txtM2 = new System.Windows.Forms.TextBox();
+            this.txtM1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCultivo = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtGram = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -74,25 +93,6 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
-            this.txtIdentificacion = new System.Windows.Forms.TextBox();
-            this.txtColonia = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtM3 = new System.Windows.Forms.TextBox();
-            this.txtM2 = new System.Windows.Forms.TextBox();
-            this.txtM1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtCultivo = new System.Windows.Forms.TextBox();
-            this.txtResistentes = new System.Windows.Forms.TextBox();
-            this.txtSensibles = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.PanelBtns.SuspendLayout();
@@ -277,6 +277,15 @@
             this.PanelBtns.Size = new System.Drawing.Size(400, 1320);
             this.PanelBtns.TabIndex = 135;
             // 
+            // txtBuscarNombre
+            // 
+            this.txtBuscarNombre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtBuscarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarNombre.Location = new System.Drawing.Point(0, 567);
+            this.txtBuscarNombre.Name = "txtBuscarNombre";
+            this.txtBuscarNombre.Size = new System.Drawing.Size(400, 30);
+            this.txtBuscarNombre.TabIndex = 184;
+            // 
             // btnEditar
             // 
             this.btnEditar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -385,6 +394,54 @@
             this.panel3.Size = new System.Drawing.Size(782, 228);
             this.panel3.TabIndex = 151;
             // 
+            // txtResistentes
+            // 
+            this.txtResistentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResistentes.Location = new System.Drawing.Point(466, 49);
+            this.txtResistentes.Multiline = true;
+            this.txtResistentes.Name = "txtResistentes";
+            this.txtResistentes.Size = new System.Drawing.Size(204, 151);
+            this.txtResistentes.TabIndex = 103;
+            // 
+            // txtSensibles
+            // 
+            this.txtSensibles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSensibles.Location = new System.Drawing.Point(197, 49);
+            this.txtSensibles.Multiline = true;
+            this.txtSensibles.Name = "txtSensibles";
+            this.txtSensibles.Size = new System.Drawing.Size(187, 151);
+            this.txtSensibles.TabIndex = 99;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(514, 27);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(92, 19);
+            this.label13.TabIndex = 102;
+            this.label13.Text = "Resistentes";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(247, 27);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(79, 19);
+            this.label14.TabIndex = 101;
+            this.label14.Text = "Sensibles";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(17, 27);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(140, 19);
+            this.label15.TabIndex = 100;
+            this.label15.Text = "ANTIBIOGRAMA :";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -407,6 +464,124 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(782, 293);
             this.panel2.TabIndex = 150;
+            // 
+            // txtIdentificacion
+            // 
+            this.txtIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdentificacion.Location = new System.Drawing.Point(219, 235);
+            this.txtIdentificacion.Name = "txtIdentificacion";
+            this.txtIdentificacion.Size = new System.Drawing.Size(473, 27);
+            this.txtIdentificacion.TabIndex = 116;
+            // 
+            // txtColonia
+            // 
+            this.txtColonia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtColonia.Location = new System.Drawing.Point(217, 191);
+            this.txtColonia.Name = "txtColonia";
+            this.txtColonia.Size = new System.Drawing.Size(475, 27);
+            this.txtColonia.TabIndex = 115;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(76, 235);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(117, 19);
+            this.label7.TabIndex = 114;
+            this.label7.Text = "Identificación :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(70, 199);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(119, 19);
+            this.label6.TabIndex = 113;
+            this.label6.Text = "# de Colonias :";
+            // 
+            // txtM3
+            // 
+            this.txtM3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtM3.Location = new System.Drawing.Point(598, 50);
+            this.txtM3.Name = "txtM3";
+            this.txtM3.Size = new System.Drawing.Size(81, 27);
+            this.txtM3.TabIndex = 112;
+            // 
+            // txtM2
+            // 
+            this.txtM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtM2.Location = new System.Drawing.Point(400, 50);
+            this.txtM2.Name = "txtM2";
+            this.txtM2.Size = new System.Drawing.Size(81, 27);
+            this.txtM2.TabIndex = 111;
+            // 
+            // txtM1
+            // 
+            this.txtM1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtM1.Location = new System.Drawing.Point(179, 50);
+            this.txtM1.Name = "txtM1";
+            this.txtM1.Size = new System.Drawing.Size(81, 27);
+            this.txtM1.TabIndex = 105;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(65, 92);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 19);
+            this.label5.TabIndex = 110;
+            this.label5.Text = "CULTIVO :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(489, 58);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 19);
+            this.label4.TabIndex = 109;
+            this.label4.Text = "3ra Muestra";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(285, 54);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 19);
+            this.label3.TabIndex = 108;
+            this.label3.Text = "2da Muestra";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(56, 54);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(96, 19);
+            this.label2.TabIndex = 107;
+            this.label2.Text = "1ra Muestra";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(196, 19);
+            this.label1.TabIndex = 106;
+            this.label1.Text = "Tinción de Zhiel Neelsen :";
+            // 
+            // txtCultivo
+            // 
+            this.txtCultivo.Location = new System.Drawing.Point(179, 92);
+            this.txtCultivo.Multiline = true;
+            this.txtCultivo.Name = "txtCultivo";
+            this.txtCultivo.Size = new System.Drawing.Size(515, 93);
+            this.txtCultivo.TabIndex = 104;
             // 
             // panel4
             // 
@@ -650,182 +825,7 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(257, 27);
             this.dtpFecha.TabIndex = 152;
-            this.dtpFecha.Value = new System.DateTime(2025, 2, 11, 0, 0, 0, 0);
-            // 
-            // txtBuscarNombre
-            // 
-            this.txtBuscarNombre.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtBuscarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarNombre.Location = new System.Drawing.Point(0, 567);
-            this.txtBuscarNombre.Name = "txtBuscarNombre";
-            this.txtBuscarNombre.Size = new System.Drawing.Size(400, 30);
-            this.txtBuscarNombre.TabIndex = 184;
-            // 
-            // txtIdentificacion
-            // 
-            this.txtIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdentificacion.Location = new System.Drawing.Point(219, 235);
-            this.txtIdentificacion.Name = "txtIdentificacion";
-            this.txtIdentificacion.Size = new System.Drawing.Size(473, 27);
-            this.txtIdentificacion.TabIndex = 116;
-            // 
-            // txtColonia
-            // 
-            this.txtColonia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtColonia.Location = new System.Drawing.Point(217, 191);
-            this.txtColonia.Name = "txtColonia";
-            this.txtColonia.Size = new System.Drawing.Size(475, 27);
-            this.txtColonia.TabIndex = 115;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(76, 235);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(117, 19);
-            this.label7.TabIndex = 114;
-            this.label7.Text = "Identificación :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(70, 199);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 19);
-            this.label6.TabIndex = 113;
-            this.label6.Text = "# de Colonias :";
-            // 
-            // txtM3
-            // 
-            this.txtM3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtM3.Location = new System.Drawing.Point(598, 50);
-            this.txtM3.Name = "txtM3";
-            this.txtM3.Size = new System.Drawing.Size(81, 27);
-            this.txtM3.TabIndex = 112;
-            // 
-            // txtM2
-            // 
-            this.txtM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtM2.Location = new System.Drawing.Point(400, 50);
-            this.txtM2.Name = "txtM2";
-            this.txtM2.Size = new System.Drawing.Size(81, 27);
-            this.txtM2.TabIndex = 111;
-            // 
-            // txtM1
-            // 
-            this.txtM1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtM1.Location = new System.Drawing.Point(179, 50);
-            this.txtM1.Name = "txtM1";
-            this.txtM1.Size = new System.Drawing.Size(81, 27);
-            this.txtM1.TabIndex = 105;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(65, 92);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 19);
-            this.label5.TabIndex = 110;
-            this.label5.Text = "CULTIVO :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(489, 58);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 19);
-            this.label4.TabIndex = 109;
-            this.label4.Text = "3ra Muestra";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(285, 54);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 19);
-            this.label3.TabIndex = 108;
-            this.label3.Text = "2da Muestra";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(56, 54);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 19);
-            this.label2.TabIndex = 107;
-            this.label2.Text = "1ra Muestra";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 19);
-            this.label1.TabIndex = 106;
-            this.label1.Text = "Tinción de Zhiel Neelsen :";
-            // 
-            // txtCultivo
-            // 
-            this.txtCultivo.Location = new System.Drawing.Point(179, 92);
-            this.txtCultivo.Multiline = true;
-            this.txtCultivo.Name = "txtCultivo";
-            this.txtCultivo.Size = new System.Drawing.Size(515, 93);
-            this.txtCultivo.TabIndex = 104;
-            // 
-            // txtResistentes
-            // 
-            this.txtResistentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResistentes.Location = new System.Drawing.Point(466, 49);
-            this.txtResistentes.Multiline = true;
-            this.txtResistentes.Name = "txtResistentes";
-            this.txtResistentes.Size = new System.Drawing.Size(204, 151);
-            this.txtResistentes.TabIndex = 103;
-            // 
-            // txtSensibles
-            // 
-            this.txtSensibles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSensibles.Location = new System.Drawing.Point(197, 49);
-            this.txtSensibles.Multiline = true;
-            this.txtSensibles.Name = "txtSensibles";
-            this.txtSensibles.Size = new System.Drawing.Size(187, 151);
-            this.txtSensibles.TabIndex = 99;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(514, 27);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(92, 19);
-            this.label13.TabIndex = 102;
-            this.label13.Text = "Resistentes";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(247, 27);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(79, 19);
-            this.label14.TabIndex = 101;
-            this.label14.Text = "Sensibles";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(17, 27);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(140, 19);
-            this.label15.TabIndex = 100;
-            this.label15.Text = "ANTIBIOGRAMA :";
+            this.dtpFecha.Value = new System.DateTime(2025, 2, 16, 0, 0, 0, 0);
             // 
             // Micro
             // 
@@ -837,6 +837,7 @@
             this.Controls.Add(this.panelLeft);
             this.Name = "Micro";
             this.Text = "Micro";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Micro_Load);
             this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();

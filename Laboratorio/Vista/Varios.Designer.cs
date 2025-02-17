@@ -53,12 +53,13 @@
             this.txtOtros = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtDatos = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtExamen = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtMuestra = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
@@ -79,7 +80,6 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.txtDatos = new System.Windows.Forms.TextBox();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.panel5.SuspendLayout();
@@ -405,6 +405,14 @@
             this.panel2.Size = new System.Drawing.Size(697, 273);
             this.panel2.TabIndex = 151;
             // 
+            // txtDatos
+            // 
+            this.txtDatos.Location = new System.Drawing.Point(35, 49);
+            this.txtDatos.Multiline = true;
+            this.txtDatos.Name = "txtDatos";
+            this.txtDatos.Size = new System.Drawing.Size(610, 187);
+            this.txtDatos.TabIndex = 9;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -446,6 +454,13 @@
             this.txtExamen.Size = new System.Drawing.Size(457, 22);
             this.txtExamen.TabIndex = 8;
             // 
+            // txtMuestra
+            // 
+            this.txtMuestra.Location = new System.Drawing.Point(166, 36);
+            this.txtMuestra.Name = "txtMuestra";
+            this.txtMuestra.Size = new System.Drawing.Size(456, 22);
+            this.txtMuestra.TabIndex = 8;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -455,13 +470,6 @@
             this.label1.Size = new System.Drawing.Size(95, 22);
             this.label1.TabIndex = 5;
             this.label1.Text = "EXAMEN :";
-            // 
-            // txtMuestra
-            // 
-            this.txtMuestra.Location = new System.Drawing.Point(166, 36);
-            this.txtMuestra.Name = "txtMuestra";
-            this.txtMuestra.Size = new System.Drawing.Size(456, 22);
-            this.txtMuestra.TabIndex = 8;
             // 
             // label3
             // 
@@ -665,15 +673,7 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(257, 27);
             this.dtpFecha.TabIndex = 155;
-            this.dtpFecha.Value = new System.DateTime(2025, 1, 21, 0, 0, 0, 0);
-            // 
-            // txtDatos
-            // 
-            this.txtDatos.Location = new System.Drawing.Point(35, 49);
-            this.txtDatos.Multiline = true;
-            this.txtDatos.Name = "txtDatos";
-            this.txtDatos.Size = new System.Drawing.Size(610, 187);
-            this.txtDatos.TabIndex = 9;
+            this.dtpFecha.Value = new System.DateTime(2025, 2, 16, 0, 0, 0, 0);
             // 
             // Varios
             // 
@@ -685,6 +685,7 @@
             this.Controls.Add(this.panelLeft);
             this.Name = "Varios";
             this.Text = "Varios";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Varios_Load);
             this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();

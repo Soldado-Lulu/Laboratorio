@@ -40,6 +40,7 @@
             this.btnOrina = new System.Windows.Forms.Button();
             this.btnHemograma = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -49,8 +50,11 @@
             this.panelRight = new System.Windows.Forms.Panel();
             this.panelCap = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
+            this.txtExamenM = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtColor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -76,10 +80,6 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.txtExamenM = new System.Windows.Forms.TextBox();
-            this.txtObservaciones = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.panel5.SuspendLayout();
@@ -267,6 +267,15 @@
             this.panel5.Size = new System.Drawing.Size(400, 1183);
             this.panel5.TabIndex = 133;
             // 
+            // txtBuscarNombre
+            // 
+            this.txtBuscarNombre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtBuscarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarNombre.Location = new System.Drawing.Point(0, 567);
+            this.txtBuscarNombre.Name = "txtBuscarNombre";
+            this.txtBuscarNombre.Size = new System.Drawing.Size(400, 30);
+            this.txtBuscarNombre.TabIndex = 189;
+            // 
             // btnEliminar
             // 
             this.btnEliminar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -293,6 +302,7 @@
             // 
             // btnGuardar
             // 
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnGuardar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.Location = new System.Drawing.Point(0, 372);
@@ -300,7 +310,7 @@
             this.btnGuardar.Size = new System.Drawing.Size(400, 65);
             this.btnGuardar.TabIndex = 186;
             this.btnGuardar.Text = "GUARDAR PACIENTE";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnBuscar
@@ -370,8 +380,26 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 649);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(793, 214);
+            this.panel3.Size = new System.Drawing.Size(793, 306);
             this.panel3.TabIndex = 172;
+            // 
+            // txtObservaciones
+            // 
+            this.txtObservaciones.Location = new System.Drawing.Point(100, 72);
+            this.txtObservaciones.Multiline = true;
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(617, 218);
+            this.txtObservaciones.TabIndex = 109;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(42, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(155, 25);
+            this.label2.TabIndex = 108;
+            this.label2.Text = "Observaciones :";
             // 
             // panel2
             // 
@@ -395,6 +423,14 @@
             this.label19.Size = new System.Drawing.Size(215, 25);
             this.label19.TabIndex = 5;
             this.label19.Text = "Exámen Microscópico :";
+            // 
+            // txtExamenM
+            // 
+            this.txtExamenM.Location = new System.Drawing.Point(100, 52);
+            this.txtExamenM.Multiline = true;
+            this.txtExamenM.Name = "txtExamenM";
+            this.txtExamenM.Size = new System.Drawing.Size(617, 183);
+            this.txtExamenM.TabIndex = 108;
             // 
             // panel4
             // 
@@ -654,42 +690,7 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(257, 27);
             this.dtpFecha.TabIndex = 173;
-            this.dtpFecha.Value = new System.DateTime(2025, 1, 21, 0, 0, 0, 0);
-            // 
-            // txtExamenM
-            // 
-            this.txtExamenM.Location = new System.Drawing.Point(100, 52);
-            this.txtExamenM.Multiline = true;
-            this.txtExamenM.Name = "txtExamenM";
-            this.txtExamenM.Size = new System.Drawing.Size(617, 183);
-            this.txtExamenM.TabIndex = 108;
-            // 
-            // txtObservaciones
-            // 
-            this.txtObservaciones.Location = new System.Drawing.Point(100, 72);
-            this.txtObservaciones.Multiline = true;
-            this.txtObservaciones.Name = "txtObservaciones";
-            this.txtObservaciones.Size = new System.Drawing.Size(617, 97);
-            this.txtObservaciones.TabIndex = 109;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(42, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 25);
-            this.label2.TabIndex = 108;
-            this.label2.Text = "Observaciones :";
-            // 
-            // txtBuscarNombre
-            // 
-            this.txtBuscarNombre.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtBuscarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarNombre.Location = new System.Drawing.Point(0, 567);
-            this.txtBuscarNombre.Name = "txtBuscarNombre";
-            this.txtBuscarNombre.Size = new System.Drawing.Size(400, 30);
-            this.txtBuscarNombre.TabIndex = 189;
+            this.dtpFecha.Value = new System.DateTime(2025, 2, 16, 0, 0, 0, 0);
             // 
             // Copros
             // 
@@ -701,6 +702,7 @@
             this.Controls.Add(this.panelLeft);
             this.Name = "Copros";
             this.Text = "Copros";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Copros_Load);
             this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();

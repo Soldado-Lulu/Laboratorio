@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.dgvPersonar = new System.Windows.Forms.DataGridView();
             this.btnVarios = new System.Windows.Forms.Button();
             this.btnSobre = new System.Windows.Forms.Button();
             this.btnBlanco = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@
             this.btnOrina = new System.Windows.Forms.Button();
             this.btnHemograma = new System.Windows.Forms.Button();
             this.PanelBtns = new System.Windows.Forms.Panel();
+            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -48,97 +50,98 @@
             this.panelRight = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtCalcio = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
+            this.txtCalcio = new System.Windows.Forms.TextBox();
             this.txtCloro = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
             this.txtPotasio = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
             this.txtSodio = new System.Windows.Forms.TextBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
             this.txtHemoGlicosilada = new System.Windows.Forms.TextBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
             this.txtCPK = new System.Windows.Forms.TextBox();
-            this.label82 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
             this.txtCKMB = new System.Windows.Forms.TextBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtFosfatasaprotastica = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
             this.txtFofatasaacida = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.txtRelacion = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.txtglobulina = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtAlbumina = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
+            this.txtProteina = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtAmilasa = new System.Windows.Forms.TextBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtFosfatasaAlcalina = new System.Windows.Forms.TextBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
             this.txtGPT = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.txtGOT = new System.Windows.Forms.TextBox();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
             this.txtIndirecta = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
             this.txtDirecta = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
             this.txtBilirrubina = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
             this.txtTrigliceridos = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.txtAlbumina = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.txtFosfatasaAlcalina = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.txtAmilasa = new System.Windows.Forms.TextBox();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.txtProteina = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtGlucosa = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
             this.txtLDL = new System.Windows.Forms.TextBox();
+            this.txtHDL = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtHDL = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtColesterol = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.txtBUN = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtUrico = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.txtBUN = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.txtCreatinina = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtCreatinina = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtUrea = new System.Windows.Forms.TextBox();
+            this.txtGlucosa = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtUrea = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
@@ -159,10 +162,8 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.dgvPersonar = new System.Windows.Forms.DataGridView();
-            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
             this.panelLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.PanelBtns.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -171,7 +172,6 @@
             this.panel8.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLeft
@@ -191,8 +191,19 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(400, 1284);
+            this.panelLeft.Size = new System.Drawing.Size(400, 1055);
             this.panelLeft.TabIndex = 131;
+            // 
+            // dgvPersonar
+            // 
+            this.dgvPersonar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPersonar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvPersonar.Location = new System.Drawing.Point(0, 585);
+            this.dgvPersonar.Name = "dgvPersonar";
+            this.dgvPersonar.RowHeadersWidth = 51;
+            this.dgvPersonar.RowTemplate.Height = 24;
+            this.dgvPersonar.Size = new System.Drawing.Size(398, 468);
+            this.dgvPersonar.TabIndex = 12;
             // 
             // btnVarios
             // 
@@ -333,8 +344,17 @@
             this.PanelBtns.Dock = System.Windows.Forms.DockStyle.Right;
             this.PanelBtns.Location = new System.Drawing.Point(1212, 0);
             this.PanelBtns.Name = "PanelBtns";
-            this.PanelBtns.Size = new System.Drawing.Size(400, 1284);
+            this.PanelBtns.Size = new System.Drawing.Size(400, 1055);
             this.PanelBtns.TabIndex = 132;
+            // 
+            // txtBuscarNombre
+            // 
+            this.txtBuscarNombre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtBuscarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarNombre.Location = new System.Drawing.Point(0, 441);
+            this.txtBuscarNombre.Name = "txtBuscarNombre";
+            this.txtBuscarNombre.Size = new System.Drawing.Size(400, 30);
+            this.txtBuscarNombre.TabIndex = 184;
             // 
             // btnEliminar
             // 
@@ -427,7 +447,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(400, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(812, 1284);
+            this.panel7.Size = new System.Drawing.Size(812, 1055);
             this.panel7.TabIndex = 133;
             // 
             // panel2
@@ -461,13 +481,6 @@
             this.panel2.Size = new System.Drawing.Size(812, 345);
             this.panel2.TabIndex = 151;
             // 
-            // txtCalcio
-            // 
-            this.txtCalcio.Location = new System.Drawing.Point(167, 271);
-            this.txtCalcio.Name = "txtCalcio";
-            this.txtCalcio.Size = new System.Drawing.Size(103, 22);
-            this.txtCalcio.TabIndex = 128;
-            // 
             // label43
             // 
             this.label43.AutoSize = true;
@@ -476,6 +489,27 @@
             this.label43.Size = new System.Drawing.Size(96, 16);
             this.label43.TabIndex = 61;
             this.label43.Text = "8,1 - 10,4 mEq/l";
+            // 
+            // txtCalcio
+            // 
+            this.txtCalcio.Location = new System.Drawing.Point(167, 271);
+            this.txtCalcio.Name = "txtCalcio";
+            this.txtCalcio.Size = new System.Drawing.Size(103, 22);
+            this.txtCalcio.TabIndex = 128;
+            // 
+            // txtCloro
+            // 
+            this.txtCloro.Location = new System.Drawing.Point(168, 235);
+            this.txtCloro.Name = "txtCloro";
+            this.txtCloro.Size = new System.Drawing.Size(103, 22);
+            this.txtCloro.TabIndex = 127;
+            // 
+            // txtPotasio
+            // 
+            this.txtPotasio.Location = new System.Drawing.Point(168, 198);
+            this.txtPotasio.Name = "txtPotasio";
+            this.txtPotasio.Size = new System.Drawing.Size(103, 22);
+            this.txtPotasio.TabIndex = 126;
             // 
             // label33
             // 
@@ -486,13 +520,6 @@
             this.label33.TabIndex = 53;
             this.label33.Text = "Calcio :";
             // 
-            // txtCloro
-            // 
-            this.txtCloro.Location = new System.Drawing.Point(168, 235);
-            this.txtCloro.Name = "txtCloro";
-            this.txtCloro.Size = new System.Drawing.Size(103, 22);
-            this.txtCloro.TabIndex = 127;
-            // 
             // label41
             // 
             this.label41.AutoSize = true;
@@ -501,6 +528,13 @@
             this.label41.Size = new System.Drawing.Size(90, 16);
             this.label41.TabIndex = 60;
             this.label41.Text = "94 - 111 mEq/l";
+            // 
+            // txtSodio
+            // 
+            this.txtSodio.Location = new System.Drawing.Point(165, 165);
+            this.txtSodio.Name = "txtSodio";
+            this.txtSodio.Size = new System.Drawing.Size(103, 22);
+            this.txtSodio.TabIndex = 125;
             // 
             // label63
             // 
@@ -511,13 +545,6 @@
             this.label63.TabIndex = 53;
             this.label63.Text = "Cloro :";
             // 
-            // txtPotasio
-            // 
-            this.txtPotasio.Location = new System.Drawing.Point(168, 198);
-            this.txtPotasio.Name = "txtPotasio";
-            this.txtPotasio.Size = new System.Drawing.Size(103, 22);
-            this.txtPotasio.TabIndex = 126;
-            // 
             // label37
             // 
             this.label37.AutoSize = true;
@@ -526,22 +553,6 @@
             this.label37.Size = new System.Drawing.Size(89, 16);
             this.label37.TabIndex = 59;
             this.label37.Text = "3,5 - 5,5 mEq/l";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(102, 201);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(59, 16);
-            this.label69.TabIndex = 50;
-            this.label69.Text = "Potasio :";
-            // 
-            // txtSodio
-            // 
-            this.txtSodio.Location = new System.Drawing.Point(165, 165);
-            this.txtSodio.Name = "txtSodio";
-            this.txtSodio.Size = new System.Drawing.Size(103, 22);
-            this.txtSodio.TabIndex = 125;
             // 
             // label73
             // 
@@ -552,14 +563,14 @@
             this.label73.TabIndex = 47;
             this.label73.Text = "Sodio :";
             // 
-            // label75
+            // label69
             // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(300, 171);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(97, 16);
-            this.label75.TabIndex = 58;
-            this.label75.Text = "135 - 155 mEq/l";
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(102, 201);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(59, 16);
+            this.label69.TabIndex = 50;
+            this.label69.Text = "Potasio :";
             // 
             // label76
             // 
@@ -570,12 +581,28 @@
             this.label76.TabIndex = 44;
             this.label76.Text = "Lipasa : ";
             // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(300, 171);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(97, 16);
+            this.label75.TabIndex = 58;
+            this.label75.Text = "135 - 155 mEq/l";
+            // 
             // txtHemoGlicosilada
             // 
             this.txtHemoGlicosilada.Location = new System.Drawing.Point(262, 95);
             this.txtHemoGlicosilada.Name = "txtHemoGlicosilada";
             this.txtHemoGlicosilada.Size = new System.Drawing.Size(77, 22);
             this.txtHemoGlicosilada.TabIndex = 123;
+            // 
+            // txtCPK
+            // 
+            this.txtCPK.Location = new System.Drawing.Point(165, 53);
+            this.txtCPK.Name = "txtCPK";
+            this.txtCPK.Size = new System.Drawing.Size(103, 22);
+            this.txtCPK.TabIndex = 122;
             // 
             // label56
             // 
@@ -586,6 +613,13 @@
             this.label56.TabIndex = 43;
             this.label56.Text = "6,2 - 8,2 %";
             // 
+            // txtCKMB
+            // 
+            this.txtCKMB.Location = new System.Drawing.Point(165, 19);
+            this.txtCKMB.Name = "txtCKMB";
+            this.txtCKMB.Size = new System.Drawing.Size(103, 22);
+            this.txtCKMB.TabIndex = 121;
+            // 
             // label79
             // 
             this.label79.AutoSize = true;
@@ -595,13 +629,6 @@
             this.label79.TabIndex = 41;
             this.label79.Text = "Hemoglobina Glicosilada";
             // 
-            // txtCPK
-            // 
-            this.txtCPK.Location = new System.Drawing.Point(165, 53);
-            this.txtCPK.Name = "txtCPK";
-            this.txtCPK.Size = new System.Drawing.Size(103, 22);
-            this.txtCPK.TabIndex = 122;
-            // 
             // label82
             // 
             this.label82.AutoSize = true;
@@ -610,13 +637,6 @@
             this.label82.Size = new System.Drawing.Size(42, 16);
             this.label82.TabIndex = 38;
             this.label82.Text = "CPK : ";
-            // 
-            // txtCKMB
-            // 
-            this.txtCKMB.Location = new System.Drawing.Point(165, 19);
-            this.txtCKMB.Name = "txtCKMB";
-            this.txtCKMB.Size = new System.Drawing.Size(103, 22);
-            this.txtCKMB.TabIndex = 121;
             // 
             // label25
             // 
@@ -697,6 +717,13 @@
             this.txtFosfatasaprotastica.Size = new System.Drawing.Size(103, 22);
             this.txtFosfatasaprotastica.TabIndex = 120;
             // 
+            // txtFofatasaacida
+            // 
+            this.txtFofatasaacida.Location = new System.Drawing.Point(572, 242);
+            this.txtFofatasaacida.Name = "txtFofatasaacida";
+            this.txtFofatasaacida.Size = new System.Drawing.Size(103, 22);
+            this.txtFofatasaacida.TabIndex = 119;
+            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -706,12 +733,19 @@
             this.label27.TabIndex = 74;
             this.label27.Text = "Fosfatasa Acida Prostática :";
             // 
-            // txtFofatasaacida
+            // txtRelacion
             // 
-            this.txtFofatasaacida.Location = new System.Drawing.Point(572, 242);
-            this.txtFofatasaacida.Name = "txtFofatasaacida";
-            this.txtFofatasaacida.Size = new System.Drawing.Size(103, 22);
-            this.txtFofatasaacida.TabIndex = 119;
+            this.txtRelacion.Location = new System.Drawing.Point(550, 208);
+            this.txtRelacion.Name = "txtRelacion";
+            this.txtRelacion.Size = new System.Drawing.Size(103, 22);
+            this.txtRelacion.TabIndex = 118;
+            // 
+            // txtglobulina
+            // 
+            this.txtglobulina.Location = new System.Drawing.Point(547, 176);
+            this.txtglobulina.Name = "txtglobulina";
+            this.txtglobulina.Size = new System.Drawing.Size(106, 22);
+            this.txtglobulina.TabIndex = 117;
             // 
             // label24
             // 
@@ -722,13 +756,6 @@
             this.label24.TabIndex = 74;
             this.label24.Text = "Fosfatasa Acida Total : ";
             // 
-            // txtRelacion
-            // 
-            this.txtRelacion.Location = new System.Drawing.Point(550, 208);
-            this.txtRelacion.Name = "txtRelacion";
-            this.txtRelacion.Size = new System.Drawing.Size(103, 22);
-            this.txtRelacion.TabIndex = 118;
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -737,6 +764,13 @@
             this.label21.Size = new System.Drawing.Size(51, 16);
             this.label21.TabIndex = 84;
             this.label21.Text = "1,2 - 2,2";
+            // 
+            // txtAlbumina
+            // 
+            this.txtAlbumina.Location = new System.Drawing.Point(547, 142);
+            this.txtAlbumina.Name = "txtAlbumina";
+            this.txtAlbumina.Size = new System.Drawing.Size(106, 22);
+            this.txtAlbumina.TabIndex = 116;
             // 
             // label19
             // 
@@ -747,13 +781,6 @@
             this.label19.TabIndex = 74;
             this.label19.Text = "Relación A/G: ";
             // 
-            // txtglobulina
-            // 
-            this.txtglobulina.Location = new System.Drawing.Point(547, 176);
-            this.txtglobulina.Name = "txtglobulina";
-            this.txtglobulina.Size = new System.Drawing.Size(106, 22);
-            this.txtglobulina.TabIndex = 117;
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -763,15 +790,80 @@
             this.label20.TabIndex = 74;
             this.label20.Text = "Globulina : ";
             // 
-            // label30
+            // txtProteina
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(11, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(208, 19);
-            this.label30.TabIndex = 35;
-            this.label30.Text = "FORMULA LEUCOCITARIA";
+            this.txtProteina.Location = new System.Drawing.Point(547, 114);
+            this.txtProteina.Name = "txtProteina";
+            this.txtProteina.Size = new System.Drawing.Size(106, 22);
+            this.txtProteina.TabIndex = 115;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(669, 144);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(77, 16);
+            this.label13.TabIndex = 83;
+            this.label13.Text = "3,5 - 4,8 g/dl";
+            // 
+            // txtAmilasa
+            // 
+            this.txtAmilasa.Location = new System.Drawing.Point(547, 79);
+            this.txtAmilasa.Name = "txtAmilasa";
+            this.txtAmilasa.Size = new System.Drawing.Size(106, 22);
+            this.txtAmilasa.TabIndex = 114;
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(411, 144);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(66, 16);
+            this.label64.TabIndex = 74;
+            this.label64.Text = "Albumina:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(669, 116);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(77, 16);
+            this.label12.TabIndex = 82;
+            this.label12.Text = "6,1 - 7,9 g/dl";
+            // 
+            // txtFosfatasaAlcalina
+            // 
+            this.txtFosfatasaAlcalina.Location = new System.Drawing.Point(547, 44);
+            this.txtFosfatasaAlcalina.Name = "txtFosfatasaAlcalina";
+            this.txtFosfatasaAlcalina.Size = new System.Drawing.Size(106, 22);
+            this.txtFosfatasaAlcalina.TabIndex = 113;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(411, 107);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(119, 16);
+            this.label66.TabIndex = 71;
+            this.label66.Text = "Proteinas Totales :";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(411, 76);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(62, 16);
+            this.label68.TabIndex = 68;
+            this.label68.Text = "Amilasa :";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(669, 85);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(89, 16);
+            this.label58.TabIndex = 81;
+            this.label58.Text = "Hasta 120 UA";
             // 
             // txtGPT
             // 
@@ -779,6 +871,40 @@
             this.txtGPT.Name = "txtGPT";
             this.txtGPT.Size = new System.Drawing.Size(106, 22);
             this.txtGPT.TabIndex = 112;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(669, 50);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(100, 16);
+            this.label11.TabIndex = 66;
+            this.label11.Text = "Adultos 68 - 240";
+            // 
+            // txtGOT
+            // 
+            this.txtGOT.Location = new System.Drawing.Point(165, 242);
+            this.txtGOT.Name = "txtGOT";
+            this.txtGOT.Size = new System.Drawing.Size(106, 22);
+            this.txtGOT.TabIndex = 111;
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(409, 47);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(121, 16);
+            this.label70.TabIndex = 65;
+            this.label70.Text = "Fosfatasa Alcalina:";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(669, 34);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(97, 16);
+            this.label59.TabIndex = 63;
+            this.label59.Text = "Niños 100 - 400";
             // 
             // label8
             // 
@@ -789,6 +915,15 @@
             this.label8.TabIndex = 61;
             this.label8.Text = "Hasta 12 U/I";
             // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(82, 214);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(104, 16);
+            this.label44.TabIndex = 50;
+            this.label44.Text = "Transaminasas:";
+            // 
             // label40
             // 
             this.label40.AutoSize = true;
@@ -797,13 +932,6 @@
             this.label40.Size = new System.Drawing.Size(38, 16);
             this.label40.TabIndex = 56;
             this.label40.Text = "GPT:";
-            // 
-            // txtGOT
-            // 
-            this.txtGOT.Location = new System.Drawing.Point(165, 242);
-            this.txtGOT.Name = "txtGOT";
-            this.txtGOT.Size = new System.Drawing.Size(106, 22);
-            this.txtGOT.TabIndex = 111;
             // 
             // label42
             // 
@@ -823,15 +951,6 @@
             this.label50.TabIndex = 60;
             this.label50.Text = "Hasta 12 U/I";
             // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(82, 214);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(104, 16);
-            this.label44.TabIndex = 50;
-            this.label44.Text = "Transaminasas:";
-            // 
             // txtTotal
             // 
             this.txtTotal.Location = new System.Drawing.Point(165, 173);
@@ -848,6 +967,13 @@
             this.label46.TabIndex = 47;
             this.label46.Text = "Total: ";
             // 
+            // txtIndirecta
+            // 
+            this.txtIndirecta.Location = new System.Drawing.Point(165, 138);
+            this.txtIndirecta.Name = "txtIndirecta";
+            this.txtIndirecta.Size = new System.Drawing.Size(106, 22);
+            this.txtIndirecta.TabIndex = 109;
+            // 
             // label48
             // 
             this.label48.AutoSize = true;
@@ -856,13 +982,6 @@
             this.label48.Size = new System.Drawing.Size(100, 16);
             this.label48.TabIndex = 58;
             this.label48.Text = "Hasta 1,0 mg/dl";
-            // 
-            // txtIndirecta
-            // 
-            this.txtIndirecta.Location = new System.Drawing.Point(165, 138);
-            this.txtIndirecta.Name = "txtIndirecta";
-            this.txtIndirecta.Size = new System.Drawing.Size(106, 22);
-            this.txtIndirecta.TabIndex = 109;
             // 
             // label36
             // 
@@ -873,6 +992,13 @@
             this.label36.TabIndex = 44;
             this.label36.Text = "Indirecta:";
             // 
+            // txtDirecta
+            // 
+            this.txtDirecta.Location = new System.Drawing.Point(165, 110);
+            this.txtDirecta.Name = "txtDirecta";
+            this.txtDirecta.Size = new System.Drawing.Size(106, 22);
+            this.txtDirecta.TabIndex = 108;
+            // 
             // label39
             // 
             this.label39.AutoSize = true;
@@ -882,12 +1008,12 @@
             this.label39.TabIndex = 35;
             this.label39.Text = "Hasta 0,7 mg/dl";
             // 
-            // txtDirecta
+            // txtBilirrubina
             // 
-            this.txtDirecta.Location = new System.Drawing.Point(165, 110);
-            this.txtDirecta.Name = "txtDirecta";
-            this.txtDirecta.Size = new System.Drawing.Size(106, 22);
-            this.txtDirecta.TabIndex = 108;
+            this.txtBilirrubina.Location = new System.Drawing.Point(165, 79);
+            this.txtBilirrubina.Name = "txtBilirrubina";
+            this.txtBilirrubina.Size = new System.Drawing.Size(106, 22);
+            this.txtBilirrubina.TabIndex = 107;
             // 
             // label38
             // 
@@ -898,22 +1024,6 @@
             this.label38.TabIndex = 41;
             this.label38.Text = "Directa:";
             // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(285, 113);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(100, 16);
-            this.label47.TabIndex = 57;
-            this.label47.Text = "Hasta 0,2 mg/dl";
-            // 
-            // txtBilirrubina
-            // 
-            this.txtBilirrubina.Location = new System.Drawing.Point(165, 79);
-            this.txtBilirrubina.Name = "txtBilirrubina";
-            this.txtBilirrubina.Size = new System.Drawing.Size(106, 22);
-            this.txtBilirrubina.TabIndex = 107;
-            // 
             // label34
             // 
             this.label34.AutoSize = true;
@@ -922,6 +1032,15 @@
             this.label34.Size = new System.Drawing.Size(69, 16);
             this.label34.TabIndex = 38;
             this.label34.Text = "Bilirrubina:";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(285, 113);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(100, 16);
+            this.label47.TabIndex = 57;
+            this.label47.Text = "Hasta 0,2 mg/dl";
             // 
             // txtTrigliceridos
             // 
@@ -948,114 +1067,15 @@
             this.label32.TabIndex = 36;
             this.label32.Text = "30- 150 mg/dl";
             // 
-            // txtAlbumina
+            // label30
             // 
-            this.txtAlbumina.Location = new System.Drawing.Point(547, 142);
-            this.txtAlbumina.Name = "txtAlbumina";
-            this.txtAlbumina.Size = new System.Drawing.Size(106, 22);
-            this.txtAlbumina.TabIndex = 116;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(669, 144);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 16);
-            this.label13.TabIndex = 83;
-            this.label13.Text = "3,5 - 4,8 g/dl";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(411, 144);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(66, 16);
-            this.label64.TabIndex = 74;
-            this.label64.Text = "Albumina:";
-            // 
-            // txtFosfatasaAlcalina
-            // 
-            this.txtFosfatasaAlcalina.Location = new System.Drawing.Point(547, 44);
-            this.txtFosfatasaAlcalina.Name = "txtFosfatasaAlcalina";
-            this.txtFosfatasaAlcalina.Size = new System.Drawing.Size(106, 22);
-            this.txtFosfatasaAlcalina.TabIndex = 113;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(669, 50);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 16);
-            this.label11.TabIndex = 66;
-            this.label11.Text = "Adultos 68 - 240";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(409, 47);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(121, 16);
-            this.label70.TabIndex = 65;
-            this.label70.Text = "Fosfatasa Alcalina:";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(669, 34);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(97, 16);
-            this.label59.TabIndex = 63;
-            this.label59.Text = "Niños 100 - 400";
-            // 
-            // txtAmilasa
-            // 
-            this.txtAmilasa.Location = new System.Drawing.Point(547, 79);
-            this.txtAmilasa.Name = "txtAmilasa";
-            this.txtAmilasa.Size = new System.Drawing.Size(106, 22);
-            this.txtAmilasa.TabIndex = 114;
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(411, 76);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(62, 16);
-            this.label68.TabIndex = 68;
-            this.label68.Text = "Amilasa :";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(669, 85);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(89, 16);
-            this.label58.TabIndex = 81;
-            this.label58.Text = "Hasta 120 UA";
-            // 
-            // txtProteina
-            // 
-            this.txtProteina.Location = new System.Drawing.Point(547, 114);
-            this.txtProteina.Name = "txtProteina";
-            this.txtProteina.Size = new System.Drawing.Size(106, 22);
-            this.txtProteina.TabIndex = 115;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(669, 116);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 16);
-            this.label12.TabIndex = 82;
-            this.label12.Text = "6,1 - 7,9 g/dl";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(411, 107);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(119, 16);
-            this.label66.TabIndex = 71;
-            this.label66.Text = "Proteinas Totales :";
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(11, 0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(208, 19);
+            this.label30.TabIndex = 35;
+            this.label30.Text = "FORMULA LEUCOCITARIA";
             // 
             // panel3
             // 
@@ -1093,12 +1113,15 @@
             this.panel3.Size = new System.Drawing.Size(812, 186);
             this.panel3.TabIndex = 149;
             // 
-            // txtGlucosa
+            // label35
             // 
-            this.txtGlucosa.Location = new System.Drawing.Point(105, 32);
-            this.txtGlucosa.Name = "txtGlucosa";
-            this.txtGlucosa.Size = new System.Drawing.Size(120, 22);
-            this.txtGlucosa.TabIndex = 98;
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(622, 9);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(171, 19);
+            this.label35.TabIndex = 106;
+            this.label35.Text = "Valores de Referencia";
             // 
             // txtLDL
             // 
@@ -1107,6 +1130,13 @@
             this.txtLDL.Size = new System.Drawing.Size(135, 22);
             this.txtLDL.TabIndex = 105;
             this.txtLDL.TextChanged += new System.EventHandler(this.txtLDL_TextChanged);
+            // 
+            // txtHDL
+            // 
+            this.txtHDL.Location = new System.Drawing.Point(477, 101);
+            this.txtHDL.Name = "txtHDL";
+            this.txtHDL.Size = new System.Drawing.Size(135, 22);
+            this.txtHDL.TabIndex = 104;
             // 
             // label5
             // 
@@ -1128,12 +1158,12 @@
             this.label6.Text = "30 - 150 mg/dl";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // txtHDL
+            // txtColesterol
             // 
-            this.txtHDL.Location = new System.Drawing.Point(477, 101);
-            this.txtHDL.Name = "txtHDL";
-            this.txtHDL.Size = new System.Drawing.Size(135, 22);
-            this.txtHDL.TabIndex = 104;
+            this.txtColesterol.Location = new System.Drawing.Point(477, 64);
+            this.txtColesterol.Name = "txtColesterol";
+            this.txtColesterol.Size = new System.Drawing.Size(135, 22);
+            this.txtColesterol.TabIndex = 103;
             // 
             // label1
             // 
@@ -1144,6 +1174,13 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "HDL:  ";
             // 
+            // txtUrico
+            // 
+            this.txtUrico.Location = new System.Drawing.Point(473, 32);
+            this.txtUrico.Name = "txtUrico";
+            this.txtUrico.Size = new System.Drawing.Size(139, 22);
+            this.txtUrico.TabIndex = 102;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -1152,13 +1189,6 @@
             this.label4.Size = new System.Drawing.Size(85, 16);
             this.label4.TabIndex = 34;
             this.label4.Text = "30 - 70  mg/dl";
-            // 
-            // txtColesterol
-            // 
-            this.txtColesterol.Location = new System.Drawing.Point(477, 64);
-            this.txtColesterol.Name = "txtColesterol";
-            this.txtColesterol.Size = new System.Drawing.Size(135, 22);
-            this.txtColesterol.TabIndex = 103;
             // 
             // label16
             // 
@@ -1169,31 +1199,6 @@
             this.label16.TabIndex = 20;
             this.label16.Text = "Colesterol Total :  ";
             // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(628, 67);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(96, 16);
-            this.label29.TabIndex = 34;
-            this.label29.Text = "150 - 200 mg/dl";
-            // 
-            // txtBUN
-            // 
-            this.txtBUN.Location = new System.Drawing.Point(106, 126);
-            this.txtBUN.Name = "txtBUN";
-            this.txtBUN.Size = new System.Drawing.Size(119, 22);
-            this.txtBUN.TabIndex = 101;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(17, 132);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(42, 16);
-            this.label15.TabIndex = 18;
-            this.label15.Text = "BUN :";
-            // 
             // label26
             // 
             this.label26.AutoSize = true;
@@ -1203,12 +1208,14 @@
             this.label26.TabIndex = 31;
             this.label26.Text = "6 - 22 mg/dl";
             // 
-            // txtUrico
+            // label29
             // 
-            this.txtUrico.Location = new System.Drawing.Point(473, 32);
-            this.txtUrico.Name = "txtUrico";
-            this.txtUrico.Size = new System.Drawing.Size(139, 22);
-            this.txtUrico.TabIndex = 102;
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(628, 67);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(96, 16);
+            this.label29.TabIndex = 34;
+            this.label29.Text = "150 - 200 mg/dl";
             // 
             // label14
             // 
@@ -1219,6 +1226,13 @@
             this.label14.TabIndex = 14;
             this.label14.Text = "Ac. Urico:";
             // 
+            // txtBUN
+            // 
+            this.txtBUN.Location = new System.Drawing.Point(106, 126);
+            this.txtBUN.Name = "txtBUN";
+            this.txtBUN.Size = new System.Drawing.Size(119, 22);
+            this.txtBUN.TabIndex = 101;
+            // 
             // label28
             // 
             this.label28.AutoSize = true;
@@ -1228,12 +1242,39 @@
             this.label28.TabIndex = 33;
             this.label28.Text = "H : 3,4 - 7 / M : 2,4 - 5,7 mg/dl";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(238, 101);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(88, 16);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "0,8 - 1,4 mg/dl";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(17, 132);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(42, 16);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "BUN :";
+            // 
             // txtCreatinina
             // 
             this.txtCreatinina.Location = new System.Drawing.Point(106, 95);
             this.txtCreatinina.Name = "txtCreatinina";
             this.txtCreatinina.Size = new System.Drawing.Size(119, 22);
             this.txtCreatinina.TabIndex = 100;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(238, 70);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(82, 16);
+            this.label22.TabIndex = 27;
+            this.label22.Text = "20 - 45 mg/dl";
             // 
             // label10
             // 
@@ -1244,14 +1285,28 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "Creatinina :";
             // 
-            // label9
+            // txtUrea
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(238, 101);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 16);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "0,8 - 1,4 mg/dl";
+            this.txtUrea.Location = new System.Drawing.Point(105, 64);
+            this.txtUrea.Name = "txtUrea";
+            this.txtUrea.Size = new System.Drawing.Size(120, 22);
+            this.txtUrea.TabIndex = 99;
+            // 
+            // txtGlucosa
+            // 
+            this.txtGlucosa.Location = new System.Drawing.Point(105, 32);
+            this.txtGlucosa.Name = "txtGlucosa";
+            this.txtGlucosa.Size = new System.Drawing.Size(120, 22);
+            this.txtGlucosa.TabIndex = 98;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(16, 67);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(43, 16);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Urea: ";
             // 
             // label2
             // 
@@ -1270,31 +1325,6 @@
             this.label3.Size = new System.Drawing.Size(89, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "75 - 115 mg/dl";
-            // 
-            // txtUrea
-            // 
-            this.txtUrea.Location = new System.Drawing.Point(105, 64);
-            this.txtUrea.Name = "txtUrea";
-            this.txtUrea.Size = new System.Drawing.Size(120, 22);
-            this.txtUrea.TabIndex = 99;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(238, 70);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(82, 16);
-            this.label22.TabIndex = 27;
-            this.label22.Text = "20 - 45 mg/dl";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 67);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 16);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Urea: ";
             // 
             // label17
             // 
@@ -1351,6 +1381,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(812, 225);
             this.panel1.TabIndex = 147;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtId
             // 
@@ -1487,50 +1518,22 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(257, 22);
             this.dtpFecha.TabIndex = 157;
-            this.dtpFecha.Value = new System.DateTime(2025, 1, 21, 0, 0, 0, 0);
-            // 
-            // dgvPersonar
-            // 
-            this.dgvPersonar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPersonar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvPersonar.Location = new System.Drawing.Point(0, 585);
-            this.dgvPersonar.Name = "dgvPersonar";
-            this.dgvPersonar.RowHeadersWidth = 51;
-            this.dgvPersonar.RowTemplate.Height = 24;
-            this.dgvPersonar.Size = new System.Drawing.Size(398, 697);
-            this.dgvPersonar.TabIndex = 12;
-            // 
-            // txtBuscarNombre
-            // 
-            this.txtBuscarNombre.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtBuscarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarNombre.Location = new System.Drawing.Point(0, 441);
-            this.txtBuscarNombre.Name = "txtBuscarNombre";
-            this.txtBuscarNombre.Size = new System.Drawing.Size(400, 30);
-            this.txtBuscarNombre.TabIndex = 184;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(622, 9);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(171, 19);
-            this.label35.TabIndex = 106;
-            this.label35.Text = "Valores de Referencia";
+            this.dtpFecha.Value = new System.DateTime(2025, 2, 16, 0, 0, 0, 0);
             // 
             // Quimica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1612, 1284);
+            this.ClientSize = new System.Drawing.Size(1612, 1055);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.PanelBtns);
             this.Controls.Add(this.panelLeft);
             this.Name = "Quimica";
             this.Text = "Quimica";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Quimica_Load);
             this.panelLeft.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();
             this.PanelBtns.ResumeLayout(false);
             this.PanelBtns.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -1545,7 +1548,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonar)).EndInit();
             this.ResumeLayout(false);
 
         }
