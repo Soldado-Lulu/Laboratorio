@@ -72,16 +72,20 @@
     <Compile Include="Logica\HematologiaLogica.cs" />
     <Compile Include="Logica\MicroLogica.cs" />
     <Compile Include="Logica\OrinaLogica.cs" />
+    <Compile Include="Logica\PacienteLogica.cs" />
     <Compile Include="Logica\PersonaLogica.cs" />
     <Compile Include="Logica\QuimicaLogica.cs" />
     <Compile Include="Logica\SerologiaLogica.cs" />
     <Compile Include="Logica\SobreLogica.cs" />
     <Compile Include="Modelo\BlancoM.cs" />
     <Compile Include="Modelo\CoprosM.cs" />
+    <Compile Include="Modelo\ExamenesM.cs" />
     <Compile Include="Modelo\HCGM.cs" />
     <Compile Include="Modelo\Hematologia.cs" />
     <Compile Include="Modelo\MicroM.cs" />
     <Compile Include="Modelo\OrinaM.cs" />
+    <Compile Include="Modelo\PacienteExamenM.cs" />
+    <Compile Include="Modelo\PacienteM.cs" />
     <Compile Include="Modelo\QuimicaM.cs" />
     <Compile Include="Modelo\SerologiaM.cs" />
     <Compile Include="Modelo\SobreM.cs" />
@@ -142,6 +146,12 @@
     <Compile Include="Vista\Quimica.Designer.cs">
       <DependentUpon>Quimica.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\RegistroPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\RegistroPaciente.Designer.cs">
+      <DependentUpon>RegistroPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Serologia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +211,9 @@
     </Compile>
     <EmbeddedResource Include="Vista\Quimica.resx">
       <DependentUpon>Quimica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\RegistroPaciente.resx">
+      <DependentUpon>RegistroPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Serologia.resx">
       <DependentUpon>Serologia.cs</DependentUpon>

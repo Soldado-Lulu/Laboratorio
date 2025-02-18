@@ -10,9 +10,9 @@ namespace Laboratorio.Modelo
     {
 
         public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string NombreM { get; set; }
-        public string Edad { get; set; }
+        public int IdPacienteExamen { get; set; }
+        public int IdPaciente { get; set; }
+
         public string Glucosa { get; set; }
         public string Urea { get; set; }
         public string Creatina { get; set; }
@@ -39,7 +39,6 @@ namespace Laboratorio.Modelo
         public string CKMB { get; set; }
         public string CPK { get; set; }
         public string Hemoglobina { get; set; }
-        //public string Lipasa { get; set; }
         public string Sodio { get; set; }
         public string Potasio { get; set; }
         public string Cloro { get; set; }
